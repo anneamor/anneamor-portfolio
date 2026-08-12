@@ -830,40 +830,6 @@ textarea:focus-visible {
 }
 
 
-/* =========================
-   NAVIGATION
-   ========================= */
-
-.primary-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    padding: 24px;
-}
-
-.primary-navigation a {
-    text-decoration: none;
-    color: inherit;
-    font-weight: 500;
-    transition: opacity 0.2s ease;
-}
-
-.primary-navigation a:hover {
-    opacity: 0.6;
-}
-
-
-/* =========================
-   MOBILE
-   ========================= */
-
-    .primary-navigation {
-        gap: 18px;
-        flex-wrap: wrap;
-    }
-
-
 /* ==============================
    RESUME PAGE
    ============================== */

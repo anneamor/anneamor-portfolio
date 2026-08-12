@@ -1,3 +1,41 @@
+const menuButton = document.querySelector(".menu-button");
+const navigation = document.querySelector(".primary-navigation");
+
+if (menuButton && navigation) {
+
+  menuButton.addEventListener("click", function () {
+
+    const isOpen =
+      navigation.classList.toggle("is-open");
+
+    menuButton.setAttribute(
+      "aria-expanded",
+      isOpen
+    );
+
+  });
+
+
+  const navigationLinks =
+    navigation.querySelectorAll("a");
+
+
+  navigationLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+      navigation.classList.remove("is-open");
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    });
+
+  });
+
+}
 const aceCarousel = document.querySelector("[data-ace-carousel]");
 
 if (aceCarousel) {
