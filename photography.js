@@ -1,6 +1,3 @@
-alert("photography.js is connected");
-
-console.log("Photography JS loaded");
 
 /* ========================================
    ANNE AMOR PHOTOGRAPHY GALLERY
