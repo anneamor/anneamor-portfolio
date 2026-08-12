@@ -1,0 +1,1054 @@
+/* ========================================
+   FRESH FARE FARMS CASE STUDY BRAND COLORS
+    Avocado  #789b4a
+    Carrot   #f57f45
+    Lime     #e0e568
+    Eggplant #61264e
+    Squash   #f0d284
+    Earth    #7a6569
+    Salmon   #f8a289
+    Wheat    #f1ceb3
+======================================== */
+
+
+/* ========================================
+   FRESH FARE FARMS CASE STUDY
+======================================== */
+
+.freshfare-case {
+  --fresh-avocado: #789b4a;
+  --fresh-carrot: #f57f45;
+  --fresh-lime: #e0e568;
+  --fresh-eggplant: #61264e;
+  --fresh-squash: #f0d284;
+  --fresh-earth: #7a6569;
+  --fresh-salmon: #f8a289;
+  --fresh-wheat: #f1ceb3;
+
+  --fresh-white: #ffffff;
+  --fresh-cream: #fffaf4;
+  --fresh-ink: #30292d;
+  --fresh-line: #e3d9d0;
+
+  color: var(--fresh-ink);
+  background: var(--fresh-cream);
+}
+
+
+.freshfare-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+
+.freshfare-section {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+}
+
+
+.freshfare-label,
+.freshfare-eyebrow {
+  margin: 0 0 1rem;
+
+  color: var(--fresh-carrot);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+
+.freshfare-case h2 {
+  max-width: 800px;
+
+  margin: 0 0 2rem;
+
+  color: var(--fresh-eggplant);
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+
+  line-height: 1.05;
+}
+
+
+.freshfare-case p {
+  line-height: 1.75;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.freshfare-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: clamp(5rem, 9vw, 8rem) 0;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(224, 229, 104, 0.35),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #fffaf4,
+      rgba(241, 206, 179, 0.55)
+    );
+}
+
+
+.freshfare-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.72fr);
+
+  align-items: center;
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.freshfare-hero h1 {
+  margin: 0 0 2rem;
+
+  color: var(--fresh-eggplant);
+
+  font-size: clamp(3.8rem, 8vw, 7rem);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.05em;
+}
+
+
+.freshfare-hero h1 span {
+  display: block;
+  color: var(--fresh-avocado);
+}
+
+
+.freshfare-lead {
+  max-width: 650px;
+
+  color: #5b5357;
+
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+
+.freshfare-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  padding: 0;
+  margin: 2rem 0 0;
+
+  list-style: none;
+}
+
+
+.freshfare-tags li {
+  padding: 0.55rem 0.9rem;
+
+  color: var(--fresh-eggplant);
+
+  background: #ffffff;
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+
+.freshfare-hero-art {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 22px 55px rgba(97, 38, 78, 0.16);
+
+  transform: rotate(2deg);
+}
+
+
+.freshfare-hero-art img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+/* ========================================
+   OVERVIEW
+======================================== */
+
+.freshfare-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(280px, 0.7fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.freshfare-facts {
+  padding: 2rem;
+
+  color: #ffffff;
+
+  background: var(--fresh-eggplant);
+
+  border-top:
+    7px solid var(--fresh-carrot);
+
+  border-radius: 0 0 18px 18px;
+}
+
+
+.freshfare-facts .freshfare-label {
+  color: var(--fresh-lime);
+}
+
+
+.freshfare-facts dl {
+  margin: 0;
+}
+
+
+.freshfare-facts dl div {
+  padding: 1rem 0;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.freshfare-facts dt {
+  color: var(--fresh-lime);
+
+  font-size: 0.76rem;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+.freshfare-facts dd {
+  margin: 0.4rem 0 0;
+}
+
+
+/* ========================================
+   DARK SECTION
+======================================== */
+
+.freshfare-dark {
+  color: #ffffff;
+
+  background: var(--fresh-eggplant);
+}
+
+
+.freshfare-dark h2,
+.freshfare-dark h3 {
+  color: #ffffff;
+}
+
+
+.freshfare-dark .freshfare-label {
+  color: var(--fresh-lime);
+}
+
+
+.freshfare-challenge-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+.freshfare-dark p,
+.freshfare-dark li {
+  color:
+    rgba(255, 255, 255, 0.82);
+}
+
+
+.freshfare-list li {
+  margin-bottom: 0.7rem;
+}
+
+
+/* ========================================
+   RESEARCH + MOOD BOARD
+======================================== */
+
+.freshfare-process-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.7fr)
+    minmax(300px, 1.3fr);
+
+  align-items: center;
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.freshfare-research-image,
+.freshfare-moodboard {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 45px
+    rgba(97, 38, 78, 0.12);
+}
+
+
+.freshfare-research-image img,
+.freshfare-moodboard img {
+  width: 100%;
+}
+
+
+.freshfare-soft {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(224, 229, 104, 0.2),
+      rgba(248, 162, 137, 0.2)
+    );
+}
+
+
+.freshfare-intro {
+  max-width: 760px;
+
+  margin-bottom: 3rem;
+
+  color: #625a5e;
+
+  font-size: 1.08rem;
+}
+
+
+/* ========================================
+   BRAND GUIDE BOOK
+======================================== */
+
+.freshfare-book-section {
+  background: var(--fresh-wheat);
+}
+
+
+.freshfare-book {
+  max-width: 1100px;
+  margin: 3rem auto 0;
+}
+
+
+.freshfare-book-stage {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 620px;
+
+  padding: 2rem;
+
+  perspective: 1800px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f4eadf,
+      #ffffff,
+      #efe3d5
+    );
+
+  border-radius: 26px;
+
+  box-shadow:
+    0 22px 55px
+    rgba(97, 38, 78, 0.15);
+}
+
+
+.freshfare-cover-view {
+  display: flex;
+
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.5s ease;
+}
+
+
+.freshfare-cover-view.is-hidden {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transform:
+    rotateY(-30deg)
+    translateX(-80px);
+}
+
+
+.freshfare-book-cover {
+  width: min(600px, 85vw);
+
+  box-shadow:
+    10px 14px 0 rgba(0, 0, 0, 0.07),
+    18px 22px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+.freshfare-spread-view {
+  display: none;
+
+  width: min(1050px, 100%);
+
+  align-items: stretch;
+  justify-content: center;
+
+  opacity: 0;
+
+  transform: scale(0.96);
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+
+.freshfare-spread-view.is-visible {
+  display: flex;
+
+  opacity: 1;
+
+  transform: scale(1);
+}
+
+
+.freshfare-page-shell {
+  position: relative;
+
+  flex: 1 1 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.14);
+}
+
+
+.freshfare-page-shell img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+
+.freshfare-book-spine {
+  width: 14px;
+  flex: 0 0 14px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.15),
+      rgba(255, 255, 255, 0.8),
+      rgba(0, 0, 0, 0.15)
+    );
+}
+
+
+.freshfare-spread-view.is-turning
+.freshfare-page-shell:last-child {
+  animation:
+    freshfare-page-turn
+    0.36s ease;
+}
+
+
+@keyframes freshfare-page-turn {
+
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    transform:
+      rotateY(-12deg)
+      scaleX(0.98);
+  }
+
+  100% {
+    transform: rotateY(0deg);
+  }
+
+}
+
+
+.freshfare-controls {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+
+.freshfare-button {
+  min-height: 46px;
+
+  padding: 0.7rem 1.25rem;
+
+  color: #ffffff;
+
+  background:
+    var(--fresh-eggplant);
+
+  border:
+    2px solid var(--fresh-eggplant);
+
+  border-radius: 999px;
+
+  font: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.freshfare-button:hover {
+  color: var(--fresh-eggplant);
+
+  background: #ffffff;
+}
+
+
+.freshfare-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+
+.freshfare-status {
+  min-width: 110px;
+
+  margin: 0;
+
+  text-align: center;
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   DESIGN EVOLUTION
+======================================== */
+
+.freshfare-draft-viewer {
+  max-width: 760px;
+
+  margin: 3rem auto 0;
+}
+
+
+.freshfare-draft-stage {
+  display: grid;
+  place-items: center;
+
+  min-height: 650px;
+
+  padding: 2rem;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 20px 50px
+    rgba(97, 38, 78, 0.13);
+}
+
+
+.freshfare-draft-stage img {
+  display: block;
+
+  max-width: 100%;
+  max-height: 720px;
+
+  object-fit: contain;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.freshfare-draft-stage img.is-changing {
+  opacity: 0;
+
+  transform: scale(0.98);
+}
+
+
+.freshfare-draft-tabs {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 0.75rem;
+
+  margin: 1.5rem 0;
+}
+
+
+.freshfare-draft-button {
+  padding: 0.7rem 1.3rem;
+
+  color: var(--fresh-eggplant);
+
+  background: transparent;
+
+  border:
+    2px solid var(--fresh-eggplant);
+
+  border-radius: 999px;
+
+  font: inherit;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.freshfare-draft-button:hover,
+.freshfare-draft-button.active {
+  color: #ffffff;
+
+  background: var(--fresh-eggplant);
+}
+
+
+.freshfare-draft-caption {
+  max-width: 600px;
+
+  margin-inline: auto;
+
+  text-align: center;
+}
+
+
+#freshfare-draft-title {
+  margin-bottom: 0.4rem;
+
+  color: var(--fresh-eggplant);
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   ANIMATED LEADERBOARD
+======================================== */
+
+.freshfare-leaderboard-frame {
+  margin: 0;
+
+  padding: clamp(1rem, 3vw, 2rem);
+
+  background: var(--fresh-eggplant);
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 18px 45px
+    rgba(97, 38, 78, 0.18);
+}
+
+
+.freshfare-leaderboard-video {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+}
+
+
+.freshfare-leaderboard-frame figcaption {
+  margin-top: 1rem;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 0.88rem;
+
+  text-align: center;
+}
+
+/* ========================================
+   SOCIAL CAROUSEL
+======================================== */
+
+.freshfare-social-section {
+  background:
+    rgba(224, 229, 104, 0.14);
+}
+
+
+.freshfare-carousel {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    minmax(0, 650px)
+    auto;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.25rem;
+}
+
+
+.freshfare-carousel-stage {
+  padding: 1.25rem;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 20px 50px
+    rgba(97, 38, 78, 0.13);
+}
+
+
+.freshfare-carousel-stage img {
+  width: 100%;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.freshfare-carousel-stage img.is-changing {
+  opacity: 0;
+
+  transform: translateX(15px);
+}
+
+
+.freshfare-carousel-arrow {
+  display: grid;
+
+  width: 54px;
+  height: 54px;
+
+  place-items: center;
+
+  color: #ffffff;
+
+  background:
+    var(--fresh-eggplant);
+
+  border: 0;
+
+  border-radius: 50%;
+
+  font-size: 1.8rem;
+
+  cursor: pointer;
+}
+
+
+.freshfare-carousel-arrow:hover {
+  background: var(--fresh-carrot);
+}
+
+
+.freshfare-carousel-footer {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 0.75rem;
+
+  margin-top: 1.5rem;
+}
+
+
+.freshfare-dots {
+  display: flex;
+  gap: 0.6rem;
+}
+
+
+.freshfare-dot {
+  width: 12px;
+  height: 12px;
+
+  padding: 0;
+
+  background: transparent;
+
+  border:
+    2px solid var(--fresh-eggplant);
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+
+.freshfare-dot.active {
+  background: var(--fresh-eggplant);
+}
+
+
+/* ========================================
+   PRESENTATION
+======================================== */
+
+.freshfare-presentation {
+  background:
+    linear-gradient(
+      135deg,
+      var(--fresh-wheat),
+      #ffffff
+    );
+}
+
+
+.freshfare-presentation-frame {
+  max-width: 1100px;
+
+  margin: 3rem auto 0;
+
+  padding: 1rem;
+
+  background: #2d252a;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 22px 55px
+    rgba(97, 38, 78, 0.17);
+}
+
+
+.freshfare-presentation-frame img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+
+/* ========================================
+   OUTCOME
+======================================== */
+
+.freshfare-outcome {
+  background: #ffffff;
+}
+
+
+.freshfare-outcome-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+.freshfare-learning-list li {
+  margin-bottom: 0.7rem;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   NEXT PROJECT
+======================================== */
+
+.freshfare-next {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  background:
+    var(--fresh-eggplant);
+}
+
+
+.freshfare-next p {
+  color: var(--fresh-lime);
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+
+.freshfare-next h2 {
+  max-width: 730px;
+
+  margin-inline: auto;
+
+  color: #ffffff;
+}
+
+
+.freshfare-next .button {
+  margin-top: 1rem;
+
+  background: var(--fresh-carrot);
+
+  border-color: var(--fresh-carrot);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .freshfare-hero-grid,
+  .freshfare-overview-grid,
+  .freshfare-challenge-grid,
+  .freshfare-process-grid,
+  .freshfare-wide-heading,
+  .freshfare-outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .freshfare-hero-art {
+    max-width: 500px;
+
+    margin-inline: auto;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .freshfare-shell {
+    width: min(100% - 28px, 1180px);
+  }
+
+
+  .freshfare-book-stage {
+    min-height: 380px;
+
+    padding: 0.75rem;
+  }
+
+
+  .freshfare-book-spine {
+    width: 6px;
+    flex-basis: 6px;
+  }
+
+
+  .freshfare-controls {
+    flex-wrap: wrap;
+  }
+
+
+  .freshfare-carousel {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .freshfare-carousel-stage {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+
+  .freshfare-carousel-arrow {
+    width: 100%;
+
+    border-radius: 999px;
+  }
+
+
+  .freshfare-draft-stage {
+    min-height: 450px;
+
+    padding: 1rem;
+  }
+
+
+  .freshfare-draft-tabs {
+    flex-wrap: wrap;
+  }
+
+}

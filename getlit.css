@@ -1,0 +1,908 @@
+/* ========================================
+   GET LIT CASE STUDY
+======================================== */
+
+.getlit-case {
+  --gl-teal: #007072;
+  --gl-gold: #f29426;
+  --gl-flame: #d94f05;
+  --gl-pink: #f4e2de;
+  --gl-gray: #414042;
+  --gl-cream: #fffaf6;
+  --gl-white: #ffffff;
+  --gl-text: #29272a;
+  --gl-muted: #686164;
+  --gl-line: #ded7d3;
+
+  background: var(--gl-cream);
+  color: var(--gl-text);
+}
+
+
+.getlit-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+
+.getlit-section {
+  padding: clamp(5rem, 8vw, 7.5rem) 0;
+}
+
+
+.getlit-section-label,
+.getlit-eyebrow,
+.getlit-format {
+  margin: 0 0 1rem;
+  color: var(--gl-teal);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+
+.getlit-case h1,
+.getlit-case h2,
+.getlit-case h3 {
+  color: var(--gl-gray);
+}
+
+
+.getlit-case h2 {
+  max-width: 800px;
+  margin: 0 0 2rem;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1.05;
+}
+
+
+.getlit-case p {
+  line-height: 1.75;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.getlit-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: clamp(5rem, 9vw, 8rem) 0;
+
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(0, 112, 114, 0.16),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff,
+      var(--gl-pink)
+    );
+}
+
+
+.getlit-hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: -100px;
+  bottom: -120px;
+
+  width: 340px;
+  height: 340px;
+
+  border: 55px solid rgba(242, 148, 38, 0.16);
+
+  border-radius: 50%;
+}
+
+
+.getlit-hero-grid {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.75fr);
+
+  align-items: center;
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.getlit-hero h1 {
+  max-width: 720px;
+
+  margin: 0 0 2rem;
+
+  color: var(--gl-gray);
+
+  font-size: clamp(3.5rem, 8vw, 7rem);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.05em;
+}
+
+
+.getlit-hero h1 span {
+  display: block;
+
+  color: var(--gl-flame);
+}
+
+
+.getlit-lead {
+  max-width: 680px;
+
+  margin-bottom: 2rem;
+
+  color: var(--gl-muted);
+
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+
+.getlit-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+
+.getlit-tags li {
+  padding: 0.55rem 0.9rem;
+
+  color: var(--gl-gray);
+
+  background: var(--gl-white);
+
+  border: 1px solid rgba(65, 64, 66, 0.15);
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+}
+
+
+.getlit-hero-art {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: var(--gl-white);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 22px 55px rgba(65, 64, 66, 0.16);
+
+  transform: rotate(2deg);
+}
+
+
+.getlit-hero-art img {
+  width: 100%;
+
+  border-radius: 14px;
+}
+
+
+/* ========================================
+   OVERVIEW
+======================================== */
+
+.getlit-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(280px, 0.7fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.getlit-facts {
+  padding: 2rem;
+
+  color: var(--gl-white);
+
+  background: var(--gl-gray);
+
+  border-top: 7px solid var(--gl-gold);
+
+  border-radius: 0 0 18px 18px;
+}
+
+
+.getlit-facts .getlit-section-label {
+  color: var(--gl-gold);
+}
+
+
+.getlit-facts dl {
+  margin: 0;
+}
+
+
+.getlit-facts dl div {
+  padding: 1rem 0;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.getlit-facts dt {
+  color: var(--gl-gold);
+
+  font-size: 0.76rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+.getlit-facts dd {
+  margin: 0.35rem 0 0;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   DARK SECTION
+======================================== */
+
+.getlit-section-dark {
+  color: var(--gl-white);
+
+  background: var(--gl-gray);
+}
+
+
+.getlit-section-dark h2,
+.getlit-section-dark h3 {
+  color: var(--gl-white);
+}
+
+
+.getlit-section-dark .getlit-section-label {
+  color: var(--gl-gold);
+}
+
+
+.getlit-challenge-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+.getlit-challenge-grid p {
+  color:
+    rgba(255, 255, 255, 0.78);
+}
+
+
+.getlit-check-list {
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+}
+
+
+.getlit-check-list li {
+  position: relative;
+
+  padding: 0.6rem 0 0.6rem 1.7rem;
+
+  color:
+    rgba(255, 255, 255, 0.84);
+}
+
+
+.getlit-check-list li::before {
+  content: "•";
+
+  position: absolute;
+
+  left: 0;
+
+  color: var(--gl-gold);
+
+  font-size: 1.5rem;
+}
+
+
+/* ========================================
+   ROLE
+======================================== */
+
+.getlit-role-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 1rem;
+}
+
+
+.getlit-role-grid article {
+  padding: 2rem;
+
+  background: var(--gl-white);
+
+  border: 1px solid var(--gl-line);
+
+  border-radius: 18px;
+}
+
+
+.getlit-role-grid span {
+  display: block;
+
+  margin-bottom: 2.5rem;
+
+  color: var(--gl-teal);
+
+  font-size: 0.8rem;
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   STRATEGY
+======================================== */
+
+.getlit-strategy {
+  background: var(--gl-pink);
+}
+
+
+.getlit-strategy-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.85fr)
+    minmax(0, 1.15fr);
+
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+
+.getlit-priorities {
+  display: grid;
+}
+
+
+.getlit-priorities article {
+  display: grid;
+
+  grid-template-columns:
+    60px
+    minmax(0, 1fr);
+
+  gap: 1.4rem;
+
+  padding: 1.8rem 0;
+
+  border-top:
+    1px solid rgba(65, 64, 66, 0.2);
+}
+
+
+.getlit-priorities span {
+  color: var(--gl-flame);
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   VISUAL DIRECTION
+======================================== */
+
+.getlit-soft {
+  background: #fff;
+}
+
+
+.getlit-section-intro {
+  max-width: 760px;
+
+  margin: 0 0 3rem;
+
+  color: var(--gl-muted);
+
+  font-size: 1.08rem;
+}
+
+
+.getlit-feature-image {
+  margin: 0 auto 3rem;
+
+  max-width: 900px;
+
+  padding: 1rem;
+
+  background: var(--gl-white);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 16px 45px rgba(65, 64, 66, 0.12);
+}
+
+
+.getlit-feature-image img {
+  width: 100%;
+}
+
+
+.getlit-brand-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 1.5rem;
+}
+
+
+.getlit-brand-grid article {
+  padding: 2rem;
+
+  background: var(--gl-cream);
+
+  border-top: 5px solid var(--gl-teal);
+
+  border-radius: 14px;
+}
+
+
+.getlit-brand-grid article:nth-child(2) {
+  border-top-color: var(--gl-gold);
+}
+
+
+.getlit-brand-grid article:nth-child(3) {
+  border-top-color: var(--gl-flame);
+}
+
+
+/* ========================================
+   DELIVERABLES
+======================================== */
+
+.getlit-deliverable-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.8fr)
+    minmax(320px, 1.2fr);
+
+  align-items: start;
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.getlit-deliverable-copy {
+  position: sticky;
+
+  top: 9rem;
+}
+
+
+.getlit-long-design,
+.getlit-email-design {
+  margin: 0 auto;
+
+  padding: 1rem;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 50px rgba(65, 64, 66, 0.14);
+}
+
+
+.getlit-long-design {
+  max-width: 650px;
+}
+
+
+.getlit-email-design {
+  max-width: 520px;
+}
+
+
+.getlit-long-design img,
+.getlit-email-design img {
+  width: 100%;
+}
+
+
+.getlit-reverse {
+  grid-template-columns:
+    minmax(320px, 1.1fr)
+    minmax(0, 0.9fr);
+}
+
+
+/* ========================================
+   WEBSITE HERO
+======================================== */
+
+.getlit-wide-heading {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 0.55fr);
+
+  gap: 3rem;
+
+  align-items: end;
+
+  margin-bottom: 3rem;
+}
+
+
+.getlit-wide-heading p {
+  color: var(--gl-muted);
+}
+
+
+.getlit-wide-design {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 45px rgba(65, 64, 66, 0.13);
+}
+
+
+.getlit-wide-design img {
+  width: 100%;
+}
+
+
+/* ========================================
+   DISPLAY ADS
+======================================== */
+
+.getlit-display-grid {
+  display: grid;
+
+  gap: 2rem;
+}
+
+
+.getlit-display-card {
+  display: grid;
+
+  grid-template-columns:
+    minmax(240px, 0.4fr)
+    minmax(0, 1.6fr);
+
+  gap: 3rem;
+
+  align-items: center;
+
+  padding: 2rem 0;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+.getlit-display-card figure {
+  margin: 0;
+}
+
+
+.getlit-display-card img {
+  width: 100%;
+
+  background: #fff;
+}
+
+
+.getlit-skyscraper {
+  max-width: 360px;
+
+  justify-self: center;
+}
+
+
+/* ========================================
+   SOCIAL
+======================================== */
+
+.getlit-social-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(260px, 0.55fr);
+
+  align-items: start;
+
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+
+.getlit-social-grid figure {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 16px 45px rgba(65, 64, 66, 0.12);
+}
+
+
+.getlit-social-grid img {
+  width: 100%;
+}
+
+
+.getlit-story {
+  max-width: 430px;
+
+  justify-self: center;
+}
+
+
+.getlit-social-grid figcaption {
+  padding: 1rem 0.25rem 0;
+
+  color: var(--gl-muted);
+
+  font-size: 0.9rem;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   PRESENTATION
+======================================== */
+
+.getlit-presentation {
+  background:
+    linear-gradient(
+      135deg,
+      var(--gl-pink),
+      #ffffff
+    );
+}
+
+
+.getlit-presentation-frame {
+  max-width: 1100px;
+
+  margin: 3rem auto 0;
+
+  padding: 1rem;
+
+  background: var(--gl-gray);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 22px 55px rgba(65, 64, 66, 0.18);
+}
+
+
+.getlit-presentation-frame img {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+
+/* ========================================
+   OUTCOME
+======================================== */
+
+.getlit-outcome {
+  background: var(--gl-white);
+}
+
+
+.getlit-outcome-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+.getlit-learned {
+  padding-left: 1.25rem;
+}
+
+
+.getlit-learned li {
+  margin-bottom: 0.7rem;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   NEXT PROJECT
+======================================== */
+
+.getlit-next {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+
+  color: #fff;
+
+  text-align: center;
+
+  background: var(--gl-teal);
+}
+
+
+.getlit-next p {
+  margin-bottom: 1rem;
+
+  color: var(--gl-gold);
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+
+.getlit-next h2 {
+  max-width: 750px;
+
+  margin-inline: auto;
+
+  color: #fff;
+}
+
+
+.getlit-next .button {
+  margin-top: 1rem;
+
+  background: var(--gl-gold);
+
+  border-color: var(--gl-gold);
+
+  color: var(--gl-gray);
+}
+
+
+.getlit-next .button:hover {
+  background: #fff;
+
+  border-color: #fff;
+
+  color: var(--gl-teal);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .getlit-hero-grid,
+  .getlit-overview-grid,
+  .getlit-challenge-grid,
+  .getlit-strategy-grid,
+  .getlit-deliverable-grid,
+  .getlit-reverse,
+  .getlit-wide-heading,
+  .getlit-outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .getlit-role-grid,
+  .getlit-brand-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .getlit-deliverable-copy {
+    position: static;
+  }
+
+
+  .getlit-hero-art {
+    max-width: 500px;
+
+    margin-inline: auto;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .getlit-shell {
+    width:
+      min(100% - 28px, 1180px);
+  }
+
+
+  .getlit-hero h1 {
+    font-size:
+      clamp(3rem, 15vw, 4.8rem);
+  }
+
+
+  .getlit-role-grid,
+  .getlit-brand-grid,
+  .getlit-social-grid,
+  .getlit-display-card {
+    grid-template-columns: 1fr;
+  }
+
+
+  .getlit-display-card {
+    gap: 1.5rem;
+  }
+
+
+  .getlit-social-grid {
+    gap: 2rem;
+  }
+
+}

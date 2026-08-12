@@ -1,0 +1,807 @@
+/* ========================================
+   FERNSCAPE CASE STUDY
+======================================== */
+
+.fernscape-case {
+  --fern-green: #508b71;
+  --fern-dark: #0f5138;
+  --fern-olive: #7e9764;
+  --fern-brown: #b06b34;
+  --fern-peach: #ed9f7c;
+  --fern-sage: #afc2b7;
+  --fern-cream: #fff8f1;
+  --fern-paper: #ffffff;
+  --fern-black: #202020;
+  --fern-line: #ded7ce;
+
+  color: var(--fern-black);
+  background: var(--fern-cream);
+}
+
+
+.fernscape-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+
+.fernscape-section {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+}
+
+
+.fernscape-label,
+.fernscape-eyebrow {
+  margin: 0 0 1rem;
+
+  color: var(--fern-brown);
+
+  font-size: 0.8rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+
+.fernscape-case h1,
+.fernscape-case h2,
+.fernscape-case h3 {
+  color: var(--fern-dark);
+}
+
+
+.fernscape-case h2 {
+  max-width: 800px;
+
+  margin: 0 0 2rem;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+
+  line-height: 1.05;
+}
+
+
+.fernscape-case p {
+  line-height: 1.75;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.fernscape-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: clamp(5rem, 9vw, 8rem) 0;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(80, 139, 113, 0.22),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      var(--fern-cream),
+      rgba(237, 159, 124, 0.18)
+    );
+}
+
+
+.fernscape-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.85fr)
+    minmax(320px, 1.15fr);
+
+  align-items: center;
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.fernscape-hero h1 {
+  margin: 0 0 2rem;
+
+  color: var(--fern-green);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(3.8rem, 8vw, 7rem);
+
+  line-height: 0.9;
+
+  letter-spacing: -0.04em;
+}
+
+
+.fernscape-hero h1 span {
+  display: block;
+
+  margin-top: 0.35rem;
+
+  color: var(--fern-dark);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 0.45em;
+
+  letter-spacing: 0.28em;
+
+  text-transform: uppercase;
+}
+
+
+.fernscape-lead {
+  max-width: 650px;
+
+  color: #57514e;
+
+  font-size: clamp(1.08rem, 2vw, 1.3rem);
+}
+
+
+.fernscape-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  padding: 0;
+
+  margin: 2rem 0 0;
+
+  list-style: none;
+}
+
+
+.fernscape-tags li {
+  padding: 0.55rem 0.9rem;
+
+  color: var(--fern-dark);
+
+  background: rgba(255, 255, 255, 0.8);
+
+  border: 1px solid rgba(15, 81, 56, 0.15);
+
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+}
+
+
+.fernscape-hero-image {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 24px 60px rgba(15, 81, 56, 0.15);
+
+  transform: rotate(1.5deg);
+}
+
+
+.fernscape-hero-image img {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+
+/* ========================================
+   OVERVIEW
+======================================== */
+
+.fernscape-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(280px, 0.7fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.fernscape-facts {
+  padding: 2rem;
+
+  color: #ffffff;
+
+  background: var(--fern-dark);
+
+  border-top: 7px solid var(--fern-peach);
+
+  border-radius: 0 0 18px 18px;
+}
+
+
+.fernscape-facts .fernscape-label {
+  color: var(--fern-peach);
+}
+
+
+.fernscape-facts dl {
+  margin: 0;
+}
+
+
+.fernscape-facts dl div {
+  padding: 1rem 0;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.fernscape-facts dt {
+  color: var(--fern-peach);
+
+  font-size: 0.75rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+.fernscape-facts dd {
+  margin: 0.35rem 0 0;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   GOALS
+======================================== */
+
+.fernscape-dark {
+  color: #ffffff;
+
+  background: var(--fern-dark);
+}
+
+
+.fernscape-dark h2,
+.fernscape-dark h3 {
+  color: #ffffff;
+}
+
+
+.fernscape-dark .fernscape-label {
+  color: var(--fern-peach);
+}
+
+
+.fernscape-goal-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 1.5rem;
+
+  margin-top: 3rem;
+}
+
+
+.fernscape-goal-grid article {
+  padding: 2rem;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 18px;
+}
+
+
+.fernscape-goal-grid span {
+  display: block;
+
+  margin-bottom: 2rem;
+
+  color: var(--fern-peach);
+
+  font-size: 0.8rem;
+
+  font-weight: 800;
+}
+
+
+.fernscape-goal-grid p {
+  color:
+    rgba(255, 255, 255, 0.8);
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.fernscape-soft {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(80, 139, 113, 0.13),
+      rgba(237, 159, 124, 0.18)
+    ),
+    #ffffff;
+}
+
+
+.fernscape-intro {
+  max-width: 760px;
+
+  margin-bottom: 3rem;
+
+  color: #625c58;
+
+  font-size: 1.08rem;
+}
+
+
+.fernscape-brand-cover {
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 1rem;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 50px rgba(15, 81, 56, 0.12);
+}
+
+
+.fernscape-brand-cover img {
+  width: 100%;
+}
+
+
+/* ========================================
+   FEATURE SECTIONS
+======================================== */
+
+.fernscape-feature-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  align-items: center;
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+.fernscape-guide-image {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #fff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 45px rgba(15, 81, 56, 0.12);
+}
+
+
+.fernscape-guide-image img {
+  width: 100%;
+}
+
+
+/* ========================================
+   COLOR + TYPE
+======================================== */
+
+.fernscape-brand-system {
+  background: var(--fern-sage);
+}
+
+
+.fernscape-system-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+}
+
+
+.fernscape-system-grid figure {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #fff;
+
+  border-radius: 18px;
+}
+
+
+.fernscape-system-grid img {
+  width: 100%;
+}
+
+
+.fernscape-system-grid figcaption {
+  padding: 1rem 0.25rem 0;
+
+  color: #625c58;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+.fernscape-color-swatches {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+
+.fernscape-color-swatches > div {
+  padding: 1rem;
+
+  background: #fff;
+
+  border-radius: 12px;
+}
+
+
+.fernscape-swatch {
+  display: block;
+
+  width: 100%;
+
+  height: 90px;
+
+  margin-bottom: 1rem;
+
+  border-radius: 8px;
+}
+
+
+.fernscape-green {
+  background: #508b71;
+}
+
+
+.fernscape-deep-green {
+  background: #0f5138;
+}
+
+
+.fernscape-brown {
+  background: #b06b34;
+}
+
+
+.fernscape-peach {
+  background: #ed9f7c;
+}
+
+
+.fernscape-color-swatches strong,
+.fernscape-color-swatches small {
+  display: block;
+}
+
+
+/* ========================================
+   WIREFRAMES
+======================================== */
+
+.fernscape-wireframes {
+  background: #ffffff;
+}
+
+
+.fernscape-wireframe-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(220px, 0.5fr);
+
+  align-items: start;
+
+  gap: clamp(2rem, 6vw, 5rem);
+}
+
+
+.fernscape-wireframe-grid figure {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: var(--fern-cream);
+
+  border: 1px solid var(--fern-line);
+
+  border-radius: 18px;
+}
+
+
+.fernscape-wireframe-grid img {
+  width: 100%;
+}
+
+
+.fernscape-wireframe-grid figcaption {
+  padding-top: 1rem;
+
+  color: #625c58;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+.fernscape-mobile-wireframe {
+  max-width: 380px;
+
+  justify-self: center;
+}
+
+
+/* ========================================
+   FINAL WEB PAGES
+======================================== */
+
+.fernscape-showcase {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+
+  background: #ffffff;
+}
+
+
+.fernscape-showcase-alt {
+  background:
+    rgba(80, 139, 113, 0.08);
+}
+
+
+.fernscape-showcase-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 0.45fr)
+    minmax(0, 1.55fr);
+
+  align-items: start;
+
+  gap: clamp(3rem, 7vw, 6rem);
+}
+
+
+.fernscape-reverse {
+  grid-template-columns:
+    minmax(0, 1.55fr)
+    minmax(260px, 0.45fr);
+}
+
+
+.fernscape-showcase-copy {
+  position: sticky;
+
+  top: 9rem;
+}
+
+
+.fernscape-page-preview {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 55px rgba(15, 81, 56, 0.12);
+}
+
+
+.fernscape-page-preview img {
+  width: 100%;
+}
+
+
+/* ========================================
+   OUTCOME
+======================================== */
+
+.fernscape-outcome {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(237, 159, 124, 0.18),
+      rgba(80, 139, 113, 0.12)
+    );
+}
+
+
+.fernscape-outcome-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+.fernscape-outcome li {
+  margin-bottom: 0.8rem;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   NEXT PROJECT
+======================================== */
+
+.fernscape-next {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  background: var(--fern-dark);
+}
+
+
+.fernscape-next p {
+  color: var(--fern-peach);
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+
+.fernscape-next h2 {
+  max-width: 720px;
+
+  margin-inline: auto;
+
+  color: #ffffff;
+}
+
+
+.fernscape-next .button {
+  margin-top: 1rem;
+
+  color: #ffffff;
+
+  background: var(--fern-brown);
+
+  border-color: var(--fern-brown);
+}
+
+
+.fernscape-next .button:hover {
+  color: var(--fern-dark);
+
+  background: #ffffff;
+
+  border-color: #ffffff;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .fernscape-hero-grid,
+  .fernscape-overview-grid,
+  .fernscape-feature-grid,
+  .fernscape-showcase-grid,
+  .fernscape-reverse,
+  .fernscape-outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .fernscape-goal-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+
+  .fernscape-showcase-copy {
+    position: static;
+  }
+
+
+  .fernscape-hero-image {
+    max-width: 700px;
+
+    margin-inline: auto;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .fernscape-shell {
+    width:
+      min(100% - 28px, 1180px);
+  }
+
+
+  .fernscape-hero h1 {
+    font-size:
+      clamp(3.2rem, 15vw, 4.8rem);
+  }
+
+
+  .fernscape-goal-grid,
+  .fernscape-system-grid,
+  .fernscape-color-swatches,
+  .fernscape-wireframe-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .fernscape-mobile-wireframe {
+    max-width: 100%;
+  }
+
+}

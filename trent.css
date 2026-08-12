@@ -1,0 +1,1178 @@
+/* ========================================
+   TRENT COLLEGE SIS CASE STUDY
+======================================== */
+
+.trent-case {
+  --trent-navy: #123047;
+  --trent-blue: #1d6887;
+  --trent-teal: #168b8b;
+  --trent-light-blue: #dceef4;
+  --trent-ice: #f2f8fa;
+  --trent-cream: #fffaf5;
+  --trent-white: #ffffff;
+  --trent-text: #26343d;
+  --trent-muted: #62717a;
+  --trent-border: #cedce2;
+
+  color: var(--trent-text);
+  background: var(--trent-white);
+}
+
+
+.trent-shell {
+  width: min(
+    1180px,
+    calc(100% - 40px)
+  );
+
+  margin-inline: auto;
+}
+
+
+.trent-section {
+  padding:
+    clamp(4.5rem, 8vw, 7.5rem)
+    0;
+}
+
+
+.trent-label,
+.trent-eyebrow {
+  margin-bottom: 0.85rem;
+
+  color: var(--trent-teal);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+
+.trent-case h2 {
+  max-width: 850px;
+
+  color: var(--trent-navy);
+
+  font-size:
+    clamp(2.2rem, 4.8vw, 4rem);
+
+  line-height: 1.06;
+
+  letter-spacing: -0.035em;
+}
+
+
+.trent-case h3 {
+  color: var(--trent-navy);
+}
+
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.trent-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    clamp(4rem, 8vw, 8rem)
+    0;
+
+  background:
+    radial-gradient(
+      circle at 87% 15%,
+      rgba(22, 139, 139, 0.22),
+      transparent 30rem
+    ),
+    linear-gradient(
+      135deg,
+      #f9fcfd,
+      var(--trent-light-blue)
+    );
+
+  border-bottom:
+    7px solid
+    var(--trent-teal);
+}
+
+
+.trent-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(340px, 0.95fr);
+
+  gap:
+    clamp(3rem, 7vw, 7rem);
+
+  align-items: center;
+}
+
+
+.trent-back-link {
+  display: inline-block;
+
+  margin-bottom: 2.5rem;
+
+  color: var(--trent-blue);
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+.trent-back-link:hover {
+  color: var(--trent-teal);
+}
+
+
+.trent-hero h1 {
+  max-width: 780px;
+
+  margin:
+    0
+    0
+    1.6rem;
+
+  color: var(--trent-navy);
+
+  font-size:
+    clamp(3rem, 7vw, 6.5rem);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.055em;
+}
+
+
+.trent-hero h1 span {
+  display: block;
+
+  margin-top: 0.4rem;
+
+  color: var(--trent-blue);
+
+  font-size: 0.52em;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.035em;
+}
+
+
+.trent-lead {
+  max-width: 680px;
+
+  color: var(--trent-muted);
+
+  font-size:
+    clamp(1.08rem, 2vw, 1.35rem);
+
+  line-height: 1.75;
+}
+
+
+.trent-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.65rem;
+
+  padding: 0;
+
+  margin:
+    2rem
+    0
+    0;
+
+  list-style: none;
+}
+
+
+.trent-tags li {
+  padding:
+    0.55rem
+    0.9rem;
+
+  color: var(--trent-navy);
+
+  background:
+    rgba(255, 255, 255, 0.72);
+
+  border:
+    1px solid
+    rgba(18, 48, 71, 0.14);
+
+  border-radius: 999px;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+
+.trent-hero-visual {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: white;
+
+  border:
+    1px solid
+    var(--trent-border);
+
+  border-radius: 18px;
+
+  box-shadow:
+    20px 24px 0
+    rgba(22, 139, 139, 0.16);
+}
+
+
+.trent-hero-visual img {
+  width: 100%;
+
+  max-height: 520px;
+
+  object-fit: contain;
+}
+
+
+.trent-hero-visual figcaption {
+  padding-top: 0.8rem;
+
+  color: var(--trent-muted);
+
+  font-size: 0.82rem;
+
+  text-align: center;
+}
+
+
+
+/* ========================================
+   OVERVIEW
+======================================== */
+
+.trent-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(280px, 0.65fr);
+
+  gap:
+    clamp(3rem, 7vw, 6rem);
+
+  align-items: start;
+}
+
+
+.trent-overview-grid article p {
+  max-width: 730px;
+
+  line-height: 1.8;
+}
+
+
+.trent-facts {
+  padding: 2rem;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--trent-navy),
+      #214b62
+    );
+
+  border-top:
+    7px solid
+    var(--trent-teal);
+
+  border-radius:
+    0 0 18px 18px;
+
+  box-shadow:
+    0 20px 45px
+    rgba(18, 48, 71, 0.16);
+}
+
+
+.trent-facts .trent-label {
+  color: #8be1dd;
+}
+
+
+.trent-facts dl {
+  margin: 0;
+}
+
+
+.trent-facts dl div {
+  padding:
+    1rem
+    0;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.18);
+}
+
+
+.trent-facts dt {
+  color: #81dad7;
+
+  font-size: 0.74rem;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+.trent-facts dd {
+  margin:
+    0.35rem
+    0
+    0;
+
+  color: white;
+
+  line-height: 1.5;
+}
+
+
+
+/* ========================================
+   DARK SECTION
+======================================== */
+
+.trent-dark {
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #102a3d,
+      var(--trent-navy)
+    );
+}
+
+
+.trent-dark h2,
+.trent-dark h3 {
+  color: white;
+}
+
+
+.trent-dark .trent-label {
+  color: #72d7d3;
+}
+
+
+.trent-challenge-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+
+.trent-challenge-grid article {
+  padding:
+    clamp(1.5rem, 3vw, 2.5rem);
+
+  background:
+    rgba(255, 255, 255, 0.07);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.16);
+
+  border-radius: 18px;
+}
+
+
+.trent-challenge-grid p,
+.trent-challenge-grid li {
+  color:
+    rgba(255, 255, 255, 0.82);
+
+  line-height: 1.7;
+}
+
+
+
+/* ========================================
+   SOFT SECTION
+======================================== */
+
+.trent-soft {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(22, 139, 139, 0.08),
+      transparent 60%
+    ),
+    var(--trent-ice);
+}
+
+
+
+/* ========================================
+   STAKEHOLDER CARDS
+======================================== */
+
+.trent-card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 1.25rem;
+
+  margin-top: 3rem;
+}
+
+
+.trent-card {
+  min-height: 260px;
+
+  padding: 1.6rem;
+
+  background: white;
+
+  border:
+    1px solid
+    var(--trent-border);
+
+  border-top:
+    5px solid
+    var(--trent-teal);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(18, 48, 71, 0.07);
+}
+
+
+.trent-card span {
+  display: inline-block;
+
+  margin-bottom: 2rem;
+
+  color: var(--trent-teal);
+
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+
+.trent-card p {
+  margin-bottom: 0;
+
+  color: var(--trent-muted);
+
+  line-height: 1.7;
+}
+
+
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+.trent-heading-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 0.8fr)
+    minmax(0, 1fr);
+
+  gap:
+    clamp(3rem, 7vw, 7rem);
+
+  margin-bottom: 3rem;
+}
+
+
+.trent-heading-grid p {
+  color: var(--trent-muted);
+
+  line-height: 1.8;
+}
+
+
+
+/* ========================================
+   DIAGRAMS
+======================================== */
+
+.trent-diagram {
+  margin: 0;
+
+  padding: 1rem;
+
+  overflow: hidden;
+
+  background: white;
+
+  border:
+    1px solid
+    var(--trent-border);
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 15px 36px
+    rgba(18, 48, 71, 0.09);
+}
+
+
+.trent-diagram a {
+  display: block;
+}
+
+
+.trent-diagram img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  max-height: 750px;
+
+  object-fit: contain;
+
+  transition:
+    transform 200ms ease;
+}
+
+
+.trent-diagram:hover img {
+  transform: scale(1.012);
+}
+
+
+.trent-diagram figcaption {
+  padding:
+    0.9rem
+    0.3rem
+    0.2rem;
+
+  color: var(--trent-muted);
+
+  font-size: 0.85rem;
+
+  text-align: center;
+}
+
+
+.trent-diagram-large {
+  max-width: 1100px;
+
+  margin-inline: auto;
+}
+
+
+.trent-diagram-medium {
+  max-width: 750px;
+
+  margin:
+    2rem
+    auto
+    0;
+}
+
+
+.trent-two-diagrams {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+
+
+/* ========================================
+   PROJECT PLAN
+======================================== */
+
+.trent-project-plan {
+  background: #f7fafb;
+}
+
+
+.trent-phases {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 1rem;
+
+  margin-top: 3rem;
+}
+
+
+.trent-phases article {
+  padding: 1.25rem;
+
+  background: white;
+
+  border:
+    1px solid
+    var(--trent-border);
+
+  border-bottom:
+    5px solid
+    var(--trent-blue);
+}
+
+
+.trent-phases span {
+  color: var(--trent-teal);
+
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+
+.trent-phases h3 {
+  margin:
+    0.8rem
+    0
+    0.5rem;
+
+  font-size: 1rem;
+}
+
+
+.trent-phases p {
+  margin: 0;
+
+  color: var(--trent-muted);
+
+  font-size: 0.87rem;
+
+  line-height: 1.55;
+}
+
+
+
+/* ========================================
+   ARCHITECTURE
+======================================== */
+
+.trent-architecture {
+  background:
+    linear-gradient(
+      135deg,
+      #f4fafb,
+      white
+    );
+}
+
+
+.trent-architecture-copy {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 1.4rem;
+
+  margin:
+    3rem
+    0;
+}
+
+
+.trent-architecture-copy article {
+  padding: 1.7rem;
+
+  border-left:
+    5px solid
+    var(--trent-teal);
+
+  background: white;
+
+  box-shadow:
+    0 10px 30px
+    rgba(18, 48, 71, 0.06);
+}
+
+
+.trent-architecture-copy span {
+  color: var(--trent-teal);
+
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+
+.trent-architecture-copy p {
+  margin-bottom: 0;
+
+  color: var(--trent-muted);
+}
+
+
+
+/* ========================================
+   PROCESS
+======================================== */
+
+.trent-process-grid,
+.trent-data-grid,
+.trent-database-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.8fr)
+    minmax(350px, 1.2fr);
+
+  gap:
+    clamp(3rem, 7vw, 7rem);
+
+  align-items: center;
+}
+
+
+.trent-process-grid p,
+.trent-data-grid p {
+  line-height: 1.8;
+}
+
+
+
+/* ========================================
+   EXPLANATION CARD
+======================================== */
+
+.trent-explanation-card {
+  padding:
+    clamp(1.5rem, 4vw, 3rem);
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--trent-navy),
+      #25546c
+    );
+
+  border-radius: 16px;
+
+  color: white;
+}
+
+
+.trent-explanation-card h3 {
+  color: white;
+}
+
+
+.trent-explanation-card p {
+  color:
+    rgba(255, 255, 255, 0.82);
+
+  line-height: 1.8;
+}
+
+
+
+/* ========================================
+   MODELS
+======================================== */
+
+.trent-model-section {
+  background: #f7fafb;
+}
+
+
+
+/* ========================================
+   DATABASE
+======================================== */
+
+.trent-database-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.6rem;
+
+  padding: 0;
+
+  margin:
+    2rem
+    0
+    0;
+
+  list-style: none;
+}
+
+
+.trent-database-list li {
+  padding:
+    0.55rem
+    0.85rem;
+
+  color: white;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.3);
+
+  border-radius: 999px;
+
+  font-size: 0.84rem;
+}
+
+
+.trent-dark-diagram {
+  background:
+    rgba(255, 255, 255, 0.95);
+}
+
+
+
+/* ========================================
+   INTERFACE / WIREFRAMES
+======================================== */
+
+.trent-interface {
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      var(--trent-ice)
+    );
+}
+
+
+.trent-intro {
+  max-width: 780px;
+
+  color: var(--trent-muted);
+
+  font-size: 1.08rem;
+
+  line-height: 1.8;
+}
+
+
+.trent-wireframes {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 2fr)
+    minmax(240px, 0.75fr);
+
+  gap: 2rem;
+
+  align-items: start;
+
+  margin-top: 3rem;
+}
+
+
+.trent-mobile-wireframe {
+  max-width: 460px;
+
+  justify-self: center;
+}
+
+
+.trent-accessibility {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 1.2rem;
+
+  margin-top: 3rem;
+}
+
+
+.trent-accessibility article {
+  padding: 1.5rem;
+
+  background: white;
+
+  border:
+    1px solid
+    var(--trent-border);
+
+  border-radius: 12px;
+}
+
+
+.trent-accessibility span {
+  color: var(--trent-teal);
+
+  font-weight: 900;
+}
+
+
+
+/* ========================================
+   FEASIBILITY
+======================================== */
+
+.trent-feasibility-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 1.4rem;
+
+  margin-top: 3rem;
+}
+
+
+.trent-feasibility-grid article {
+  padding:
+    clamp(1.5rem, 3vw, 2.3rem);
+
+  background: white;
+
+  border:
+    1px solid
+    var(--trent-border);
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 10px 30px
+    rgba(18, 48, 71, 0.06);
+}
+
+
+.trent-feasibility-grid span {
+  color: var(--trent-teal);
+
+  font-size: 0.76rem;
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+
+/* ========================================
+   OUTCOME
+======================================== */
+
+.trent-outcome {
+  background: white;
+}
+
+
+.trent-outcome-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap:
+    clamp(3rem, 7vw, 7rem);
+}
+
+
+.trent-outcome-grid p,
+.trent-learning-list {
+  line-height: 1.8;
+}
+
+
+.trent-learning-list {
+  padding-left: 1.3rem;
+}
+
+
+
+/* ========================================
+   NEXT PROJECT
+======================================== */
+
+.trent-next {
+  padding:
+    clamp(4rem, 8vw, 7rem)
+    0;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--trent-navy),
+      #1f586d
+    );
+}
+
+
+.trent-next p {
+  color: #72d7d3;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+
+.trent-next h2 {
+  max-width: 700px;
+
+  margin-inline: auto;
+
+  color: white;
+}
+
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .trent-hero-grid,
+  .trent-overview-grid,
+  .trent-heading-grid,
+  .trent-process-grid,
+  .trent-data-grid,
+  .trent-database-grid,
+  .trent-outcome-grid,
+  .trent-two-diagrams {
+    grid-template-columns: 1fr;
+  }
+
+
+  .trent-card-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .trent-phases {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+
+  .trent-architecture-copy {
+    grid-template-columns: 1fr;
+  }
+
+
+  .trent-wireframes {
+    grid-template-columns: 1fr;
+  }
+
+
+  .trent-mobile-wireframe {
+    max-width: 380px;
+  }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .trent-shell {
+    width:
+      min(
+        100% - 28px,
+        1180px
+      );
+  }
+
+
+  .trent-hero h1 {
+    font-size:
+      clamp(
+        2.7rem,
+        14vw,
+        4.4rem
+      );
+  }
+
+
+  .trent-card-grid,
+  .trent-phases,
+  .trent-accessibility,
+  .trent-feasibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .trent-hero-visual {
+    box-shadow:
+      10px 12px 0
+      rgba(22, 139, 139, 0.15);
+  }
+
+
+  .trent-diagram {
+    padding: 0.6rem;
+  }
+
+}
+
+
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (
+  prefers-reduced-motion: reduce
+) {
+
+  .trent-diagram img {
+    transition: none;
+  }
+
+
+  .trent-diagram:hover img {
+    transform: none;
+  }
+
+}

@@ -1,0 +1,1162 @@
+/* ========================================
+   WHINNY & MANE CASE STUDY
+======================================== */
+
+.whinny-case {
+  --whinny-chestnut: #9a5034;
+  --whinny-chestnut-dark: #653421;
+
+  --whinny-blue: #8296a1;
+  --whinny-blue-light: #dfe7e9;
+
+  --whinny-palomino: #d8b77b;
+  --whinny-green: #68745a;
+
+  --whinny-brown: #35271f;
+  --whinny-cream: #faf5ed;
+  --whinny-white: #ffffff;
+
+  --whinny-text: #37302c;
+  --whinny-muted: #695f59;
+  --whinny-line: #e1d6c9;
+
+  color: var(--whinny-text);
+  background: var(--whinny-cream);
+}
+
+
+.whinny-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+
+.whinny-section {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+}
+
+
+.whinny-label,
+.whinny-eyebrow {
+  margin: 0 0 1rem;
+
+  color: var(--whinny-chestnut);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+
+.whinny-case h2 {
+  max-width: 800px;
+
+  margin: 0 0 2rem;
+
+  color: var(--whinny-brown);
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+
+  line-height: 1.05;
+}
+
+
+.whinny-case p,
+.whinny-case li {
+  line-height: 1.75;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.whinny-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: clamp(5rem, 9vw, 8rem) 0;
+
+  background:
+    radial-gradient(
+      circle at 87% 18%,
+      rgba(130, 150, 161, 0.28),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #faf5ed,
+      #efe3d3
+    );
+}
+
+
+.whinny-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.8fr);
+
+  align-items: center;
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.whinny-hero h1 {
+  max-width: 900px;
+
+  margin: 0 0 2rem;
+
+  color: var(--whinny-brown);
+
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.05em;
+}
+
+
+.whinny-hero h1 span {
+  display: block;
+  color: var(--whinny-chestnut);
+}
+
+
+.whinny-lead {
+  max-width: 650px;
+
+  color: var(--whinny-muted);
+
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+
+.whinny-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+
+  padding: 0;
+  margin: 2rem 0 0;
+
+  list-style: none;
+}
+
+
+.whinny-tags li {
+  padding: 0.55rem 0.9rem;
+
+  background: #ffffff;
+
+  border-radius: 999px;
+
+  color: var(--whinny-brown);
+
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+
+.whinny-hero-art {
+  margin: 0;
+  padding: 1rem;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 22px 55px rgba(53, 39, 31, 0.18);
+
+  transform: rotate(2deg);
+}
+
+
+.whinny-hero-art img {
+  width: 100%;
+
+  border-radius: 12px;
+}
+
+
+/* ========================================
+   OVERVIEW
+======================================== */
+
+.whinny-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(280px, 0.7fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.whinny-facts {
+  padding: 2rem;
+
+  color: #ffffff;
+
+  background: var(--whinny-brown);
+
+  border-top:
+    7px solid var(--whinny-chestnut);
+
+  border-radius: 0 0 18px 18px;
+}
+
+
+.whinny-facts .whinny-label {
+  color: var(--whinny-palomino);
+}
+
+
+.whinny-facts dl {
+  margin: 0;
+}
+
+
+.whinny-facts dl div {
+  padding: 1rem 0;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+.whinny-facts dt {
+  color: var(--whinny-palomino);
+
+  font-size: 0.76rem;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+.whinny-facts dd {
+  margin: 0.4rem 0 0;
+}
+
+
+/* ========================================
+   DARK SECTION
+======================================== */
+
+.whinny-dark {
+  color: #ffffff;
+
+  background: var(--whinny-brown);
+}
+
+
+.whinny-dark h2,
+.whinny-dark h3 {
+  color: #ffffff;
+}
+
+
+.whinny-dark .whinny-label {
+  color: var(--whinny-palomino);
+}
+
+
+.whinny-dark p,
+.whinny-dark li {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+
+.whinny-challenge-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+/* ========================================
+   AUDIENCE
+======================================== */
+
+.whinny-audience-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+}
+
+
+.whinny-card {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+
+  background: #ffffff;
+
+  border:
+    1px solid var(--whinny-line);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 14px 35px rgba(53, 39, 31, 0.08);
+}
+
+
+.whinny-card span {
+  display: block;
+
+  margin-bottom: 1rem;
+
+  color: var(--whinny-chestnut);
+
+  font-size: 0.78rem;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+
+/* ========================================
+   PLATFORM STRATEGY
+======================================== */
+
+.whinny-soft {
+  background: var(--whinny-blue-light);
+}
+
+
+.whinny-platform-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 1.5rem;
+}
+
+
+.whinny-platform-grid article {
+  padding: 2rem;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+}
+
+
+.whinny-platform-number {
+  color: var(--whinny-chestnut);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+
+/* ========================================
+   BRAND + ACCESSIBILITY
+======================================== */
+
+.whinny-brand-section {
+  background: #ffffff;
+}
+
+
+.whinny-brand-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(300px, 0.8fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.whinny-accessibility {
+  padding: 2rem;
+
+  background: var(--whinny-cream);
+
+  border-left:
+    6px solid var(--whinny-chestnut);
+}
+
+
+.whinny-accessibility div {
+  display: grid;
+
+  grid-template-columns: 40px 1fr;
+
+  gap: 1rem;
+
+  align-items: start;
+}
+
+
+.whinny-accessibility div span {
+  color: var(--whinny-chestnut);
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   CAMPAIGN LANGUAGE
+======================================== */
+
+.whinny-message-section {
+  color: #ffffff;
+
+  background: var(--whinny-green);
+}
+
+
+.whinny-message-section h2 {
+  color: #ffffff;
+}
+
+
+.whinny-message-section .whinny-label {
+  color: #ffffff;
+}
+
+
+.whinny-message-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 1.25rem;
+}
+
+
+.whinny-message-grid blockquote {
+  margin: 0;
+
+  padding: 2rem;
+
+  color: var(--whinny-brown);
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+
+  line-height: 1.5;
+}
+
+
+.whinny-cta-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 0.7rem;
+
+  margin-top: 2rem;
+}
+
+
+.whinny-cta-list span {
+  padding: 0.6rem 1rem;
+
+  color: var(--whinny-brown);
+
+  background: var(--whinny-palomino);
+
+  border-radius: 999px;
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   STATIC ADS
+======================================== */
+
+.whinny-intro {
+  max-width: 760px;
+
+  margin-bottom: 3rem;
+
+  color: var(--whinny-muted);
+
+  font-size: 1.08rem;
+}
+
+
+.whinny-ad-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+}
+
+
+.whinny-ad-grid figure {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 16px 40px rgba(53, 39, 31, 0.12);
+}
+
+
+.whinny-ad-grid img {
+  width: 100%;
+}
+
+
+.whinny-ad-grid figcaption {
+  padding: 1rem 0.4rem 0;
+
+  color: var(--whinny-muted);
+
+  font-size: 0.88rem;
+}
+
+
+.whinny-ad-wide {
+  grid-column: 1 / -1;
+}
+
+
+/* ========================================
+   VIDEO
+======================================== */
+
+.whinny-video-section {
+  color: #ffffff;
+
+  background: var(--whinny-chestnut-dark);
+}
+
+
+.whinny-video-section h2,
+.whinny-video-section h3 {
+  color: #ffffff;
+}
+
+
+.whinny-video-section .whinny-label {
+  color: var(--whinny-palomino);
+}
+
+
+.whinny-video-section p,
+.whinny-video-section li {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+.whinny-video-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 0.65fr);
+
+  align-items: center;
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.whinny-video-frame {
+  padding: 1rem;
+
+  background: #1e1815;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.28);
+}
+
+
+.whinny-video-frame video {
+  display: block;
+
+  width: 100%;
+  max-height: 720px;
+
+  object-fit: contain;
+
+  border-radius: 14px;
+
+  background: #000000;
+}
+
+
+/* ========================================
+   OUTCOME
+======================================== */
+
+.whinny-outcome {
+  background: #ffffff;
+}
+
+
+.whinny-outcome-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+
+.whinny-learning-list li {
+  margin-bottom: 0.7rem;
+}
+
+
+/* ========================================
+   NEXT PROJECT
+======================================== */
+
+.whinny-next {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  background: var(--whinny-brown);
+}
+
+
+.whinny-next p {
+  color: var(--whinny-palomino);
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+
+.whinny-next h2 {
+  max-width: 700px;
+
+  margin-inline: auto;
+
+  color: #ffffff;
+}
+
+
+.whinny-next .button {
+  margin-top: 1rem;
+
+  color: #ffffff;
+
+  background: var(--whinny-chestnut);
+
+  border-color: var(--whinny-chestnut);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .whinny-hero-grid,
+  .whinny-overview-grid,
+  .whinny-challenge-grid,
+  .whinny-audience-grid,
+  .whinny-platform-grid,
+  .whinny-brand-grid,
+  .whinny-message-grid,
+  .whinny-video-grid,
+  .whinny-outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .whinny-hero-art {
+    max-width: 500px;
+
+    margin-inline: auto;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .whinny-shell {
+    width: min(100% - 28px, 1180px);
+  }
+
+
+  .whinny-ad-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .whinny-ad-wide {
+    grid-column: auto;
+  }
+
+}
+
+/* ========================================
+   WHINNY & MANE BRAND GUIDE BOOK
+======================================== */
+
+.whinny-book-section {
+  background:
+    linear-gradient(
+      135deg,
+      #eee4d5,
+      #faf5ed
+    );
+}
+
+
+.whinny-book {
+  width: min(1100px, 100%);
+
+  margin: 3rem auto 0;
+}
+
+
+/* ========================================
+   BOOK STAGE
+======================================== */
+
+.whinny-book-stage {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  min-height: 650px;
+
+  padding: 2rem;
+
+  perspective: 1800px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ddd2c3,
+      #ffffff 48%,
+      #e9dfd1
+    );
+
+  border:
+    1px solid var(--whinny-line);
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 22px 55px
+    rgba(53, 39, 31, 0.16);
+}
+
+
+/* ========================================
+   CLOSED COVER
+======================================== */
+
+.whinny-cover-view {
+  display: flex;
+
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.5s ease;
+}
+
+
+.whinny-cover-view.is-hidden {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transform:
+    rotateY(-35deg)
+    translateX(-70px);
+}
+
+
+.whinny-book-cover {
+  display: block;
+
+  width: min(470px, 75vw);
+
+  height: auto;
+
+  background: #ffffff;
+
+  box-shadow:
+    9px 12px 0
+      rgba(0, 0, 0, 0.07),
+
+    18px 24px 42px
+      rgba(0, 0, 0, 0.2);
+
+  transform-origin: left center;
+}
+
+
+/* ========================================
+   OPEN SPREAD
+======================================== */
+
+.whinny-spread-view {
+  display: none;
+
+  position: relative;
+
+  width: min(1050px, 100%);
+
+  align-items: stretch;
+  justify-content: center;
+
+  opacity: 0;
+
+  transform:
+    scale(0.96)
+    rotateX(2deg);
+
+  transform-origin: center;
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+
+.whinny-spread-view.is-visible {
+  display: flex;
+
+  opacity: 1;
+
+  transform:
+    scale(1)
+    rotateX(0);
+}
+
+
+/* ========================================
+   PAGES
+======================================== */
+
+.whinny-page-shell {
+  position: relative;
+
+  flex: 1 1 0;
+
+  max-width: 500px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 15px 35px
+    rgba(0, 0, 0, 0.13);
+}
+
+
+.whinny-page-shell--left {
+  border-radius:
+    5px 0 0 5px;
+}
+
+
+.whinny-page-shell--right {
+  border-radius:
+    0 5px 5px 0;
+}
+
+
+.whinny-page-shell img {
+  display: block;
+
+  width: 100%;
+
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ========================================
+   BOOK SPINE
+======================================== */
+
+.whinny-book-spine {
+  position: relative;
+
+  width: 16px;
+
+  flex: 0 0 16px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.14),
+      rgba(255, 255, 255, 0.8),
+      rgba(0, 0, 0, 0.15)
+    );
+
+  box-shadow:
+    inset 3px 0 6px
+      rgba(0, 0, 0, 0.08),
+
+    inset -3px 0 6px
+      rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   INNER SHADOWS
+======================================== */
+
+.whinny-page-shell--left::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 28px;
+  height: 100%;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.13),
+      transparent
+    );
+}
+
+
+.whinny-page-shell--right::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 28px;
+  height: 100%;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.13),
+      transparent
+    );
+}
+
+
+/* ========================================
+   LAST SINGLE PAGE
+======================================== */
+
+.whinny-page-shell.is-empty {
+  background:
+    linear-gradient(
+      90deg,
+      #f4efe8,
+      #ffffff
+    );
+}
+
+
+.whinny-page-shell.is-empty img {
+  display: none;
+}
+
+
+/* ========================================
+   PAGE TURN
+======================================== */
+
+.whinny-spread-view.is-turning
+.whinny-page-shell--right {
+  animation:
+    whinny-page-turn
+    0.36s ease;
+}
+
+
+@keyframes whinny-page-turn {
+
+  0% {
+    transform: rotateY(0deg);
+  }
+
+
+  50% {
+    transform:
+      rotateY(-13deg)
+      scaleX(0.98);
+  }
+
+
+  100% {
+    transform: rotateY(0deg);
+  }
+
+}
+
+
+/* ========================================
+   CONTROLS
+======================================== */
+
+.whinny-book-controls {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+
+.whinny-book-button {
+  min-width: 125px;
+
+  min-height: 48px;
+
+  padding: 0.7rem 1.3rem;
+
+  color: #ffffff;
+
+  background:
+    var(--whinny-chestnut);
+
+  border:
+    2px solid var(--whinny-chestnut);
+
+  border-radius: 999px;
+
+  font: inherit;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+.whinny-book-button:hover,
+.whinny-book-button:focus-visible {
+  color:
+    var(--whinny-chestnut);
+
+  background: #ffffff;
+}
+
+
+.whinny-book-button:disabled {
+  opacity: 0.4;
+
+  cursor: default;
+}
+
+
+.whinny-book-status {
+  min-width: 110px;
+
+  margin: 0;
+
+  text-align: center;
+
+  font-weight: 800;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .whinny-book-stage {
+    min-height: auto;
+
+    padding: 1rem;
+  }
+
+
+  .whinny-book-cover {
+    width: min(360px, 85vw);
+  }
+
+
+  .whinny-book-spine {
+    width: 7px;
+
+    flex-basis: 7px;
+  }
+
+
+  .whinny-book-controls {
+    flex-wrap: wrap;
+
+    gap: 0.7rem;
+  }
+
+
+  .whinny-book-button {
+    min-width: 105px;
+  }
+
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ace Restaurant Android mobile application UX/UI and development case study by Anne Amor.">
+  <title>Ace Restaurant Mobile Application | Anne Amor</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../ace-page.css">
+   <script src="../script.js" defer></script>
+</head>
+
+<body class="ace-page">
+  <a class="ace-skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="ace-site-header">
+    <div class="ace-header-inner">
+      <a class="ace-brand" href="../index.html" aria-label="Anne Amor home page">
+        <img src="../images/brand/Anne-Amor-Logo.png" alt="Anne Amor — Design, UX, and Technology">
+      </a>
+
+      <nav class="ace-primary-nav" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="../work.html" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="ace-hero">
+      <div class="ace-container ace-hero-grid">
+        <div class="ace-hero-copy">
+          <p class="ace-eyebrow">Student project · UX/UI Design · Android Development</p>
+          <h1>Ace Restaurant<br><span>Mobile Application</span></h1>
+          <p class="ace-lead">
+            A functional Android ordering experience that helps restaurant customers
+            browse a categorized menu, build an order, review pricing, and monitor
+            nutritional information.
+          </p>
+
+          <div class="ace-actions">
+            <a class="ace-button ace-button-primary" href="#screens">View the application</a>
+            <a class="ace-button ace-button-secondary" href="../work.html">Back to all work</a>
+          </div>
+        </div>
+
+        <figure class="ace-hero-visual">
+          <div class="ace-phone-frame">
+            <img src="../images/projects/ace_home_final.png" alt="Ace Restaurant application's home screen" fetchpriority="high">
+          </div>
+          <figcaption>Home screen of the working Android application</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ace-project-facts" aria-label="Project summary">
+      <div class="ace-container ace-facts-grid">
+        <div>
+          <p class="ace-fact-label">My role</p>
+          <p>UX/UI designer and Android developer</p>
+        </div>
+        <div>
+          <p class="ace-fact-label">Tools</p>
+          <p>Android Studio, Java, Android SDK</p>
+        </div>
+        <div>
+          <p class="ace-fact-label">Focus</p>
+          <p>Mobile ordering, navigation, calculations, accessibility</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ace-section">
+      <div class="ace-container ace-two-column">
+        <div>
+          <p class="ace-section-number">01</p>
+          <h2>Overview</h2>
+        </div>
+        <div class="ace-reading-column">
+          <p>
+            Ace Restaurant is an Android mobile application designed to help customers
+            browse a categorized menu, build an order, review pricing, and monitor
+            nutritional information.
+          </p>
+          <p>
+            The project combined visual design, user-experience principles, business
+            requirements, and functional application development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ace-section ace-tinted-section">
+      <div class="ace-container ace-two-column">
+        <div>
+          <p class="ace-section-number">02</p>
+          <h2>My role</h2>
+        </div>
+        <div class="ace-reading-column">
+          <p>I designed and developed the application using Java and Android Studio.</p>
+          <ul class="ace-check-list">
+            <li>Interface and navigation design</li>
+            <li>Information architecture</li>
+            <li>Android application development</li>
+            <li>Interactive order controls</li>
+            <li>Pricing and calorie calculations</li>
+            <li>Usability and accessibility considerations</li>
+            <li>Testing and code documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="ace-section">
+      <div class="ace-container">
+        <div class="ace-section-heading">
+          <p class="ace-section-number">03</p>
+          <h2>The challenge</h2>
+          <p>
+            Restaurant customers need to find menu items, understand prices and
+            nutritional information, and manage an order without navigating a
+            complicated interface.
+          </p>
+        </div>
+
+        <div class="ace-requirements-grid">
+          <article class="ace-requirement-card">
+            <span>01</span>
+            <h3>Browse</h3>
+            <p>A categorized restaurant menu that makes food easy to locate.</p>
+          </article>
+          <article class="ace-requirement-card">
+            <span>02</span>
+            <h3>Understand</h3>
+            <p>Item descriptions, prices, and calorie information presented clearly.</p>
+          </article>
+          <article class="ace-requirement-card">
+            <span>03</span>
+            <h3>Control</h3>
+            <p>Simple controls for adding, removing, and changing quantities.</p>
+          </article>
+          <article class="ace-requirement-card">
+            <span>04</span>
+            <h3>Review</h3>
+            <p>A calorie counter and order totals that respond to user selections.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ace-section ace-dark-section">
+      <div class="ace-container">
+        <div class="ace-section-heading ace-section-heading-light">
+          <p class="ace-section-number">04</p>
+          <h2>The solution</h2>
+          <p>I created five connected areas supported by consistent bottom navigation.</p>
+        </div>
+
+        <ol class="ace-solution-list">
+          <li><strong>Home</strong><span>Restaurant details, hours, contact information, and featured items</span></li>
+          <li><strong>Menu</strong><span>Appetizers, meals, drinks, and desserts with prices and calories</span></li>
+          <li><strong>Orders</strong><span>Selected items, quantity controls, subtotal, tax, and total</span></li>
+          <li><strong>Nutrition</strong><span>A calorie total that updates as selections change</span></li>
+          <li><strong>Profile</strong><span>Account details, preferences, rewards, favorites, and order history</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="ace-section" id="screens">
+      <div class="ace-container">
+        <div class="ace-section-heading">
+          <p class="ace-section-number">05</p>
+          <h2>Application walkthrough</h2>
+          <p>
+            The strongest screen sequence shows how a customer moves from restaurant
+            information to selecting food, reviewing an order, checking calories, and
+            managing a profile.
+          </p>
+        </div>
+
+        <div class="ace-screen-grid">
+          <figure class="ace-screen-card">
+            <div class="ace-screen-image"><img src="../images/projects/ace_home.png" alt="Ace Restaurant home screen showing restaurant information" loading="lazy"></div>
+            <figcaption><span>01</span><strong>Home</strong> Restaurant information and featured item</figcaption>
+          </figure>
+          <figure class="ace-screen-card">
+            <div class="ace-screen-image"><img src="../images/projects/ace_menu.png" alt="Ace Restaurant menu with selected item quantities" loading="lazy"></div>
+            <figcaption><span>02</span><strong>Menu</strong> Item prices, calories, and quantity controls</figcaption>
+          </figure>
+          <figure class="ace-screen-card">
+            <div class="ace-screen-image"><img src="../images/projects/ace_order.png" alt="Ace Restaurant order screen showing quantities and calculated total" loading="lazy"></div>
+            <figcaption><span>03</span><strong>Order</strong> Subtotal, tax, total, and checkout</figcaption>
+          </figure>
+          <figure class="ace-screen-card">
+            <div class="ace-screen-image"><img src="../images/projects/ace_nutrition.png" alt="Ace Restaurant nutrition screen showing selected foods and total calories" loading="lazy"></div>
+            <figcaption><span>04</span><strong>Nutrition</strong> Dynamic calorie tracking</figcaption>
+          </figure>
+          <figure class="ace-screen-card">
+            <div class="ace-screen-image"><img src="../images/projects/ace_profile.png" alt="Ace Restaurant profile screen with account and preference options" loading="lazy"></div>
+            <figcaption><span>05</span><strong>Profile</strong> Account, rewards, favorites, and history</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="ace-section ace-tinted-section">
+      <div class="ace-container">
+        <div class="ace-section-heading">
+          <p class="ace-section-number">06</p>
+          <h2>From wireframe to working application</h2>
+          <p>
+            I translated the initial screen designs into a functional Android
+            application using Java and Android Studio.
+          </p>
+        </div>
+
+        <section class="ace-gallery" aria-labelledby="ace-gallery-title">
+    <div class="ace-gallery-heading">
+        <p class="section-label">Design process</p>
+        <h2 id="ace-gallery-title">From Wireframes to Final Application</h2>
+        <p>
+            Explore how the Ace Restaurant application developed from its
+            initial structure through functional drafts and final interface designs.
+        </p>
+    </div>
+
+    <div
+    
+        class="ace-carousel"
+        data-ace-carousel
+        tabindex="0"
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Ace Restaurant design process"
+    >
+        <div class="ace-carousel-stage">
+            <button
+                class="ace-carousel-button ace-carousel-previous"
+                type="button"
+                aria-label="View previous design"
+            >
+                &#10094;
+            </button>
+
+            <figure class="ace-carousel-slide">
+                <div class="ace-carousel-image-container">
+                    <img
+                        id="ace-carousel-image"
+                        src="../images/projects/ace_home_wf.png"
+                        alt="Wireframe of the Ace Restaurant home screen"
+                    >
+                </div>
+
+                <figcaption class="ace-carousel-caption" aria-live="polite">
+                    <div>
+                        <span class="ace-stage-badge" id="ace-stage">
+                            Wireframe
+                        </span>
+                        <strong id="ace-slide-title">Home screen</strong>
+                    </div>
+
+                    <span id="ace-slide-counter">1 / 18</span>
+                </figcaption>
+            </figure>
+
+            <button
+                class="ace-carousel-button ace-carousel-next"
+                type="button"
+                aria-label="View next design"
+            >
+                &#10095;
+            </button>
+        </div>
+
+        <div class="ace-carousel-phases" aria-label="Jump to a design phase">
+            <button type="button" data-ace-start="0">
+                Wireframes
+            </button>
+
+            <button type="button" data-ace-start="5">
+                Drafts
+            </button>
+
+            <button type="button" data-ace-start="12">
+                Final designs
+            </button>
+        </div>
+
+        <p class="ace-carousel-help">
+            Use the arrow buttons or your keyboard’s left and right arrow keys.
+        </p>
+    </div>
+</section>
+
+        <p class="ace-centered-copy">
+          Users can adjust menu quantities, review dynamically calculated order prices,
+          track total calories, and navigate between restaurant and profile features
+          through a consistent interface.
+        </p>
+      </div>
+    </section>
+
+    <section class="ace-section">
+      <div class="ace-container">
+        <div class="ace-section-heading">
+          <p class="ace-section-number">07</p>
+          <h2>Design decisions</h2>
+        </div>
+
+        <div class="ace-decision-grid">
+          <article><h3>Clear organization</h3><p>Familiar menu categories help users locate food without reviewing one long list.</p></article>
+          <article><h3>Consistent navigation</h3><p>The same primary navigation appears throughout the application, reducing cognitive load.</p></article>
+          <article><h3>Transparent information</h3><p>Prices, calories, quantities, taxes, and totals stay visible to support informed choices.</p></article>
+          <article><h3>Immediate feedback</h3><p>Quantity changes and other actions produce immediate visual updates or confirmations.</p></article>
+          <article><h3>Flexible layouts</h3><p>The interface was designed for Android devices with different screen sizes and resolutions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ace-section ace-dark-section">
+      <div class="ace-container ace-detail-grid">
+        <article>
+          <p class="ace-section-number">08</p>
+          <h2>Technical implementation</h2>
+          <p>
+            The application was developed in Java with Android Studio. Separate
+            activities organize the Home, Menu, Orders, Nutrition, and Profile functions.
+          </p>
+          <p>
+            Interactive controls update item quantities, order totals, sales tax, and
+            calorie totals in response to user selections.
+          </p>
+        </article>
+
+        <article>
+          <p class="ace-section-number">09</p>
+          <h2>Accessibility and ethics</h2>
+          <p>
+            The design emphasizes readable text, clearly labeled controls, organized
+            layouts, consistent interactions, and minimal collection of personal information.
+          </p>
+          <p>
+            Users can review the financial and nutritional effects of their selections
+            before completing an order.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ace-section">
+      <div class="ace-container ace-two-column">
+        <div>
+          <p class="ace-section-number">10</p>
+          <h2>Outcome</h2>
+        </div>
+        <div class="ace-reading-column">
+          <p>
+            The completed application met the assignment's business and functionality
+            requirements. Instructor feedback confirmed that it functioned successfully,
+            demonstrated effective interface design, followed ethical programming
+            practices, and included professional code documentation.
+          </p>
+
+          <h3>Tools and skills</h3>
+          <div class="ace-tag-list" aria-label="Tools and skills used">
+            <span>Android Studio</span><span>Java</span><span>Android SDK</span>
+            <span>UX/UI design</span><span>Mobile navigation</span>
+            <span>Information architecture</span><span>Interaction design</span>
+            <span>HCI principles</span><span>Accessibility</span>
+            <span>Order calculations</span><span>Nutritional tracking</span>
+            <span>Testing</span><span>Technical documentation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ace-next-steps">
+      <div class="ace-container ace-next-grid">
+        <div>
+          <p class="ace-eyebrow">Future iteration</p>
+          <h2>What I would improve next</h2>
+        </div>
+        <p>
+          I would introduce a stronger restaurant identity, clearer navigation labels,
+          food photography, improved spacing, and more accessible icon treatments. I
+          would also conduct usability testing to evaluate whether users can recognize
+          each navigation option and complete an order without assistance.
+        </p>
+      </div>
+    </section>
+
+    <nav class="ace-project-navigation" aria-label="Project navigation">
+      <div class="ace-container">
+        <a href="../work.html"><span>Explore more projects</span><strong>Return to portfolio work →</strong></a>
+      </div>
+    </nav>
+  </main>
+
+  <footer class="ace-site-footer">
+    <div class="ace-container ace-footer-inner">
+      <p>© <span id="current-year">2026</span> Anne Amor</p>
+      <a href="mailto:anneamordesigns@gmail.com">anneamordesigns@gmail.com</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

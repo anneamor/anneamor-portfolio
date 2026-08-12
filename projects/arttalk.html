@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Art Talk editorial design case study by Anne Amor."
+  >
+
+  <title>Art Talk Editorial Design | Anne Amor</title>
+
+  <!-- Your main portfolio stylesheet -->
+   
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../art-talk.css">
+
+
+  <style>
+    /* ========================================
+       ART TALK PAGE
+    ======================================== */
+
+    :root {
+      --art-purple: #655b94;
+      --art-purple-dark: #423a68;
+      --art-teal: #82a8a8;
+      --art-black: #202126;
+      --art-cream: #fffaf4;
+      --art-white: #ffffff;
+      --art-border: #d9d4cc;
+      --art-shadow: 0 20px 50px rgba(31, 24, 45, 0.16);
+    }
+
+    .arttalk-page {
+      margin: 0;
+      color: var(--art-black);
+      background: var(--art-cream);
+    }
+
+    .arttalk-page *,
+    .arttalk-page *::before,
+    .arttalk-page *::after {
+      box-sizing: border-box;
+    }
+
+    .arttalk-shell {
+      width: min(1180px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .arttalk-section {
+      padding: 80px 0;
+    }
+
+    .arttalk-section--tinted {
+      background: #f1eeee;
+    }
+
+    .arttalk-kicker {
+      margin: 0 0 14px;
+      color: var(--art-teal);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .arttalk-section h2 {
+      margin: 0 0 18px;
+      color: var(--art-purple-dark);
+      font-size: clamp(2rem, 5vw, 3.7rem);
+      line-height: 1.05;
+    }
+
+    .arttalk-section-intro {
+      max-width: 720px;
+      margin: 0 0 40px;
+      color: #55515b;
+      font-size: 1.08rem;
+      line-height: 1.75;
+    }
+
+    /* ========================================
+       PORTFOLIO HEADER
+    ======================================== */
+
+    .arttalk-page .site-header {
+      position: relative;
+      z-index: 100;
+      background: #fffaf6;
+      border-bottom: 1px solid #ded9d2;
+    }
+
+    .arttalk-page .header-inner {
+      min-height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .arttalk-page .brand {
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .arttalk-page .brand img {
+      display: block;
+      width: clamp(210px, 25vw, 340px);
+      max-width: 100%;
+      height: auto;
+    }
+
+    .arttalk-page .site-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(20px, 3vw, 42px);
+    }
+
+    .arttalk-page .site-nav a {
+      color: #2f292d;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .arttalk-page .site-nav a:hover,
+    .arttalk-page .site-nav a:focus-visible,
+    .arttalk-page .site-nav a[aria-current="page"] {
+      color: #087f80;
+    }
+
+    .arttalk-page .menu-toggle {
+      display: none;
+      width: 48px;
+      height: 44px;
+      padding: 9px;
+      border: 1px solid #b9b2ac;
+      border-radius: 8px;
+      background: #ffffff;
+      cursor: pointer;
+    }
+
+    .arttalk-page .menu-toggle span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      margin: 5px 0;
+      background: #30272c;
+      border-radius: 10px;
+    }
+
+    /* ========================================
+       HERO
+    ======================================== */
+
+    .arttalk-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 90px 0;
+      color: var(--art-white);
+      background:
+        linear-gradient(
+          130deg,
+          var(--art-purple-dark),
+          var(--art-purple) 48%,
+          var(--art-teal)
+        );
+    }
+
+    .arttalk-hero::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -160px;
+      width: 460px;
+      height: 460px;
+      border: 70px solid rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+    }
+
+    .arttalk-hero__grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(300px, 1.1fr);
+      align-items: center;
+      gap: 60px;
+    }
+
+    .arttalk-hero .arttalk-kicker {
+      color: #ffffff;
+    }
+
+    .arttalk-hero h1 {
+      max-width: 700px;
+      margin: 0 0 24px;
+      color: #ffffff;
+      font-size: clamp(3.2rem, 8vw, 6.8rem);
+      line-height: 0.94;
+    }
+
+    .arttalk-hero__intro {
+      max-width: 640px;
+      margin: 0 0 30px;
+      color: #ffffff;
+      font-size: clamp(1.05rem, 2vw, 1.3rem);
+      line-height: 1.65;
+    }
+
+    .arttalk-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .arttalk-tags span {
+      padding: 9px 14px;
+      color: var(--art-purple-dark);
+      background: #ffffff;
+      border-radius: 100px;
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .arttalk-hero__image {
+      margin: 0;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 24px;
+      transform: rotate(2deg);
+      box-shadow: var(--art-shadow);
+    }
+
+    .arttalk-hero__image img {
+      display: block;
+      width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 14px;
+    }
+
+    /* ========================================
+       PROJECT OVERVIEW
+    ======================================== */
+
+    .arttalk-overview-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 34px;
+    }
+
+    .arttalk-panel {
+      padding: clamp(26px, 4vw, 45px);
+      background: #ffffff;
+      border: 1px solid var(--art-border);
+      border-radius: 22px;
+      box-shadow: 0 15px 36px rgba(34, 30, 37, 0.08);
+    }
+
+    .arttalk-panel h2,
+    .arttalk-panel h3 {
+      color: var(--art-purple-dark);
+    }
+
+    .arttalk-panel h2 {
+      font-size: clamp(2rem, 4vw, 3.3rem);
+    }
+
+    .arttalk-panel h3 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .arttalk-panel p,
+    .arttalk-panel li {
+      color: #55515b;
+      line-height: 1.75;
+    }
+
+    .arttalk-panel ul {
+      padding-left: 1.25rem;
+    }
+
+  
+    /* ========================================
+       MAGAZINE AD CAROUSEL
+    ======================================== */
+
+    .arttalk-carousel {
+      display: grid;
+      grid-template-columns: auto minmax(0, 700px) auto;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+    }
+
+    .arttalk-carousel__stage {
+      display: grid;
+      place-items: center;
+      min-height: 550px;
+      padding: 24px;
+      background: #ffffff;
+      border: 1px solid var(--art-border);
+      border-radius: 24px;
+      box-shadow: var(--art-shadow);
+    }
+
+    .arttalk-carousel__image {
+      display: block;
+      max-width: 100%;
+      max-height: 510px;
+      object-fit: contain;
+      transition:
+        opacity 180ms ease,
+        transform 180ms ease;
+    }
+
+    .arttalk-carousel__image.is-changing {
+      opacity: 0;
+      transform: translateX(18px);
+    }
+
+    .arttalk-carousel__button {
+      display: grid;
+      place-items: center;
+      width: 55px;
+      height: 55px;
+      padding: 0;
+      color: #ffffff;
+      background: var(--art-purple-dark);
+      border: 0;
+      border-radius: 50%;
+      font-size: 1.75rem;
+      cursor: pointer;
+    }
+
+    .arttalk-carousel__button:hover,
+    .arttalk-carousel__button:focus-visible {
+      background: var(--art-teal);
+    }
+
+    .arttalk-carousel__status {
+      margin: 20px 0 0;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    /* ========================================
+       NEW YEAR CARD
+    ======================================== */
+
+    .arttalk-card-display {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+      align-items: center;
+      gap: 55px;
+    }
+
+    .arttalk-card-frame {
+      position: relative;
+      padding: 28px;
+      background:
+        linear-gradient(
+          145deg,
+          var(--art-purple),
+          var(--art-teal)
+        );
+      border-radius: 28px;
+      box-shadow: var(--art-shadow);
+      transform: rotate(-2deg);
+    }
+
+    .arttalk-card-frame img {
+      display: block;
+      width: 100%;
+      max-height: 650px;
+      object-fit: contain;
+      background: #ffffff;
+      border-radius: 14px;
+    }
+
+    .arttalk-card-copy {
+      padding: 36px;
+      background: #ffffff;
+      border: 1px solid var(--art-border);
+      border-radius: 22px;
+    }
+
+    .arttalk-card-copy h2 {
+      color: var(--art-purple-dark);
+    }
+
+    .arttalk-card-copy p {
+      color: #55515b;
+      line-height: 1.75;
+    }
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+
+    .arttalk-footer {
+      padding: 28px 20px;
+      color: #ffffff;
+      text-align: center;
+      background: var(--art-purple-dark);
+    }
+
+    .arttalk-footer a {
+      color: #ffffff;
+    }
+
+    /* ========================================
+       MISSING IMAGE MESSAGE
+    ======================================== */
+
+    .arttalk-image-error {
+      display: none;
+      max-width: 650px;
+      margin: 20px auto;
+      padding: 18px;
+      color: #5e2031;
+      text-align: center;
+      background: #fff1f4;
+      border: 2px solid #b64b69;
+      border-radius: 12px;
+    }
+
+    .arttalk-image-error.is-visible {
+      display: block;
+    }
+
+    /* ========================================
+       RESPONSIVE LAYOUT
+    ======================================== */
+
+    @media (max-width: 850px) {
+      .arttalk-page .header-inner {
+        min-height: 100px;
+      }
+
+      .arttalk-page .menu-toggle {
+        display: block;
+      }
+
+      .arttalk-page .site-nav {
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        left: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px;
+        background: #ffffff;
+        border: 1px solid #d8d2cc;
+        border-radius: 12px;
+        box-shadow: 0 18px 34px rgba(25, 20, 23, 0.14);
+      }
+
+      .arttalk-page .site-nav.is-open {
+        display: flex;
+      }
+
+      .arttalk-page .site-nav a {
+        padding: 14px;
+      }
+
+      .arttalk-hero__grid,
+      .arttalk-overview-grid,
+      .arttalk-card-display {
+        grid-template-columns: 1fr;
+      }
+
+      .arttalk-hero__image {
+        max-width: 620px;
+        margin-inline: auto;
+      }
+
+
+      .arttalk-carousel {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .arttalk-carousel__stage {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        min-height: 450px;
+      }
+
+      .arttalk-carousel__button {
+        width: 100%;
+        border-radius: 100px;
+      }
+
+      .arttalk-carousel__button--previous {
+        grid-column: 1;
+      }
+
+      .arttalk-carousel__button--next {
+        grid-column: 2;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .arttalk-shell {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .arttalk-section {
+        padding: 58px 0;
+      }
+
+      .arttalk-page .brand img {
+        width: 220px;
+      }
+
+      .arttalk-hero {
+        padding: 65px 0;
+      }
+
+      .arttalk-hero__grid {
+        gap: 38px;
+      }
+
+      .arttalk-carousel__stage {
+        min-height: 390px;
+        padding: 14px;
+      }
+
+      .arttalk-carousel__image {
+        max-height: 360px;
+      }
+
+      .arttalk-card-copy {
+        padding: 25px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .arttalk-book__page,
+      .arttalk-carousel__image {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="arttalk-page">
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+  <!-- ======================================
+       PORTFOLIO HEADER
+  ======================================= -->
+
+  <header class="site-header">
+    <div class="container header-inner arttalk-shell">
+      <a class="brand" href="../index.html">
+        <img
+          src="../images/brand/Anne-Amor-Logo.png"
+          alt="Anne Amor — Design + UX + Technology"
+        >
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+        aria-label="Open navigation menu"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav
+        id="main-navigation"
+        class="site-nav"
+        aria-label="Main navigation"
+      >
+        <a href="../index.html">Home</a>
+        <a href="../work.html" aria-current="page">Work</a>
+        <a href="../about.html">About</a>
+        <a href="../resume.html">Resume</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====================================
+         HERO
+    ===================================== -->
+
+    <section class="arttalk-hero" aria-labelledby="arttalk-title">
+      <div class="arttalk-shell arttalk-hero__grid">
+        <div>
+          <p class="arttalk-kicker">
+            Student Project · Editorial Design · Print Design
+          </p>
+
+          <h1 id="arttalk-title">Art Talk</h1>
+
+          <p class="arttalk-hero__intro">
+            An editorial design system created for an inclusive museum
+            exhibition featuring artists from diverse backgrounds. The
+            assignment included a complete exhibition catalog, magazine
+            advertising, and a coordinated New Year card.
+          </p>
+
+          <div class="arttalk-tags" aria-label="Project deliverables">
+            <span>Exhibition catalog</span>
+            <span>Magazine spread</span>
+            <span>New Year card</span>
+          </div>
+        </div>
+
+        <figure class="arttalk-hero__image">
+          <img
+            id="arttalk-cover-image"
+            src="../images/projects/arttalk.jpg"
+            alt="Art Talk exhibition catalog cover"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====================================
+         OVERVIEW
+    ===================================== -->
+
+    <section class="arttalk-section">
+      <div class="arttalk-shell arttalk-overview-grid">
+        <article class="arttalk-panel">
+          <p class="arttalk-kicker">Project overview</p>
+
+          <h2>Inclusive storytelling through editorial design</h2>
+
+          <p>
+            Art Talk is a coordinated print-design assignment for a museum
+            exhibition centered on inclusion, diversity, and artistic
+            conversation. The visual system brings together portraiture,
+            floral photography, artist biographies, artwork descriptions,
+            and exhibition information.
+          </p>
+
+          <p>
+            The catalog uses repeated typography, page numbering, image
+            placement, and color to help visitors move through a diverse
+            collection while maintaining a consistent exhibition identity.
+          </p>
+        </article>
+
+        <aside class="arttalk-panel">
+          <h3>My responsibilities</h3>
+
+          <ul>
+            <li>Editorial layout and page sequencing</li>
+            <li>Typography and visual hierarchy</li>
+            <li>Image placement and cropping</li>
+            <li>Catalog cover and contents design</li>
+            <li>Magazine advertising</li>
+            <li>Coordinated promotional card</li>
+            <li>Print-ready visual presentation</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+<!-- ====================================
+     CATALOG BOOK
+===================================== -->
+
+<section
+  class="arttalk-section arttalk-section--tinted"
+  aria-labelledby="catalog-heading"
+>
+  <div class="arttalk-shell">
+
+    <p class="arttalk-kicker">Catalog design</p>
+
+    <h2 id="catalog-heading">Explore the complete catalog</h2>
+
+    <p class="arttalk-section-intro">
+      Open the exhibition catalog and move through the page spreads
+      using the controls below. You can also use the left and right
+      arrow keys.
+    </p>
+
+    <div
+      class="arttalk-book"
+      role="group"
+      aria-label="Art Talk exhibition catalog viewer"
+    >
+
+      <div
+        id="catalog-book-stage"
+        class="arttalk-book__stage is-closed"
+      >
+
+        <!-- CLOSED COVER -->
+
+        <div
+          id="catalog-cover-view"
+          class="arttalk-book__cover-view"
+        >
+          <img
+            id="catalog-cover"
+            class="arttalk-book__cover"
+            src="../images/projects/arttalk_cover.png"
+            alt="Art Talk exhibition catalog cover"
+          >
+        </div>
+
+
+        <!-- OPEN BOOK -->
+
+        <div
+          id="catalog-spread-view"
+          class="arttalk-book__spread-view"
+          aria-hidden="true"
+        >
+
+          <div class="arttalk-book__page-shell arttalk-book__page-shell--left">
+            <img
+              id="catalog-left-page"
+              class="arttalk-book__page"
+              src="../images/projects/arttalk1.png"
+              alt="Art Talk catalog page 1"
+            >
+          </div>
+
+          <div class="arttalk-book__spine" aria-hidden="true"></div>
+
+          <div class="arttalk-book__page-shell arttalk-book__page-shell--right">
+            <img
+              id="catalog-right-page"
+              class="arttalk-book__page"
+              src="../images/projects/arttalk2.png"
+              alt="Art Talk catalog page 2"
+            >
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="arttalk-controls">
+
+        <button
+          id="catalog-previous"
+          class="arttalk-control-button"
+          type="button"
+          disabled
+        >
+          ← Previous
+        </button>
+
+        <p
+          id="catalog-page-number"
+          class="arttalk-page-number"
+          aria-live="polite"
+        >
+          Cover
+        </p>
+
+        <button
+          id="catalog-next"
+          class="arttalk-control-button"
+          type="button"
+        >
+          Open Book →
+        </button>
+
+      </div>
+
+      <p
+        id="catalog-image-error"
+        class="arttalk-image-error"
+        role="status"
+      ></p>
+
+    </div>
+  </div>
+</section>
+ 
+    <!-- ====================================
+         MAGAZINE ADS
+    ===================================== -->
+
+    <section
+      class="arttalk-section"
+      aria-labelledby="advertising-heading"
+    >
+      <div class="arttalk-shell">
+        <p class="arttalk-kicker">Magazine advertising</p>
+
+        <h2 id="advertising-heading">
+          Exhibition magazine campaign
+        </h2>
+
+        <p class="arttalk-section-intro">
+          The magazine advertisements extend the catalog’s typography,
+          color palette, and imagery into a promotional format.
+        </p>
+
+        <div
+          class="arttalk-carousel"
+          role="group"
+          aria-label="Art Talk magazine advertisement carousel"
+        >
+          <button
+            id="ad-previous"
+            class="arttalk-carousel__button arttalk-carousel__button--previous"
+            type="button"
+            aria-label="Show previous magazine advertisement"
+          >
+            ‹
+          </button>
+
+          <div class="arttalk-carousel__stage">
+            <img
+              id="ad-image"
+              class="arttalk-carousel__image"
+              src="../images/projects/arttalk_ad_1.jpg"
+              alt="Art Talk magazine advertisement 1"
+            >
+          </div>
+
+          <button
+            id="ad-next"
+            class="arttalk-carousel__button arttalk-carousel__button--next"
+            type="button"
+            aria-label="Show next magazine advertisement"
+          >
+            ›
+          </button>
+        </div>
+
+        <p
+          id="ad-status"
+          class="arttalk-carousel__status"
+          aria-live="polite"
+        >
+          Advertisement 1 of 3
+        </p>
+
+        <p
+          id="ad-image-error"
+          class="arttalk-image-error"
+          role="status"
+        >
+          A magazine-ad image could not be found. Check that the files are
+          named arttalk_ad_1, arttalk_ad_2, and arttalk_ad_3.
+        </p>
+      </div>
+    </section>
+
+   <!-- ====================================
+     NEW YEAR CARD
+===================================== -->
+
+<section
+  class="arttalk-section arttalk-section--tinted"
+  aria-labelledby="card-heading"
+>
+  <div class="arttalk-shell arttalk-card-display">
+
+    <div class="new-year-card-project">
+
+      <div class="greeting-card-display">
+        <img
+          id="new-year-card-image"
+          class="greeting-card-image"
+          src="../images/projects/arttalk_newyears_card_front.png"
+          alt="Front of Art Talk New Year greeting card"
+        >
+      </div>
+
+      <div class="card-controls">
+        <button
+          type="button"
+          class="card-button active"
+          data-card-view="front"
+        >
+          Front
+        </button>
+
+        <button
+          type="button"
+          class="card-button"
+          data-card-view="inside"
+        >
+          Open Card
+        </button>
+
+        <button
+          type="button"
+          class="card-button"
+          data-card-view="back"
+        >
+          Back
+        </button>
+      </div>
+
+      <p
+        id="card-image-error"
+        class="arttalk-image-error"
+        role="status"
+      ></p>
+
+    </div>
+
+    <article class="arttalk-card-copy">
+      <p class="arttalk-kicker">Coordinated collateral</p>
+
+      <h2 id="card-heading">New Year card</h2>
+
+      <p>
+        The New Year card translates the Art Talk exhibition identity
+        into a smaller commemorative format. Its typography, angular
+        shapes, and color palette connect it visually to the exhibition
+        catalog and magazine campaign.
+      </p>
+
+      <p>
+        Keeping these elements consistent allows each deliverable to
+        feel distinct while still belonging to one recognizable design
+        system.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+    <!-- ====================================
+         OUTCOME
+    ===================================== -->
+
+    <section class="arttalk-section">
+      <div class="arttalk-shell arttalk-overview-grid">
+        <article class="arttalk-panel">
+          <p class="arttalk-kicker">Outcome</p>
+
+          <h2>A flexible editorial identity</h2>
+
+          <p>
+            The completed assignment demonstrates the ability to organize
+            a large amount of visual and written information across several
+            print formats. The project maintains a unified exhibition
+            identity while giving each featured artist space for an
+            individual visual presentation.
+          </p>
+        </article>
+
+        <aside class="arttalk-panel">
+          <h3>Tools and skills</h3>
+
+          <p>
+            Adobe InDesign, Adobe Illustrator, Adobe Photoshop, editorial
+            layout, typography, grid systems, image selection, visual
+            hierarchy, print design, campaign consistency, and production
+            preparation.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="arttalk-footer">
+    <p>
+      © <span id="current-year"></span> Anne Amor ·
+      <a href="../contact.html">Contact me</a>
+    </p>
+  </footer>
+
+  <script>
+    /* ========================================
+       MOBILE PORTFOLIO MENU
+    ======================================== */
+
+    const menuButton = document.querySelector(".menu-toggle");
+    const mainNavigation = document.querySelector(".site-nav");
+
+    if (menuButton && mainNavigation) {
+      menuButton.addEventListener("click", function () {
+        const isOpen = mainNavigation.classList.toggle("is-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+      });
+
+      mainNavigation.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          mainNavigation.classList.remove("is-open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+          );
+        });
+      });
+    }
+
+    /* ========================================
+       IMAGE FILE RESOLVER
+       Allows JPG, JPEG, PNG, WEBP, or GIF.
+    ======================================== */
+
+    const imageExtensions = [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp",
+      ".gif"
+    ];
+
+    function loadProjectImage(imageElement, baseNames, errorElement) {
+      const names = Array.isArray(baseNames) ? baseNames : [baseNames];
+      const possibleSources = [];
+
+      names.forEach(function (name) {
+        imageExtensions.forEach(function (extension) {
+          possibleSources.push(
+            "../images/projects/" + name + extension
+          );
+        });
+      });
+
+      let sourceIndex = 0;
+
+      function tryNextSource() {
+        if (sourceIndex >= possibleSources.length) {
+          if (errorElement) {
+            errorElement.classList.add("is-visible");
+          }
+
+          return;
+        }
+
+        imageElement.src = possibleSources[sourceIndex];
+        sourceIndex += 1;
+      }
+
+      imageElement.onload = function () {
+        if (errorElement) {
+          errorElement.classList.remove("is-visible");
+        }
+      };
+
+      imageElement.onerror = tryNextSource;
+      tryNextSource();
+    }
+
+    /* ========================================
+       HERO COVER
+    ======================================== */
+
+    const coverImage = document.getElementById(
+      "arttalk-cover-image"
+    );
+
+    loadProjectImage(
+      coverImage,
+      ["arttalk", "arttalk-cover", "arttalk_cover"]
+    );
+
+     /* ========================================
+   CATALOG BOOK
+======================================== */
+
+const catalogSpreads = [
+  {
+    left: "../images/projects/arttalk1.png",
+    right: "../images/projects/arttalk2.png",
+    leftAlt: "Art Talk catalog page 2",
+    rightAlt: "Art Talk catalog page 3",
+    label: "Pages 2-3"
+  },
+
+  {
+    left: "../images/projects/arttalk3.png",
+    right: "../images/projects/arttalk4.png",
+    leftAlt: "Art Talk catalog page 4",
+    rightAlt: "Art Talk catalog page 5",
+    label: "Pages 4-5"
+  },
+
+  {
+    left: "../images/projects/arttalk5.png",
+    right: "../images/projects/arttalk6.png",
+    leftAlt: "Art Talk catalog page 6",
+    rightAlt: "Art Talk catalog page 7",
+    label: "Pages 6-7"
+  },
+
+  {
+    left: "../images/projects/arttalk7.png",
+    right: "../images/projects/arttalk8.png",
+    leftAlt: "Art Talk catalog page 8",
+    rightAlt: "Art Talk catalog page 9",
+    label: "Pages 8-9"
+  },
+
+  {
+    left: "../images/projects/arttalk9.png",
+    right: "../images/projects/arttalk10.png",
+    leftAlt: "Art Talk catalog page 10",
+    rightAlt: "Art Talk catalog page 11",
+    label: "Pages 10-11"
+  },
+
+  {
+    left: "../images/projects/arttalk11.png",
+    right: null,
+    leftAlt: "Art Talk catalog page 12",
+    rightAlt: "",
+    label: "Page 12"
+  }
+];
+
+
+const catalogBookStage =
+  document.getElementById("catalog-book-stage");
+
+const catalogCoverView =
+  document.getElementById("catalog-cover-view");
+
+const catalogSpreadView =
+  document.getElementById("catalog-spread-view");
+
+const catalogLeftPage =
+  document.getElementById("catalog-left-page");
+
+const catalogRightPage =
+  document.getElementById("catalog-right-page");
+
+const catalogPrevious =
+  document.getElementById("catalog-previous");
+
+const catalogNext =
+  document.getElementById("catalog-next");
+
+const catalogPageNumber =
+  document.getElementById("catalog-page-number");
+
+const catalogError =
+  document.getElementById("catalog-image-error");
+
+
+let catalogIsOpen = false;
+let currentCatalogSpread = 0;
+
+
+/* ========================================
+   SHOW CLOSED COVER
+======================================== */
+
+function showCatalogCover() {
+
+  catalogIsOpen = false;
+
+  catalogBookStage.classList.remove("is-open");
+  catalogBookStage.classList.add("is-closed");
+
+  catalogCoverView.classList.remove("is-hidden");
+  catalogSpreadView.classList.remove("is-visible");
+
+  catalogSpreadView.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+  catalogPageNumber.textContent = "Cover";
+
+  catalogPrevious.disabled = true;
+
+  catalogNext.disabled = false;
+  catalogNext.textContent = "Open Book →";
+}
+
+
+/* ========================================
+   DISPLAY BOOK SPREAD
+======================================== */
+
+function displayCatalogSpread(index) {
+
+  if (
+    index < 0 ||
+    index >= catalogSpreads.length
+  ) {
+    return;
+  }
+
+  catalogIsOpen = true;
+  currentCatalogSpread = index;
+
+  const spread = catalogSpreads[index];
+
+
+  /* PAGE TURN ANIMATION */
+
+  catalogSpreadView.classList.add(
+    "is-turning"
+  );
+
+
+  window.setTimeout(function () {
+
+    catalogLeftPage.src = spread.left;
+    catalogLeftPage.alt = spread.leftAlt;
+
+
+    /* RIGHT PAGE */
+
+    if (spread.right) {
+
+      catalogRightPage.src = spread.right;
+      catalogRightPage.alt = spread.rightAlt;
+
+      catalogRightPage.parentElement.classList.remove(
+        "is-empty"
+      );
+
+    } else {
+
+      catalogRightPage.removeAttribute("src");
+      catalogRightPage.alt = "";
+
+      catalogRightPage.parentElement.classList.add(
+        "is-empty"
+      );
+    }
+
+
+    catalogBookStage.classList.remove(
+      "is-closed"
+    );
+
+    catalogBookStage.classList.add(
+      "is-open"
+    );
+
+
+    catalogCoverView.classList.add(
+      "is-hidden"
+    );
+
+    catalogSpreadView.classList.add(
+      "is-visible"
+    );
+
+    catalogSpreadView.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+
+    catalogPageNumber.textContent =
+      spread.label;
+
+
+    catalogPrevious.disabled = false;
+
+
+    if (
+      currentCatalogSpread ===
+      catalogSpreads.length - 1
+    ) {
+
+      catalogNext.disabled = true;
+      catalogNext.textContent = "End of Catalog";
+
+    } else {
+
+      catalogNext.disabled = false;
+      catalogNext.textContent = "Next →";
+    }
+
+
+    catalogSpreadView.classList.remove(
+      "is-turning"
+    );
+
+  }, 180);
+}
+
+
+/* ========================================
+   PREVIOUS BUTTON
+======================================== */
+
+catalogPrevious.addEventListener(
+  "click",
+  function () {
+
+    if (!catalogIsOpen) {
+      return;
+    }
+
+    if (currentCatalogSpread === 0) {
+
+      showCatalogCover();
+
+    } else {
+
+      displayCatalogSpread(
+        currentCatalogSpread - 1
+      );
+    }
+  }
+);
+
+
+/* ========================================
+   NEXT BUTTON
+======================================== */
+
+catalogNext.addEventListener(
+  "click",
+  function () {
+
+    if (!catalogIsOpen) {
+
+      displayCatalogSpread(0);
+
+      return;
+    }
+
+    if (
+      currentCatalogSpread <
+      catalogSpreads.length - 1
+    ) {
+
+      displayCatalogSpread(
+        currentCatalogSpread + 1
+      );
+    }
+  }
+);
+
+
+/* START CLOSED */
+
+showCatalogCover();
+
+    /* ========================================
+       MAGAZINE AD CAROUSEL
+    ======================================== */
+
+    const magazineAdvertisements = [
+      {
+        names: ["arttalk_ad_1", "arttalk-ad-1"],
+        alt: "Art Talk magazine advertisement 1"
+      },
+      {
+        names: ["arttalk_ad_2", "arttalk-ad-2"],
+        alt: "Art Talk magazine advertisement 2"
+      },
+      {
+        names: ["arttalk_ad_3", "arttalk-ad-3"],
+        alt: "Art Talk magazine advertisement 3"
+      }
+    ];
+
+    const adImage = document.getElementById("ad-image");
+    const adPrevious = document.getElementById("ad-previous");
+    const adNext = document.getElementById("ad-next");
+    const adStatus = document.getElementById("ad-status");
+    const adError = document.getElementById("ad-image-error");
+
+    let currentAdvertisement = 0;
+
+    function displayAdvertisement(adIndex) {
+      currentAdvertisement =
+        (
+          adIndex + magazineAdvertisements.length
+        ) % magazineAdvertisements.length;
+
+      const advertisement =
+        magazineAdvertisements[currentAdvertisement];
+
+      adImage.classList.add("is-changing");
+
+      window.setTimeout(function () {
+        adImage.alt = advertisement.alt;
+
+        loadProjectImage(
+          adImage,
+          advertisement.names,
+          adError
+        );
+
+        adStatus.textContent =
+          "Advertisement " +
+          (currentAdvertisement + 1) +
+          " of " +
+          magazineAdvertisements.length;
+
+        adImage.classList.remove("is-changing");
+      }, 170);
+    }
+
+    adPrevious.addEventListener("click", function () {
+      displayAdvertisement(currentAdvertisement - 1);
+    });
+
+    adNext.addEventListener("click", function () {
+      displayAdvertisement(currentAdvertisement + 1);
+    });
+
+    displayAdvertisement(0);
+
+    /* ========================================
+   NEW YEAR CARD
+======================================== */
+
+const newYearCardImage =
+  document.getElementById("new-year-card-image");
+
+const cardError =
+  document.getElementById("card-image-error");
+
+const cardButtons =
+  document.querySelectorAll("[data-card-view]");
+
+const newYearCardViews = {
+  front: {
+    src: "../images/projects/arttalk_newyears_card_front.png",
+    alt: "Front of Art Talk New Year greeting card"
+  },
+
+  inside: {
+    src: "../images/projects/arttalk_newyears_card_open.png",
+    alt: "Inside of Art Talk New Year greeting card"
+  },
+
+  back: {
+    src: "../images/projects/arttalk_newyears_card_back.png",
+    alt: "Back of Art Talk New Year greeting card"
+  }
+};
+
+function displayNewYearCard(view) {
+  const selectedView = newYearCardViews[view];
+
+  if (!selectedView || !newYearCardImage) {
+    return;
+  }
+
+  newYearCardImage.classList.add("changing");
+
+  setTimeout(function () {
+    newYearCardImage.src = selectedView.src;
+    newYearCardImage.alt = selectedView.alt;
+
+    newYearCardImage.onload = function () {
+      newYearCardImage.classList.remove("changing");
+
+      if (cardError) {
+        cardError.textContent = "";
+      }
+    };
+
+    newYearCardImage.onerror = function () {
+      newYearCardImage.classList.remove("changing");
+
+      if (cardError) {
+        cardError.textContent =
+          "The New Year card image could not be loaded.";
+      }
+    };
+  }, 200);
+
+  cardButtons.forEach(function (button) {
+    button.classList.toggle(
+      "active",
+      button.dataset.cardView === view
+    );
+  });
+}
+
+cardButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    displayNewYearCard(button.dataset.cardView);
+  });
+});
+
+
+    /* ========================================
+   KEYBOARD CONTROLS
+======================================== */
+
+document.addEventListener("keydown", function (event) {
+  const activeTag = document.activeElement.tagName;
+
+  if (
+    activeTag === "INPUT" ||
+    activeTag === "TEXTAREA" ||
+    activeTag === "SELECT" ||
+    activeTag === "BUTTON"
+  ) {
+    return;
+  }
+
+  if (event.key === "ArrowLeft") {
+
+    if (!catalogIsOpen) {
+      return;
+    }
+
+    if (currentCatalogSpread === 0) {
+      showCatalogCover();
+    } else {
+      displayCatalogSpread(
+        currentCatalogSpread - 1
+      );
+    }
+  }
+
+  if (event.key === "ArrowRight") {
+
+    if (!catalogIsOpen) {
+      displayCatalogSpread(0);
+      return;
+    }
+
+    if (
+      currentCatalogSpread <
+      catalogSpreads.length - 1
+    ) {
+      displayCatalogSpread(
+        currentCatalogSpread + 1
+      );
+    }
+  }
+});
+
+    /* ========================================
+       FOOTER YEAR
+    ======================================== */
+
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>

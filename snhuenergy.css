@@ -1,0 +1,1063 @@
+/* ========================================
+   SNHUENERGY NETWORK EVALUATION
+======================================== */
+
+.snhuenergy-page {
+  --snhu-navy: #173b5f;
+  --snhu-blue: #5e9fd3;
+  --snhu-blue-light: #dcebf5;
+  --snhu-teal: #168b8b;
+
+  --snhu-plum: #4b1735;
+  --snhu-dark-plum: #2f1024;
+
+  --snhu-cream: #fffaf5;
+  --snhu-soft: #f4f6f7;
+
+  --snhu-text: #2d3034;
+  --snhu-muted: #65717b;
+
+  color: var(--snhu-text);
+  background: var(--snhu-cream);
+}
+
+
+/* ========================================
+   WIDTH
+======================================== */
+
+.snhu-shell {
+  width: min(1180px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+
+/* ========================================
+   SHARED TYPOGRAPHY
+======================================== */
+
+.snhu-label,
+.snhu-eyebrow {
+  margin: 0 0 1rem;
+
+  color: var(--snhu-teal);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+
+.snhu-section {
+  padding: clamp(5rem, 8vw, 7rem) 0;
+}
+
+
+.snhu-section h2 {
+  max-width: 850px;
+
+  margin: 0 0 1.5rem;
+
+  color: var(--snhu-dark-plum);
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+
+.snhu-section h3 {
+  color: var(--snhu-navy);
+}
+
+
+.snhu-intro {
+  max-width: 760px;
+
+  margin-bottom: 3rem;
+
+  color: var(--snhu-muted);
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.snhu-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: clamp(5rem, 9vw, 8rem) 0;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 83% 20%,
+      rgba(94, 159, 211, 0.38),
+      transparent 28rem
+    ),
+    linear-gradient(
+      135deg,
+      #102b47,
+      var(--snhu-navy)
+    );
+}
+
+
+.snhu-hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: -140px;
+  bottom: -160px;
+
+  width: 380px;
+  height: 380px;
+
+  border: 55px solid rgba(255,255,255,0.05);
+
+  border-radius: 50%;
+}
+
+
+.snhu-hero-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(330px, 0.72fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+
+  align-items: center;
+}
+
+
+.snhu-hero h1 {
+  max-width: 800px;
+
+  margin: 0 0 1.75rem;
+
+  color: white;
+
+  font-size: clamp(3.2rem, 7vw, 6.6rem);
+
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+}
+
+
+.snhu-hero h1 span {
+  display: block;
+
+  color: #9ed6e0;
+}
+
+
+.snhu-lead {
+  max-width: 700px;
+
+  color: rgba(255,255,255,0.82);
+
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+
+  line-height: 1.8;
+}
+
+
+.snhu-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.65rem;
+
+  padding: 0;
+  margin: 2rem 0 0;
+
+  list-style: none;
+}
+
+
+.snhu-tags li {
+  padding: 0.55rem 0.9rem;
+
+  color: white;
+
+  border: 1px solid rgba(255,255,255,0.32);
+
+  border-radius: 999px;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+
+/* ========================================
+   HERO ART
+======================================== */
+
+.snhu-hero-art {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow:
+    24px 24px 0
+    rgba(94,159,211,0.35);
+}
+
+
+.snhu-hero-art a {
+  display: block;
+}
+
+
+.snhu-hero-art img {
+  width: 100%;
+
+  max-height: 650px;
+
+  object-fit: contain;
+}
+
+
+.snhu-hero-art figcaption {
+  padding: 0.8rem 0.3rem 0.2rem;
+
+  color: var(--snhu-navy);
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+
+
+/* ========================================
+   OVERVIEW
+======================================== */
+
+.snhu-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(290px, 0.65fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.snhu-overview-grid article p {
+  color: var(--snhu-muted);
+
+  line-height: 1.8;
+}
+
+
+.snhu-facts {
+  padding: 2rem;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--snhu-navy),
+      #102b47
+    );
+
+  border-top: 7px solid var(--snhu-teal);
+
+  border-radius: 0 0 16px 16px;
+
+  box-shadow:
+    0 18px 45px rgba(23,59,95,0.18);
+}
+
+
+.snhu-facts .snhu-label {
+  color: #8fd7d4;
+}
+
+
+.snhu-facts dl {
+  margin: 0;
+}
+
+
+.snhu-facts dl div {
+  padding: 1rem 0;
+
+  border-top:
+    1px solid rgba(255,255,255,0.18);
+}
+
+
+.snhu-facts dt {
+  color: #9ed6e0;
+
+  font-size: 0.75rem;
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+.snhu-facts dd {
+  margin: 0.35rem 0 0;
+
+  line-height: 1.55;
+}
+
+
+
+/* ========================================
+   SOFT SECTION
+======================================== */
+
+.snhu-soft {
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(94,159,211,0.11),
+      transparent 25rem
+    ),
+    var(--snhu-soft);
+}
+
+
+
+/* ========================================
+   BUSINESS SYSTEM CARDS
+======================================== */
+
+.snhu-system-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 1.5rem;
+
+  margin-top: 3rem;
+}
+
+
+.snhu-system-grid article {
+  padding: 2rem;
+
+  background: white;
+
+  border-top: 5px solid var(--snhu-blue);
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 10px 30px rgba(23,59,95,0.08);
+}
+
+
+.snhu-system-grid article span {
+  color: var(--snhu-teal);
+
+  font-weight: 900;
+}
+
+
+.snhu-system-grid h3 {
+  margin: 1rem 0 0.75rem;
+}
+
+
+
+/* ========================================
+   DIAGRAMS
+======================================== */
+
+.snhu-diagram-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+}
+
+
+.snhu-diagram {
+  margin: 0;
+
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid #dde3e7;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 14px 34px rgba(23,59,95,0.09);
+}
+
+
+.snhu-diagram:first-child {
+  grid-column: 1 / -1;
+}
+
+
+.snhu-diagram a {
+  display: flex;
+
+  min-height: 350px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem;
+
+  background: #f7f9fa;
+}
+
+
+.snhu-diagram img {
+  width: 100%;
+
+  max-height: 650px;
+
+  object-fit: contain;
+}
+
+
+.snhu-diagram figcaption {
+  display: grid;
+
+  gap: 0.35rem;
+
+  padding: 1.25rem 1.5rem;
+}
+
+
+.snhu-diagram figcaption strong {
+  color: var(--snhu-navy);
+}
+
+
+.snhu-diagram figcaption span {
+  color: var(--snhu-muted);
+
+  font-size: 0.9rem;
+}
+
+
+
+/* ========================================
+   DARK SECTIONS
+======================================== */
+
+.snhu-dark {
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #102b47,
+      var(--snhu-navy)
+    );
+}
+
+
+.snhu-dark h2,
+.snhu-dark h3 {
+  color: white;
+}
+
+
+.snhu-dark .snhu-label {
+  color: #8fd7d4;
+}
+
+
+.snhu-dark p {
+  color: rgba(255,255,255,0.78);
+}
+
+
+
+/* ========================================
+   DEVICE LIST
+======================================== */
+
+.snhu-two-column {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.8fr)
+    minmax(0, 1.2fr);
+
+  gap: clamp(3rem, 7vw, 7rem);
+}
+
+
+.snhu-device-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0,1fr));
+
+  gap: 1rem;
+}
+
+
+.snhu-device-list article {
+  padding: 1.5rem;
+
+  border:
+    1px solid rgba(255,255,255,0.18);
+
+  border-radius: 12px;
+
+  background:
+    rgba(255,255,255,0.05);
+}
+
+
+
+/* ========================================
+   OSI GRID
+======================================== */
+
+.snhu-osi-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 1rem;
+
+  margin-top: 3rem;
+}
+
+
+.snhu-osi-grid article {
+  position: relative;
+
+  min-height: 240px;
+
+  padding: 1.5rem;
+
+  background: white;
+
+  border:
+    1px solid rgba(23,59,95,0.14);
+
+  border-bottom:
+    5px solid var(--snhu-blue);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 8px 25px rgba(23,59,95,0.07);
+}
+
+
+.snhu-osi-grid article span {
+  display: grid;
+
+  width: 42px;
+  height: 42px;
+
+  place-items: center;
+
+  margin-bottom: 1.5rem;
+
+  color: white;
+
+  background: var(--snhu-navy);
+
+  border-radius: 50%;
+
+  font-weight: 900;
+}
+
+
+.snhu-osi-grid p {
+  color: var(--snhu-muted);
+}
+
+
+
+/* ========================================
+   TRAFFIC
+======================================== */
+
+.snhu-traffic-grid,
+.snhu-recommendation-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+
+  margin-top: 3rem;
+}
+
+
+.snhu-traffic-grid article {
+  padding: 2rem;
+
+  background: white;
+
+  border-left:
+    6px solid var(--snhu-teal);
+
+  border-radius: 0 14px 14px 0;
+
+  box-shadow:
+    0 10px 28px rgba(23,59,95,0.07);
+}
+
+
+.snhu-traffic-grid article span,
+.snhu-recommendation-grid article span {
+  color: var(--snhu-blue);
+
+  font-weight: 900;
+}
+
+
+
+/* ========================================
+   TRAFFIC FLOW
+======================================== */
+
+.snhu-flow {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.8rem;
+
+  align-items: center;
+
+  margin: 2.5rem 0;
+
+  color: var(--snhu-navy);
+
+  font-weight: 800;
+}
+
+
+.snhu-flow span {
+  color: var(--snhu-teal);
+
+  font-size: 1.35rem;
+}
+
+
+.snhu-large-diagram,
+.snhu-future-diagram {
+  margin: 3rem auto 0;
+
+  padding: 1.5rem;
+
+  background: white;
+
+  border:
+    1px solid #dfe6eb;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 46px rgba(23,59,95,0.11);
+}
+
+
+.snhu-large-diagram img,
+.snhu-future-diagram img {
+  display: block;
+
+  width: 100%;
+
+  max-height: 1000px;
+
+  object-fit: contain;
+}
+
+
+.snhu-large-diagram figcaption,
+.snhu-future-diagram figcaption {
+  max-width: 780px;
+
+  margin: 1rem auto 0;
+
+  color: var(--snhu-muted);
+
+  font-size: 0.92rem;
+
+  text-align: center;
+}
+
+
+
+/* ========================================
+   RISKS
+======================================== */
+
+.snhu-risk-section {
+  background:
+    linear-gradient(
+      135deg,
+      #fff8f4,
+      #f7f2ee
+    );
+}
+
+
+.snhu-risk-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0,1fr));
+
+  gap: 1.25rem;
+
+  margin-top: 3rem;
+}
+
+
+.snhu-risk-grid article {
+  padding: 1.75rem;
+
+  background: white;
+
+  border-top:
+    5px solid var(--snhu-plum);
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 9px 28px rgba(75,23,53,0.08);
+}
+
+
+.snhu-risk-number {
+  color: var(--snhu-teal);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+
+
+/* ========================================
+   RECOMMENDATIONS
+======================================== */
+
+.snhu-recommendation-grid article {
+  padding: 1.75rem;
+
+  border:
+    1px solid rgba(255,255,255,0.18);
+
+  border-radius: 12px;
+
+  background:
+    rgba(255,255,255,0.05);
+}
+
+
+
+/* ========================================
+   FUTURE DIAGRAM
+======================================== */
+
+.snhu-future-diagram {
+  max-width: 900px;
+}
+
+
+
+/* ========================================
+   BASIC NETWORK
+======================================== */
+
+.snhu-basic-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,0.9fr)
+    minmax(350px,1.1fr);
+
+  gap: clamp(3rem,7vw,7rem);
+
+  align-items: center;
+}
+
+
+.snhu-basic-diagram {
+  margin: 0;
+
+  padding: 1rem;
+
+  background: white;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 15px 40px rgba(23,59,95,0.1);
+}
+
+
+.snhu-basic-diagram img {
+  width: 100%;
+
+  object-fit: contain;
+}
+
+
+
+/* ========================================
+   OUTCOME
+======================================== */
+
+.snhu-outcome {
+  background:
+    linear-gradient(
+      135deg,
+      var(--snhu-blue-light),
+      #ffffff
+    );
+}
+
+
+.snhu-outcome-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+  gap: clamp(3rem,7vw,7rem);
+}
+
+
+.snhu-learning-list {
+  display: grid;
+
+  gap: 0.9rem;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.snhu-learning-list li {
+  position: relative;
+
+  padding-left: 1.7rem;
+}
+
+
+.snhu-learning-list li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 0;
+
+  color: var(--snhu-teal);
+
+  font-weight: 900;
+}
+
+
+
+/* ========================================
+   REFERENCES
+======================================== */
+
+.snhu-reference-section {
+  background: #ffffff;
+}
+
+
+.snhu-references {
+  max-width: 850px;
+
+  padding-left: 2rem;
+
+  border-left:
+    4px solid var(--snhu-blue);
+}
+
+
+.snhu-references p {
+  color: var(--snhu-muted);
+
+  line-height: 1.8;
+}
+
+
+
+/* ========================================
+   NEXT PROJECT
+======================================== */
+
+.snhu-next {
+  padding: clamp(5rem,8vw,7rem) 0;
+
+  color: white;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--snhu-dark-plum),
+      var(--snhu-plum)
+    );
+}
+
+
+.snhu-next p {
+  color: #8fd7d4;
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+
+.snhu-next h2 {
+  max-width: 720px;
+
+  margin-inline: auto;
+
+  color: white;
+}
+
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .snhu-hero-grid,
+  .snhu-overview-grid,
+  .snhu-two-column,
+  .snhu-basic-grid,
+  .snhu-outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .snhu-system-grid,
+  .snhu-risk-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  .snhu-osi-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  .snhu-hero-art {
+    width: min(650px, 92%);
+  }
+
+}
+
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+  .snhu-shell {
+    width:
+      min(
+        100% - 28px,
+        1180px
+      );
+  }
+
+
+  .snhu-hero h1 {
+    font-size:
+      clamp(
+        3rem,
+        15vw,
+        4.6rem
+      );
+  }
+
+
+  .snhu-system-grid,
+  .snhu-diagram-grid,
+  .snhu-device-list,
+  .snhu-osi-grid,
+  .snhu-traffic-grid,
+  .snhu-risk-grid,
+  .snhu-recommendation-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .snhu-diagram:first-child {
+    grid-column: auto;
+  }
+
+
+  .snhu-diagram a {
+    min-height: auto;
+  }
+
+
+  .snhu-flow {
+    display: grid;
+  }
+
+
+  .snhu-flow span {
+    transform: rotate(90deg);
+
+    width: fit-content;
+  }
+
+}

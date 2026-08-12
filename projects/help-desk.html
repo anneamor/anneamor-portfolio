@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Workplace IT Help Desk System analysis and design case study by Anne Amor."
+  >
+
+  <title>Workplace IT Help Desk System | Anne Amor</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../help-desk.css">
+
+  <script src="../script.js" defer></script>
+</head>
+
+
+<body>
+
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
+
+
+  <!-- =====================================
+       HEADER
+  ====================================== -->
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="../index.html"
+        aria-label="Anne Amor homepage"
+      >
+        <img
+          class="brand-logo"
+          src="../images/brand/Anne-Amor-Logo.png"
+          alt="Anne Amor — Design plus UX plus Technology"
+        >
+      </a>
+
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+      >
+        <span class="sr-only">
+          Open navigation menu
+        </span>
+
+        <span
+          class="menu-icon"
+          aria-hidden="true"
+        >
+          &#9776;
+        </span>
+      </button>
+
+
+      <nav
+        id="primary-navigation"
+        class="primary-navigation"
+        aria-label="Primary navigation"
+      >
+        <ul>
+          <li>
+            <a href="../index.html">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="../work.html"
+              aria-current="page"
+            >
+              Work
+            </a>
+          </li>
+
+          <li>
+            <a href="../photography.html">
+              Photography
+            </a>
+          </li>
+
+          <li>
+            <a href="../about.html">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="../resume.html">
+              Resume
+            </a>
+          </li>
+
+          <li>
+            <a href="../contact.html">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <main id="main-content" class="help-desk-case">
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="hd-hero">
+
+      <div class="hd-shell hd-hero-grid">
+
+        <div class="hd-hero-copy">
+
+          <p class="hd-eyebrow">
+            Systems Analysis · UML · Workflow Modeling · Software Design
+          </p>
+
+          <h1>
+            Workplace IT
+            <span>Help Desk System</span>
+          </h1>
+
+          <p class="hd-lead">
+            A systems-analysis and software-design project modeling
+            the workflows, user interactions, service operations,
+            and application structure required for an internal
+            workplace IT support system.
+          </p>
+
+
+          <ul class="hd-tags">
+            <li>Systems Analysis</li>
+            <li>Use Cases</li>
+            <li>Sequence Diagrams</li>
+            <li>UML</li>
+            <li>Object-Oriented Design</li>
+          </ul>
+
+        </div>
+
+
+        <figure class="hd-hero-visual">
+
+          <a
+            href="../images/projects/IT_helpdesk_use_case.png"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="../images/projects/IT_helpdesk_use_case.png"
+              alt="Overall use case diagram for the Workplace IT Help Desk System"
+            >
+          </a>
+
+          <figcaption>
+            Select the diagram to view the full-size system model.
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         OVERVIEW
+    ====================================== -->
+
+    <section class="hd-section">
+
+      <div class="hd-shell hd-overview-grid">
+
+        <article>
+
+          <p class="hd-label">
+            Project overview
+          </p>
+
+          <h2>
+            Modeling a structured IT support workflow
+          </h2>
+
+          <p>
+            The Workplace IT Help Desk System was designed to model
+            how employees, IT technicians, help desk managers,
+            system administrators, and supporting services interact
+            throughout the support-ticket lifecycle.
+          </p>
+
+          <p>
+            The project explores both the user-facing workflow and
+            the underlying application structure. Use case diagrams
+            identify system functionality, sequence diagrams model
+            communication between software components, and a class
+            diagram defines the core objects and services supporting
+            the application.
+          </p>
+
+        </article>
+
+
+        <aside class="hd-facts">
+
+          <p class="hd-label">
+            Project details
+          </p>
+
+          <dl>
+
+            <div>
+              <dt>Project type</dt>
+              <dd>Academic Systems Design Project</dd>
+            </div>
+
+            <div>
+              <dt>Focus</dt>
+              <dd>
+                IT support workflow and software architecture
+              </dd>
+            </div>
+
+            <div>
+              <dt>Role</dt>
+              <dd>
+                Systems Analyst and Designer
+              </dd>
+            </div>
+
+            <div>
+              <dt>Deliverables</dt>
+              <dd>
+                Use case diagrams, sequence diagrams,
+                workflow models, and UML class model
+              </dd>
+            </div>
+
+          </dl>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SYSTEM WORKFLOWS
+    ====================================== -->
+
+    <section class="hd-section hd-soft">
+
+      <div class="hd-shell">
+
+        <p class="hd-label">
+          Functional modeling
+        </p>
+
+        <h2>
+          Mapping the major help desk workflows
+        </h2>
+
+        <p class="hd-intro">
+          The system was divided into six primary workflows covering
+          the ticket lifecycle and administrative responsibilities.
+          Breaking the system into individual use cases made it easier
+          to identify users, dependencies, decisions, and system actions.
+        </p>
+
+
+        <div class="hd-workflow-list">
+
+          <article>
+            <span>01</span>
+            <h3>Submit Support Ticket</h3>
+            <p>
+              Employees authenticate, enter issue information,
+              attach supporting files, categorize the problem,
+              and receive confirmation after a ticket record is created.
+            </p>
+          </article>
+
+
+          <article>
+            <span>02</span>
+            <h3>Assign Ticket to Technician</h3>
+            <p>
+              Help desk managers review the ticket queue,
+              choose an appropriate technician, update the
+              assignment, and notify the technician.
+            </p>
+          </article>
+
+
+          <article>
+            <span>03</span>
+            <h3>Update Ticket Status</h3>
+            <p>
+              IT technicians open assigned tickets, add work notes,
+              update progress, and communicate status changes.
+            </p>
+          </article>
+
+
+          <article>
+            <span>04</span>
+            <h3>Escalate Ticket</h3>
+            <p>
+              Tickets requiring additional attention can be
+              reprioritized, reassigned, and escalated when
+              service expectations are not being met.
+            </p>
+          </article>
+
+
+          <article>
+            <span>05</span>
+            <h3>View Ticket Status</h3>
+            <p>
+              Employees can locate their submitted tickets,
+              review ticket details, and see technician updates.
+            </p>
+          </article>
+
+
+          <article>
+            <span>06</span>
+            <h3>Manage User Accounts</h3>
+            <p>
+              System administrators can create accounts,
+              modify user roles, deactivate users, reset
+              passwords, and review account activity.
+            </p>
+          </article>
+
+        </div>
+
+
+        <figure class="hd-large-diagram">
+
+          <a
+            href="../images/projects/IT_helpdesk_system.png"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="../images/projects/IT_helpdesk_system.png"
+              alt="Six detailed Workplace IT Help Desk System workflow diagrams"
+              loading="lazy"
+            >
+          </a>
+
+          <figcaption>
+            Detailed functional workflows for the Workplace IT Help Desk System.
+            Select the image to view it full size.
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CONSOLIDATED USE CASE
+    ====================================== -->
+
+    <section class="hd-section">
+
+      <div class="hd-shell hd-two-column">
+
+        <div>
+
+          <p class="hd-label">
+            Use case model
+          </p>
+
+          <h2>
+            Connecting actors with system functionality
+          </h2>
+
+          <p>
+            The consolidated use case diagram provides a higher-level
+            view of how the primary users interact with the system.
+          </p>
+
+          <p>
+            Employees interact with ticket submission and status
+            tracking. Help desk managers oversee assignment and
+            escalation activities, while IT technicians manage
+            active support work.
+          </p>
+
+          <p>
+            Supporting services such as the notification service
+            extend the workflow by providing confirmation and
+            status communication.
+          </p>
+
+        </div>
+
+
+        <figure class="hd-diagram-card">
+
+          <a
+            href="../images/projects/IT_helpdesk_use_case.png"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="../images/projects/IT_helpdesk_use_case.png"
+              alt="Consolidated use case model showing employees, managers, technicians and notification services"
+              loading="lazy"
+            >
+          </a>
+
+          <figcaption>
+            Consolidated help desk use case model.
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         SEQUENCE DIAGRAMS
+    ====================================== -->
+
+    <section class="hd-section hd-dark">
+
+      <div class="hd-shell">
+
+        <p class="hd-label">
+          Interaction modeling
+        </p>
+
+        <h2>
+          Following requests through the application
+        </h2>
+
+        <p class="hd-intro">
+          Sequence diagrams were used to show how users and application
+          components communicate during important workflows. These
+          diagrams helped connect the user experience with the
+          underlying service and data layers.
+        </p>
+
+
+        <div class="hd-sequence-grid">
+
+
+          <!-- SUBMIT TICKET -->
+
+          <article class="hd-sequence-card">
+
+            <div class="hd-sequence-copy">
+
+              <span class="hd-number">
+                01
+              </span>
+
+              <h3>
+                Submit Support Ticket
+              </h3>
+
+              <p>
+                The employee submits a ticket through the Help Desk UI.
+                The request passes to the TicketService, where the
+                information is validated before the ticket is saved
+                through the TicketRepository.
+              </p>
+
+              <p>
+                The NotificationService then sends confirmation and
+                the interface displays the resulting ticket information
+                to the employee.
+              </p>
+
+            </div>
+
+
+            <a
+              class="hd-sequence-image"
+              href="../images/projects/IT_helpdesk_ticket_support_sequence.png"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="../images/projects/IT_helpdesk_ticket_support_sequence.png"
+                alt="Sequence diagram for submitting an IT support ticket"
+                loading="lazy"
+              >
+            </a>
+
+          </article>
+
+
+
+          <!-- ASSIGN TECHNICIAN -->
+
+          <article class="hd-sequence-card">
+
+            <div class="hd-sequence-copy">
+
+              <span class="hd-number">
+                02
+              </span>
+
+              <h3>
+                Assign Ticket to Technician
+              </h3>
+
+              <p>
+                A help desk manager selects a ticket and technician
+                through the interface. The TicketService retrieves
+                ticket information, validates the assignment,
+                updates the repository, and sends a notification
+                to the selected technician.
+              </p>
+
+              <p>
+                The completed assignment is then confirmed through
+                the user interface.
+              </p>
+
+            </div>
+
+
+            <a
+              class="hd-sequence-image"
+              href="../images/projects/IT_assign_ticket_sequence.gif"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="../images/projects/IT_assign_ticket_sequence.gif"
+                alt="Sequence diagram for assigning an IT support ticket to a technician"
+                loading="lazy"
+              >
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CLASS DIAGRAM
+    ====================================== -->
+
+    <section class="hd-section">
+
+      <div class="hd-shell">
+
+        <div class="hd-class-heading">
+
+          <div>
+
+            <p class="hd-label">
+              Object-oriented design
+            </p>
+
+            <h2>
+              Defining the system's core classes and services
+            </h2>
+
+          </div>
+
+
+          <div>
+
+            <p>
+              The class diagram translates the workflow requirements
+              into an object-oriented system structure.
+            </p>
+
+            <p>
+              Core classes represent users, employees, technicians,
+              tickets, ticket services, and notifications. Attributes
+              describe stored information while methods represent the
+              actions each object is responsible for performing.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <figure class="hd-class-diagram">
+
+          <a
+            href="../images/projects/IT_class_diagram.gif"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="../images/projects/IT_class_diagram.gif"
+              alt="UML class diagram for the Workplace IT Help Desk System"
+              loading="lazy"
+            >
+          </a>
+
+          <figcaption>
+            UML class model showing users, employees, technicians,
+            tickets, ticket services, and notification services.
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         ARCHITECTURE
+    ====================================== -->
+
+    <section class="hd-section hd-soft">
+
+      <div class="hd-shell">
+
+        <p class="hd-label">
+          System architecture
+        </p>
+
+        <h2>
+          Separating interface, business logic, and data responsibilities
+        </h2>
+
+
+        <div class="hd-architecture-grid">
+
+          <article>
+
+            <span>01</span>
+
+            <h3>
+              User interface
+            </h3>
+
+            <p>
+              The HelpDeskUI provides the interaction layer where
+              employees, technicians, and managers perform
+              system tasks.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>02</span>
+
+            <h3>
+              Service layer
+            </h3>
+
+            <p>
+              TicketService manages validation, ticket creation,
+              assignment, technician actions, and other business rules.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>03</span>
+
+            <h3>
+              Data layer
+            </h3>
+
+            <p>
+              TicketRepository manages ticket persistence and
+              retrieval so system information can be stored
+              independently from interface logic.
+            </p>
+
+          </article>
+
+
+          <article>
+
+            <span>04</span>
+
+            <h3>
+              Supporting services
+            </h3>
+
+            <p>
+              NotificationService handles confirmation,
+              assignment alerts, and other communications
+              generated by help desk workflows.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         WHAT PROJECT DEMONSTRATES
+    ====================================== -->
+
+    <section class="hd-section hd-reflection">
+
+      <div class="hd-shell hd-reflection-grid">
+
+        <div>
+
+          <p class="hd-label">
+            What this project demonstrates
+          </p>
+
+          <h2>
+            Connecting business workflows with software design
+          </h2>
+
+        </div>
+
+
+        <div>
+
+          <p>
+            This project demonstrates my ability to analyze a business
+            process and translate operational requirements into
+            structured system models.
+          </p>
+
+          <p>
+            Creating the use case, sequence, and class diagrams helped
+            connect three perspectives: what users need to accomplish,
+            how application components communicate, and how software
+            objects should be structured to support those interactions.
+          </p>
+
+
+          <ul class="hd-learning-list">
+
+            <li>
+              Systems and workflow analysis
+            </li>
+
+            <li>
+              UML use case modeling
+            </li>
+
+            <li>
+              Sequence and interaction modeling
+            </li>
+
+            <li>
+              Object-oriented system design
+            </li>
+
+            <li>
+              Service and repository architecture
+            </li>
+
+            <li>
+              Technical documentation and communication
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         NEXT
+    ====================================== -->
+
+    <section class="hd-next">
+
+      <div class="hd-shell">
+
+        <p>
+          Software &amp; IT
+        </p>
+
+        <h2>
+          Explore more systems and technology projects.
+        </h2>
+
+        <a
+          class="button"
+          href="../work.html#software-it"
+        >
+          Back to Software &amp; IT
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================
+       FOOTER
+  ====================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <a
+        class="brand"
+        href="../index.html"
+        aria-label="Anne Amor homepage"
+      >
+        <img
+          class="brand-logo"
+          src="../images/brand/Anne-Amor-Logo_white.png"
+          alt="Anne Amor — Design plus UX plus Technology"
+        >
+      </a>
+
+
+      <div class="footer-contact">
+
+        <p>
+          San Diego, California
+        </p>
+
+        <a href="mailto:anneamordesigns@gmail.com">
+          anneamordesigns@gmail.com
+        </a>
+
+      </div>
+
+
+      <p class="copyright">
+        &copy;
+        <span id="current-year">2026</span>
+        Anne Amor. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
