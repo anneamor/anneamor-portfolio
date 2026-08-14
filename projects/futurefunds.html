@@ -1,315 +1,824 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ace Restaurant Android mobile application UX/UI and development case study by Anne Amor.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="FutureFunds responsive financial planning UX/UI case study by Anne Amor, featuring usability analysis, accessibility, responsive design, and front-end implementation."
+  >
+
   <title>FutureFunds Responsive Landing Page | Anne Amor</title>
+
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../ace-page.css">
-   <script src="../script.js" defer></script>
+
+  <script src="../script.js" defer></script>
 </head>
 
+
 <body class="ace-page">
-  <a class="ace-skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- SKIP LINK -->
+  <a
+    class="ace-skip-link"
+    href="#main-content"
+  >
+    Skip to main content
+  </a>
+
+
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
 
   <header class="ace-site-header">
+
     <div class="ace-header-inner">
-      <a class="ace-brand" href="../index.html" aria-label="Anne Amor home page">
-        <img src="../images/brand/Anne-Amor-Logo.png" alt="Anne Amor — Design, UX, and Technology">
+
+      <a
+        class="ace-brand"
+        href="../index.html"
+        aria-label="Anne Amor home page"
+      >
+        <img
+          src="../images/brand/Anne-Amor-Logo.png"
+          alt="Anne Amor — Design, UX, and Technology"
+        >
       </a>
 
-      <nav class="ace-primary-nav" aria-label="Primary navigation">
-        <a href="../index.html">Home</a>
-        <a href="../work.html" aria-current="page">Work</a>
-        <a href="../about.html">About</a>
-        <a href="../resume.html">Resume</a>
-        <a href="../contact.html">Contact</a>
+
+      <nav
+        class="ace-primary-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a
+          href="../work.html"
+          aria-current="page"
+        >
+          Work
+        </a>
+
+        <a href="../about.html">
+          About
+        </a>
+
+        <a href="../resume.html">
+          Resume
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
       </nav>
+
     </div>
+
   </header>
 
 
 
-  <section class="ff-hero">
-    <div class="container">
-      <a class="back-link" href="../work.html">← Back to Work</a>
+  <!-- ======================================================
+       MAIN
+  ======================================================= -->
 
-      <p class="eyebrow">Responsive UX/UI Case Study</p>
-      <h1>FutureFunds Responsive Landing Page</h1>
+  <main id="main-content">
 
-      <p class="ff-intro">
-        A responsive financial-planning website designed to help young
-        professionals discover services, use financial calculators, and
-        schedule consultations.
-      </p>
 
-      <ul class="case-tags" aria-label="Project disciplines">
-        <li>UX/UI Design</li>
-        <li>Responsive Wireframing</li>
-        <li>Information Architecture</li>
-        <li>Accessibility</li>
-        <li>User Feedback</li>
-      </ul>
-    </div>
-  </section>
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
 
-  <section class="ff-overview">
-    <div class="container ff-overview-grid">
-      <div>
-        <p class="section-label">Overview</p>
-        <h2>Making financial planning easier to understand</h2>
+    <section class="ff-hero">
 
-        <p>
-          FutureFunds is a responsive website concept for a financial-planning
-          company serving young professionals. The experience introduces the
-          organization, organizes its services, provides access to financial
-          calculators, and gives visitors a clear way to schedule a
-          consultation.
-        </p>
+      <div class="container">
 
-        <p>
-          The project required both desktop and mobile layouts. The content and
-          navigation needed to adapt to different screen sizes without losing
-          important information or functionality.
-        </p>
-      </div>
-
-      <aside class="project-facts" aria-label="Project facts">
-        <h2>Project details</h2>
-
-        <dl>
-          <div>
-            <dt>Project type</dt>
-            <dd>Student UX/UI project</dd>
-          </div>
-
-          <div>
-            <dt>My role</dt>
-            <dd>UX/UI designer</dd>
-          </div>
-
-          <div>
-            <dt>Tools</dt>
-            <dd>Adobe XD, Figma and Microsoft Office</dd>
-          </div>
-
-          <div>
-            <dt>Deliverables</dt>
-            <dd>Wireframes, desktop design and mobile design</dd>
-          </div>
-        </dl>
-      </aside>
-    </div>
-  </section>
-
-  <section class="ff-section ff-dark">
-    <div class="container two-column">
-      <div>
-        <p class="section-label">The challenge</p>
-        <h2>Organizing a content-heavy financial experience</h2>
-
-        <p>
-          Financial websites can feel complicated or intimidating, especially
-          for younger users who may be learning about budgeting, retirement,
-          debt management and investing.
-        </p>
-
-        <p>
-          The page needed to communicate a large amount of information while
-          keeping important actions easy to locate.
-        </p>
-      </div>
-
-      <div>
-        <p class="section-label">Project goals</p>
-
-        <ul class="feature-list">
-          <li>Introduce the FutureFunds mission clearly.</li>
-          <li>Organize financial services into recognizable categories.</li>
-          <li>Provide quick access to useful calculators.</li>
-          <li>Make consultation scheduling easy to find.</li>
-          <li>Create a consistent experience on desktop and mobile.</li>
-          <li>Improve readability and accessibility.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="ff-section">
-    <div class="container">
-      <p class="section-label">Early exploration</p>
-      <h2>Beginning with a broad wireframe</h2>
-
-      <p class="section-intro">
-        The early wireframe explored consultation scheduling, customer
-        testimonials, company information, service offerings, calculators and
-        supporting content. Reviewing this layout revealed that the page needed
-        a clearer hierarchy and a more focused landing-page experience.
-      </p>
-
-      <figure class="ff-image-panel ff-wireframe">
-        <img
-          src="../images/projects/GRA470_FutureFunds_Wireframes_issue.png"
-          alt="Early FutureFunds website wireframe with scheduling, testimonials, company information and service sections"
-          loading="lazy"
+        <a
+          class="back-link"
+          href="../work.html"
         >
-        <figcaption>
-          Early wireframe used to evaluate content hierarchy and page length.
-        </figcaption>
-      </figure>
-    </div>
-  </section>
+          ← Back to Work
+        </a>
 
-  <section class="ff-section ff-soft">
-    <div class="container">
-      <p class="section-label">The solution</p>
-      <h2>A focused and responsive landing page</h2>
 
-      <div class="solution-grid">
-        <article>
-          <span aria-hidden="true">01</span>
-          <h3>Popular services</h3>
-          <p>
-            Important financial services are grouped near the beginning of the
-            page so visitors can quickly understand what FutureFunds offers.
-          </p>
-        </article>
+        <p class="eyebrow">
+          Responsive UX/UI Case Study
+        </p>
 
-        <article>
-          <span aria-hidden="true">02</span>
-          <h3>Financial calculators</h3>
-          <p>
-            Mortgage, debt-payoff and retirement calculators are presented as
-            clear actions instead of being hidden within lengthy content.
-          </p>
-        </article>
 
-        <article>
-          <span aria-hidden="true">03</span>
-          <h3>Consultation scheduling</h3>
-          <p>
-            A dedicated scheduling section combines contact fields, date
-            selection and one prominent call-to-action.
-          </p>
-        </article>
+        <h1>
+          FutureFunds Responsive Landing Page
+        </h1>
 
-        <article>
-          <span aria-hidden="true">04</span>
-          <h3>Trust-building content</h3>
-          <p>
-            Blog topics and testimonials support the primary services while
-            helping the organization establish credibility.
-          </p>
-        </article>
+
+        <p class="ff-intro">
+          A responsive financial-planning website designed to help young
+          professionals discover services, use financial calculators, and
+          schedule consultations.
+        </p>
+
+
+        <ul
+          class="case-tags"
+          aria-label="Project disciplines"
+        >
+          <li>UX/UI Design</li>
+          <li>Responsive Wireframing</li>
+          <li>Information Architecture</li>
+          <li>Accessibility</li>
+          <li>User Feedback</li>
+          <li>Front-End Development</li>
+        </ul>
+
       </div>
-    </div>
-  </section>
 
-  <section class="ff-section">
-    <div class="container">
-      <p class="section-label">Responsive designs</p>
-      <h2>Desktop and mobile experiences</h2>
+    </section>
 
-      <p class="section-intro">
-        The desktop version uses horizontal space to organize content into
-        columns. The mobile version changes those sections into a vertical
-        sequence with larger touch targets and simplified navigation.
+
+
+    <!-- ====================================================
+         OVERVIEW
+    ===================================================== -->
+
+    <section class="ff-overview">
+
+      <div class="container ff-overview-grid">
+
+
+        <!-- Overview Copy -->
+        <div>
+
+          <p class="section-label">
+            Overview
+          </p>
+
+
+          <h2>
+            Making financial planning easier to understand
+          </h2>
+
+
+          <p>
+            FutureFunds is a responsive website concept for a
+            financial-planning company serving young professionals. The
+            experience introduces the organization, organizes its services,
+            provides access to financial calculators, and gives visitors a
+            clear way to schedule a consultation.
+          </p>
+
+
+          <p>
+            The project required both desktop and mobile layouts. The content
+            and navigation needed to adapt to different screen sizes without
+            losing important information or functionality.
+          </p>
+
+        </div>
+
+
+
+        <!-- Project Facts -->
+        <aside
+          class="project-facts"
+          aria-label="Project facts"
+        >
+
+          <h2>
+            Project details
+          </h2>
+
+
+          <dl>
+
+            <div>
+              <dt>
+                Project type
+              </dt>
+
+              <dd>
+                Student UX/UI project
+              </dd>
+            </div>
+
+
+            <div>
+              <dt>
+                My role
+              </dt>
+
+              <dd>
+                UX/UI designer and front-end developer
+              </dd>
+            </div>
+
+
+            <div>
+              <dt>
+                Tools
+              </dt>
+
+              <dd>
+                Adobe XD, Figma, HTML, CSS, JavaScript and Microsoft Office
+              </dd>
+            </div>
+
+
+            <div>
+              <dt>
+                Deliverables
+              </dt>
+
+              <dd>
+                Wireframes, responsive desktop and mobile designs,
+                usability-informed revisions, and front-end implementation
+              </dd>
+            </div>
+
+          </dl>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         LIVE WEBSITE CTA
+    ===================================================== -->
+
+    <section class="futurefunds-live-section">
+
+      <div class="container">
+
+        <div class="futurefunds-live-cta">
+
+
+          <div class="futurefunds-live-copy">
+
+            <span class="futurefunds-live-label">
+              Final Implementation
+            </span>
+
+
+            <h2>
+              Experience the redesigned FutureFunds website
+            </h2>
+
+
+            <p>
+              Explore the responsive website developed from the research,
+              usability findings, accessibility considerations, and design
+              decisions documented in this case study.
+            </p>
+
+          </div>
+
+
+
+          <a
+            href="future-funds-index.html"
+            class="futurefunds-live-button"
+            target="_blank"
+            rel="noopener"
+          >
+            <span>
+              View Live Website
+            </span>
+
+            <span
+              class="futurefunds-live-arrow"
+              aria-hidden="true"
+            >
+              ↗
+            </span>
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         CHALLENGE
+    ===================================================== -->
+
+    <section class="ff-section ff-dark">
+
+      <div class="container two-column">
+
+
+        <div>
+
+          <p class="section-label">
+            The challenge
+          </p>
+
+
+          <h2>
+            Organizing a content-heavy financial experience
+          </h2>
+
+
+          <p>
+            Financial websites can feel complicated or intimidating,
+            especially for younger users who may be learning about budgeting,
+            retirement, debt management and investing.
+          </p>
+
+
+          <p>
+            The page needed to communicate a large amount of information while
+            keeping important actions easy to locate.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <p class="section-label">
+            Project goals
+          </p>
+
+
+          <ul class="feature-list">
+            <li>
+              Introduce the FutureFunds mission clearly.
+            </li>
+
+            <li>
+              Organize financial services into recognizable categories.
+            </li>
+
+            <li>
+              Provide quick access to useful calculators.
+            </li>
+
+            <li>
+              Make consultation scheduling easy to find.
+            </li>
+
+            <li>
+              Create a consistent experience on desktop and mobile.
+            </li>
+
+            <li>
+              Improve readability and accessibility.
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         EARLY EXPLORATION
+    ===================================================== -->
+
+    <section class="ff-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Early exploration
+        </p>
+
+
+        <h2>
+          Beginning with a broad wireframe
+        </h2>
+
+
+        <p class="section-intro">
+          The early wireframe explored consultation scheduling, customer
+          testimonials, company information, service offerings, calculators
+          and supporting content. Reviewing this layout revealed that the page
+          needed a clearer hierarchy and a more focused landing-page
+          experience.
+        </p>
+
+
+        <figure class="ff-image-panel ff-wireframe">
+
+          <img
+            src="../images/projects/GRA470_FutureFunds_Wireframes_issue.png"
+            alt="Early FutureFunds website wireframe with scheduling, testimonials, company information and service sections"
+            loading="lazy"
+          >
+
+
+          <figcaption>
+            Early wireframe used to evaluate content hierarchy and page length.
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         SOLUTION
+    ===================================================== -->
+
+    <section class="ff-section ff-soft">
+
+      <div class="container">
+
+        <p class="section-label">
+          The solution
+        </p>
+
+
+        <h2>
+          A focused and responsive landing page
+        </h2>
+
+
+        <div class="solution-grid">
+
+
+          <article>
+
+            <span aria-hidden="true">
+              01
+            </span>
+
+            <h3>
+              Popular services
+            </h3>
+
+            <p>
+              Important financial services are grouped near the beginning of
+              the page so visitors can quickly understand what FutureFunds
+              offers.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              02
+            </span>
+
+            <h3>
+              Financial calculators
+            </h3>
+
+            <p>
+              Mortgage, debt-payoff and retirement calculators are presented
+              as clear actions instead of being hidden within lengthy content.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              03
+            </span>
+
+            <h3>
+              Consultation scheduling
+            </h3>
+
+            <p>
+              A dedicated scheduling section combines contact fields, date
+              selection and one prominent call-to-action.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              04
+            </span>
+
+            <h3>
+              Trust-building content
+            </h3>
+
+            <p>
+              Blog topics and testimonials support the primary services while
+              helping the organization establish credibility.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         RESPONSIVE DESIGNS
+    ===================================================== -->
+
+    <section class="ff-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Responsive designs
+        </p>
+
+
+        <h2>
+          Desktop and mobile experiences
+        </h2>
+
+
+        <p class="section-intro">
+          The desktop version uses horizontal space to organize content into
+          columns. The mobile version changes those sections into a vertical
+          sequence with larger touch targets and simplified navigation.
+        </p>
+
+
+
+        <div class="ff-responsive-gallery">
+
+
+          <!-- Desktop Design -->
+          <figure class="ff-image-panel">
+
+            <img
+              src="../images/projects/FutureFundsDesktop.png"
+              alt="Desktop design for the FutureFunds financial-planning landing page"
+              loading="lazy"
+            >
+
+            <figcaption>
+              Desktop landing page
+            </figcaption>
+
+          </figure>
+
+
+
+          <!-- Mobile Design -->
+          <figure class="ff-image-panel ff-mobile-design">
+
+            <img
+              src="../images/projects/FutureFundsMobile.png"
+              alt="Mobile design for the FutureFunds financial-planning landing page"
+              loading="lazy"
+            >
+
+            <figcaption>
+              Mobile landing page
+            </figcaption>
+
+          </figure>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         DESIGN DECISIONS / ACCESSIBILITY
+    ===================================================== -->
+
+    <section class="ff-section ff-dark">
+
+      <div class="container two-column">
+
+
+        <div>
+
+          <p class="section-label">
+            Design decisions
+          </p>
+
+
+          <h2>
+            Responsive hierarchy
+          </h2>
+
+
+          <p>
+            On smaller screens, services, calculators and scheduling controls
+            are stacked in a logical reading order. Large buttons provide
+            comfortable touch targets, while section headings help users scan
+            the page.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <p class="section-label">
+            Accessibility
+          </p>
+
+
+          <ul class="feature-list">
+
+            <li>
+              High-contrast text and interface controls
+            </li>
+
+            <li>
+              Readable type sizes
+            </li>
+
+            <li>
+              Descriptive headings and content sections
+            </li>
+
+            <li>
+              Large mobile touch targets
+            </li>
+
+            <li>
+              Predictable page organization
+            </li>
+
+            <li>
+              Text alternatives for portfolio images
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         OUTCOME
+    ===================================================== -->
+
+    <section class="ff-section">
+
+      <div class="container outcome-panel">
+
+
+        <div>
+
+          <p class="section-label">
+            Outcome
+          </p>
+
+
+          <h2>
+            A clearer path through financial services
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            The finished concept transformed a broad initial wireframe into a
+            more focused responsive landing page. Visitors can identify
+            services, select a calculator, schedule a consultation and review
+            supporting content without navigating through an overwhelming
+            interface.
+          </p>
+
+
+          <p>
+            The project demonstrates responsive UX/UI design, information
+            organization, accessibility planning, usability-informed
+            iteration, and front-end development.
+          </p>
+
+
+          <a
+            href="future-funds-index.html"
+            class="futurefunds-outcome-link"
+            target="_blank"
+            rel="noopener"
+          >
+            View the completed FutureFunds website
+            <span aria-hidden="true">
+              ↗
+            </span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         NEXT PROJECT
+    ===================================================== -->
+
+    <section class="ff-next">
+
+      <div class="container">
+
+        <p>
+          Continue exploring
+        </p>
+
+
+        <h2>
+          View more design and technology projects.
+        </h2>
+
+
+        <a
+          class="button"
+          href="../work.html"
+        >
+          View all work
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer class="ace-site-footer">
+
+    <div class="ace-container ace-footer-inner">
+
+      <p>
+        ©
+        <span id="current-year">
+          2026
+        </span>
+        Anne Amor
       </p>
 
-      <div class="ff-responsive-gallery">
-        <figure class="ff-image-panel">
-          <img
-            src="../images/projects/FutureFundsDesktop.png"
-            alt="Desktop design for the FutureFunds financial-planning landing page"
-            loading="lazy"
-          >
-          <figcaption>Desktop landing page</figcaption>
-        </figure>
 
-        <figure class="ff-image-panel ff-mobile-design">
-          <img
-            src="../images/projects/FutureFundsMobile.png"
-            alt="Mobile design for the FutureFunds financial-planning landing page"
-            loading="lazy"
-          >
-          <figcaption>Mobile landing page</figcaption>
-        </figure>
-      </div>
+      <a href="mailto:anneamordesigns@gmail.com">
+        anneamordesigns@gmail.com
+      </a>
+
     </div>
-  </section>
 
-  <section class="ff-section ff-dark">
-    <div class="container two-column">
-      <div>
-        <p class="section-label">Design decisions</p>
-        <h2>Responsive hierarchy</h2>
-
-        <p>
-          On smaller screens, services, calculators and scheduling controls are
-          stacked in a logical reading order. Large buttons provide comfortable
-          touch targets, while section headings help users scan the page.
-        </p>
-      </div>
-
-      <div>
-        <p class="section-label">Accessibility</p>
-
-        <ul class="feature-list">
-          <li>High-contrast text and interface controls</li>
-          <li>Readable type sizes</li>
-          <li>Descriptive headings and content sections</li>
-          <li>Large mobile touch targets</li>
-          <li>Predictable page organization</li>
-          <li>Text alternatives for portfolio images</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="ff-section">
-    <div class="container outcome-panel">
-      <div>
-        <p class="section-label">Outcome</p>
-        <h2>A clearer path through financial services</h2>
-      </div>
-
-      <div>
-        <p>
-          The finished concept transformed a broad initial wireframe into a
-          more focused responsive landing page. Visitors can identify services,
-          select a calculator, schedule a consultation and review supporting
-          content without navigating through an overwhelming interface.
-        </p>
-
-        <p>
-          The project demonstrates responsive UX/UI design, information
-          organization, accessibility planning and the ability to revise a
-          design after reviewing usability concerns.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="ff-next">
-    <div class="container">
-      <p>Continue exploring</p>
-      <h2>View more design and technology projects.</h2>
-      <a class="button" href="../work.html">View all work</a>
-    </div>
-  </section>
-
-</main>
-
-<footer class="ace-site-footer">
-    <div class="ace-container ace-footer-inner">
-      <p>© <span id="current-year">2026</span> Anne Amor</p>
-      <a href="mailto:anneamordesigns@gmail.com">anneamordesigns@gmail.com</a>
-    </div>
   </footer>
 
+
+
+  <!-- CURRENT YEAR -->
   <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
   </script>
+
 </body>
+
 </html>
