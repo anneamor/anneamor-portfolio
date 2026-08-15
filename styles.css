@@ -324,51 +324,112 @@ textarea:focus-visible {
 .hero {
   position: relative;
   display: grid;
-  min-height: 42rem;
+  min-height: 34rem;
   align-items: center;
   overflow: hidden;
+
+  padding-block: clamp(3.5rem, 7vw, 5.5rem);
+
   background:
     radial-gradient(
       circle at 85% 25%,
-      rgba(22, 139, 139, 0.2),
-      transparent 26rem
+      rgba(8, 127, 123, 0.22),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 75% 80%,
+      rgba(217, 135, 155, 0.22),
+      transparent 28%
     ),
     linear-gradient(
       135deg,
-      var(--cream),
-      var(--off-white)
+      var(--cream) 45%,
+      var(--teal-light)
     );
 }
 
 .hero::after {
-  position: absolute;
-  right: -8rem;
-  bottom: -12rem;
-  width: 30rem;
-  height: 30rem;
-  background-color: rgba(84, 35, 61, 0.08);
-  border-radius: 50%;
   content: "";
+
+  position: absolute;
+  right: -90px;
+  bottom: -130px;
+
+  width: 340px;
+  height: 340px;
+
+  border-radius: 50%;
+
+  background: var(--plum);
+  opacity: 0.08;
+
+  pointer-events: none;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
+
+  max-width: 880px;
+}
+
+/* Smaller homepage headline */
+.hero h1 {
+  max-width: 14ch;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--plum-dark);
+
+  font-size: clamp(2.6rem, 4vw, 4.25rem);
+
+  line-height: 1.03;
+
+  letter-spacing: -0.035em;
 }
 
 .hero-introduction {
   max-width: 42rem;
+
   margin-bottom: 2rem;
+
   color: var(--text-light);
-  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+
+  line-height: 1.7;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+
   gap: 1rem;
 }
 
+.eyebrow,
+.hero-kicker {
+  color: var(--teal);
+}
+
+/* Highlight selected words */
+.accent-text {
+  color: var(--teal);
+}
+
+.hero {
+  min-height: 27rem;
+  padding-block: 3rem;
+}
+
+.hero h1 {
+  max-width: 18ch;
+  margin-bottom: 1.25rem;
+  color: var(--plum-dark);
+  font-size: clamp(2.25rem, 3.4vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
 /* ---------- Portfolio page hero ---------- */
 
 .page-hero {
@@ -793,9 +854,10 @@ textarea:focus-visible {
     padding-block: 3.5rem;
   }
 
-  .hero {
-    min-height: 36rem;
-  }
+ .hero {
+  min-height: auto;
+  padding-block: 3.5rem;
+}
 
   .hero-actions {
     align-items: stretch;
@@ -807,6 +869,23 @@ textarea:focus-visible {
   }
 }
 
+@media (max-width: 768px) {
+
+  .hero h1 {
+    max-width: 16ch;
+
+    font-size: clamp(
+      2.6rem,
+      9vw,
+      4rem
+    );
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+}
 /* ---------- Reduced motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {
@@ -4909,4 +4988,236 @@ figcaption small {
 
 .project-card:hover .project-card-image img {
   transform: scale(1.03);
+}
+
+/* ========================================
+   RESUME PAGE — COMPACT SPACING
+======================================== */
+
+/* Resume hero */
+.resume-hero {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 55px 30px 35px;
+}
+
+.resume-hero h1 {
+  margin-bottom: 18px;
+}
+
+.resume-summary {
+  margin-bottom: 12px;
+  line-height: 1.65;
+}
+
+.resume-actions {
+  margin-top: 22px;
+}
+
+
+/* Overview statistic cards */
+.resume-overview {
+  margin-bottom: 45px;
+}
+
+.overview-card {
+  min-height: 125px;
+  padding: 22px;
+}
+
+.overview-label {
+  margin-top: 16px;
+}
+
+
+/* Main resume layout */
+.resume-layout {
+  padding-bottom: 60px;
+  gap: 55px;
+}
+
+
+/* IMPORTANT:
+   Stop the global section padding from creating
+   giant gaps inside the resume page.
+*/
+.resume-layout section,
+.resume-sidebar section {
+  padding-block: 0;
+}
+
+
+/* Main resume sections */
+.resume-section {
+  margin-bottom: 50px;
+}
+
+.resume-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+
+/* Experience */
+.resume-item,
+.education-item {
+  margin-bottom: 35px;
+}
+
+.resume-item:last-child,
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.resume-item-header {
+  margin-bottom: 14px;
+}
+
+.resume-item > p,
+.education-item > p {
+  line-height: 1.6;
+}
+
+.resume-item ul {
+  margin: 14px 0;
+}
+
+.resume-item li {
+  margin-bottom: 7px;
+  line-height: 1.5;
+}
+
+
+/* Earlier experience */
+.earlier-experience {
+  margin-top: 35px;
+}
+
+.earlier-experience > h3 {
+  margin-bottom: 15px;
+}
+
+.earlier-job {
+  padding: 13px 0;
+}
+
+
+/* Sidebar */
+.sidebar-section {
+  margin-bottom: 35px;
+}
+
+.sidebar-section h2 {
+  margin-bottom: 17px;
+}
+
+.skill-group {
+  margin-bottom: 22px;
+}
+
+.skill-group h3 {
+  margin-bottom: 10px;
+}
+
+.sidebar-list li {
+  padding: 7px 0;
+}
+
+
+/* Education */
+.education-highlight {
+  margin-top: 10px;
+}
+
+.coursework-title {
+  margin-top: 18px;
+}
+
+.coursework-list {
+  gap: 6px 22px;
+}
+
+
+/* Projects */
+.project-item {
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.project-item p {
+  line-height: 1.55;
+}
+
+
+/* Additional information */
+.additional-list {
+  gap: 8px 30px;
+}
+
+
+/* Prevent unnecessary empty space after sections */
+.resume-main > *:last-child,
+.resume-sidebar > *:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .resume-hero {
+    padding: 45px 25px 30px;
+  }
+
+  .resume-overview {
+    margin-bottom: 40px;
+  }
+
+  .resume-layout {
+    gap: 35px;
+    padding-bottom: 50px;
+  }
+
+  .resume-section {
+    margin-bottom: 45px;
+  }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  .resume-hero {
+    padding: 40px 20px 30px;
+  }
+
+  .resume-overview {
+    margin-bottom: 40px;
+  }
+
+  .resume-layout {
+    padding-bottom: 45px;
+  }
+
+  .resume-section {
+    margin-bottom: 40px;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .resume-item,
+  .education-item {
+    margin-bottom: 30px;
+  }
 }
