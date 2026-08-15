@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Weather Wise Java web application development case study by Anne Amor featuring Spring Boot, Spring MVC, REST API integration, responsive web design, and the National Weather Service API."
+  >
+
+  <title>Weather Wise Java Web Application | Anne Amor</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../ace-page.css">
+  <link rel="stylesheet" href="../weather-page.css">
+
+  <script src="../script.js" defer></script>
+</head>
+
+
+<body class="ace-page weather-case-study">
+
+  <!-- SKIP LINK -->
+  <a
+    class="ace-skip-link"
+    href="#main-content"
+  >
+    Skip to main content
+  </a>
+
+
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
+
+  <header class="ace-site-header">
+
+    <div class="ace-header-inner">
+
+      <a
+        class="ace-brand"
+        href="../index.html"
+        aria-label="Anne Amor home page"
+      >
+        <img
+          src="../images/brand/Anne-Amor-Logo.png"
+          alt="Anne Amor — Design, UX, and Technology"
+        >
+      </a>
+
+
+      <nav
+        class="ace-primary-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a
+          href="../work.html"
+          aria-current="page"
+        >
+          Work
+        </a>
+
+        <a href="../about.html">
+          About
+        </a>
+
+        <a href="../resume.html">
+          Resume
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ======================================================
+       MAIN
+  ======================================================= -->
+
+  <main id="main-content">
+
+
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="weather-hero">
+
+      <div class="container">
+
+        <a
+          class="back-link"
+          href="../work.html"
+        >
+          ← Back to Work
+        </a>
+
+
+        <p class="eyebrow">
+          Java Application Development
+        </p>
+
+
+        <h1>
+          Weather Wise
+        </h1>
+
+
+        <p class="weather-intro">
+          A responsive Java and Spring Boot weather application that
+          retrieves location-based forecasts from the National Weather
+          Service through REST API integration.
+        </p>
+
+
+        <ul
+          class="case-tags"
+          aria-label="Project technologies"
+        >
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>Spring MVC</li>
+          <li>REST API</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Maven</li>
+          <li>Responsive Design</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         OVERVIEW
+    ===================================================== -->
+
+    <section class="weather-overview">
+
+      <div class="container weather-overview-grid">
+
+
+        <div>
+
+          <p class="section-label">
+            Overview
+          </p>
+
+
+          <h2>
+            Connecting a Java application to live weather data
+          </h2>
+
+
+          <p>
+            Weather Wise was developed as a Java and Spring Boot project
+            focused on consuming a public REST API and presenting the returned
+            information through a user-friendly web interface.
+          </p>
+
+
+          <p>
+            Users enter latitude and longitude coordinates. The application
+            sends those coordinates through the National Weather Service API
+            workflow, processes the returned forecast information, and
+            displays the resulting weather data in the browser.
+          </p>
+
+
+          <p>
+            The project gave me hands-on experience connecting front-end
+            interfaces, Java application logic, and external web services
+            within one application.
+          </p>
+
+        </div>
+
+
+
+        <aside
+          class="project-facts"
+          aria-label="Weather Wise project details"
+        >
+
+          <h2>
+            Project details
+          </h2>
+
+
+          <dl>
+
+            <div>
+              <dt>Project type</dt>
+              <dd>Academic software development project</dd>
+            </div>
+
+
+            <div>
+              <dt>My role</dt>
+              <dd>Java developer and interface designer</dd>
+            </div>
+
+
+            <div>
+              <dt>Application</dt>
+              <dd>Spring Boot web application</dd>
+            </div>
+
+
+            <div>
+              <dt>API</dt>
+              <dd>National Weather Service</dd>
+            </div>
+
+
+            <div>
+              <dt>Technologies</dt>
+              <dd>
+                Java, Spring Boot, Spring MVC, REST, Maven,
+                HTML and CSS
+              </dd>
+            </div>
+
+
+            <div>
+              <dt>Development focus</dt>
+              <dd>
+                API integration, data handling, debugging,
+                responsive design and web application development
+              </dd>
+            </div>
+
+          </dl>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         TECH STACK
+    ===================================================== -->
+
+    <section class="weather-section weather-dark">
+
+      <div class="container">
+
+        <p class="section-label">
+          Technical Stack
+        </p>
+
+
+        <h2>
+          Technologies used to build the application
+        </h2>
+
+
+        <div class="weather-tech-grid">
+
+
+          <article class="weather-tech-card">
+
+            <span class="weather-tech-number">
+              01
+            </span>
+
+            <h3>
+              Java
+            </h3>
+
+            <p>
+              Java handles the application's core logic, API response
+              models, and forecast data processing.
+            </p>
+
+          </article>
+
+
+
+          <article class="weather-tech-card">
+
+            <span class="weather-tech-number">
+              02
+            </span>
+
+            <h3>
+              Spring Boot
+            </h3>
+
+            <p>
+              Spring Boot provides the application framework and manages
+              configuration, startup, routing, and the local web server.
+            </p>
+
+          </article>
+
+
+
+          <article class="weather-tech-card">
+
+            <span class="weather-tech-number">
+              03
+            </span>
+
+            <h3>
+              Spring MVC
+            </h3>
+
+            <p>
+              The MVC architecture separates application logic, data
+              handling, controller behavior, and the user-facing interface.
+            </p>
+
+          </article>
+
+
+
+          <article class="weather-tech-card">
+
+            <span class="weather-tech-number">
+              04
+            </span>
+
+            <h3>
+              REST API
+            </h3>
+
+            <p>
+              The application communicates with the National Weather
+              Service API to retrieve location-specific forecast data.
+            </p>
+
+          </article>
+
+
+
+          <article class="weather-tech-card">
+
+            <span class="weather-tech-number">
+              05
+            </span>
+
+            <h3>
+              HTML &amp; CSS
+            </h3>
+
+            <p>
+              Semantic HTML and responsive CSS provide a clear browser
+              interface for coordinate input and forecast results.
+            </p>
+
+          </article>
+
+
+
+          <article class="weather-tech-card">
+
+            <span class="weather-tech-number">
+              06
+            </span>
+
+            <h3>
+              Maven
+            </h3>
+
+            <p>
+              Maven manages dependencies and supports building and running
+              the Spring Boot project.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         APPLICATION FLOW
+    ===================================================== -->
+
+    <section class="weather-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Application Flow
+        </p>
+
+
+        <h2>
+          How the weather request works
+        </h2>
+
+
+        <p class="section-intro">
+          Retrieving a forecast requires more than sending a city name to a
+          single endpoint. Weather Wise uses geographic coordinates to locate
+          the correct National Weather Service forecast endpoint before
+          requesting the forecast itself.
+        </p>
+
+
+        <div class="weather-flow">
+
+
+          <article class="weather-flow-step">
+
+            <span>
+              1
+            </span>
+
+            <div>
+              <h3>
+                Enter coordinates
+              </h3>
+
+              <p>
+                The user enters latitude and longitude values into the
+                Weather Wise search form.
+              </p>
+            </div>
+
+          </article>
+
+
+
+          <div
+            class="weather-flow-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </div>
+
+
+
+          <article class="weather-flow-step">
+
+            <span>
+              2
+            </span>
+
+            <div>
+              <h3>
+                Request location data
+              </h3>
+
+              <p>
+                The application sends the coordinates to the National
+                Weather Service points endpoint.
+              </p>
+            </div>
+
+          </article>
+
+
+
+          <div
+            class="weather-flow-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </div>
+
+
+
+          <article class="weather-flow-step">
+
+            <span>
+              3
+            </span>
+
+            <div>
+              <h3>
+                Locate the forecast endpoint
+              </h3>
+
+              <p>
+                The API response identifies the forecast URL associated
+                with the requested coordinates.
+              </p>
+            </div>
+
+          </article>
+
+
+
+          <div
+            class="weather-flow-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </div>
+
+
+
+          <article class="weather-flow-step">
+
+            <span>
+              4
+            </span>
+
+            <div>
+              <h3>
+                Retrieve forecast data
+              </h3>
+
+              <p>
+                The application sends a second API request to retrieve the
+                forecast information for that location.
+              </p>
+            </div>
+
+          </article>
+
+
+
+          <div
+            class="weather-flow-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </div>
+
+
+
+          <article class="weather-flow-step">
+
+            <span>
+              5
+            </span>
+
+            <div>
+              <h3>
+                Display the forecast
+              </h3>
+
+              <p>
+                Java models process the API response and the resulting
+                forecast information is rendered through the web interface.
+              </p>
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         INTERFACE
+    ===================================================== -->
+
+    <section class="weather-section weather-soft">
+
+      <div class="container">
+
+        <p class="section-label">
+          User Interface
+        </p>
+
+
+        <h2>
+          Giving technical data a clear visual presentation
+        </h2>
+
+
+        <p class="section-intro">
+          The interface was designed to make the application approachable
+          rather than presenting raw API data. Location inputs, forecast
+          information, and weather details are organized into a clear,
+          responsive layout.
+        </p>
+
+
+        <div class="weather-interface-gallery">
+
+
+          <!-- INITIAL STATE -->
+
+          <figure class="weather-interface-panel">
+
+            <img
+              src="../images/projects/weather-wise-homepage.jpeg"
+              alt="Weather Wise home screen with latitude and longitude forecast form"
+              loading="lazy"
+            >
+
+            <figcaption>
+              The initial Weather Wise interface allows users to enter
+              latitude and longitude coordinates to request a forecast.
+            </figcaption>
+
+          </figure>
+
+
+
+          <!-- RESULTS STATE -->
+
+          <figure class="weather-interface-panel">
+
+            <img
+              src="../images/projects/weather-wise-results.jpeg"
+              alt="Weather Wise displaying forecast results returned by the National Weather Service API"
+              loading="lazy"
+            >
+
+            <figcaption>
+              After submission, Weather Wise retrieves National Weather
+              Service data and dynamically displays the forecast in
+              responsive forecast cards.
+            </figcaption>
+
+          </figure>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         DEVELOPMENT CHALLENGES
+    ===================================================== -->
+
+    <section class="weather-section weather-dark">
+
+      <div class="container two-column">
+
+
+        <div>
+
+          <p class="section-label">
+            Development Challenges
+          </p>
+
+
+          <h2>
+            Debugging the complete application workflow
+          </h2>
+
+
+          <p>
+            Building the application required troubleshooting multiple
+            layers of the development environment, including the Spring
+            Boot server, API communication, project configuration, and
+            browser output.
+          </p>
+
+
+          <p>
+            One challenge involved resolving local server port conflicts
+            while testing the application. Identifying the process using
+            the configured port and correcting the development environment
+            helped strengthen my understanding of how Spring Boot
+            applications run locally.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <p class="section-label">
+            Problem Solving
+          </p>
+
+
+          <ul class="feature-list">
+
+            <li>
+              Configured and ran a Spring Boot web application.
+            </li>
+
+            <li>
+              Integrated an external REST API.
+            </li>
+
+            <li>
+              Worked with multiple API requests to obtain forecast data.
+            </li>
+
+            <li>
+              Processed structured API responses with Java model classes.
+            </li>
+
+            <li>
+              Diagnosed local server and port conflicts.
+            </li>
+
+            <li>
+              Tested the application using real geographic coordinates.
+            </li>
+
+            <li>
+              Refined the interface using responsive CSS.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         TESTING
+    ===================================================== -->
+
+    <section class="weather-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Testing &amp; Validation
+        </p>
+
+
+        <h2>
+          Verifying API and interface behavior
+        </h2>
+
+
+        <div class="weather-test-grid">
+
+
+          <article>
+
+            <span aria-hidden="true">
+              ✓
+            </span>
+
+            <h3>
+              Coordinate Input
+            </h3>
+
+            <p>
+              Tested valid latitude and longitude coordinates to confirm
+              the application correctly requests geographic forecast
+              information.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              ✓
+            </span>
+
+            <h3>
+              API Response
+            </h3>
+
+            <p>
+              Verified that forecast data returned by the National Weather
+              Service could be processed and displayed by the application.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              ✓
+            </span>
+
+            <h3>
+              Local Server
+            </h3>
+
+            <p>
+              Troubleshot Spring Boot startup behavior and resolved local
+              port conflicts during testing.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              ✓
+            </span>
+
+            <h3>
+              Responsive Layout
+            </h3>
+
+            <p>
+              Reviewed the interface at multiple screen sizes to maintain
+              readability and a clear content hierarchy.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         WHAT I LEARNED
+    ===================================================== -->
+
+    <section class="weather-section weather-soft">
+
+      <div class="container weather-learning-grid">
+
+
+        <div>
+
+          <p class="section-label">
+            What I Learned
+          </p>
+
+
+          <h2>
+            Moving beyond a static web interface
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            This project strengthened my understanding of how front-end
+            interfaces interact with server-side application logic and
+            external services.
+          </p>
+
+
+          <p>
+            Working with Spring Boot and the National Weather Service API
+            gave me practical experience tracing data through an
+            application, debugging problems across multiple layers, and
+            converting structured API responses into information that is
+            useful to the user.
+          </p>
+
+
+          <p>
+            It also reinforced the value of combining software development
+            with thoughtful interface design. Functional applications are
+            more effective when technical information is presented in a
+            clear and approachable way.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         OUTCOME
+    ===================================================== -->
+
+    <section class="weather-section">
+
+      <div class="container outcome-panel">
+
+
+        <div>
+
+          <p class="section-label">
+            Outcome
+          </p>
+
+
+          <h2>
+            A working API-powered Java web application
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            The completed application connects a responsive browser
+            interface to a Java Spring Boot backend and retrieves live
+            forecast information through the National Weather Service API.
+          </p>
+
+
+          <p>
+            The project demonstrates experience with Java, Spring Boot,
+            Spring MVC, REST API integration, Maven, debugging, responsive
+            web development, and the connection between interface design
+            and application functionality.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         NEXT
+    ===================================================== -->
+
+    <section class="ff-next weather-next">
+
+      <div class="container">
+
+        <p>
+          Continue exploring
+        </p>
+
+
+        <h2>
+          View more design and technology projects.
+        </h2>
+
+
+        <a
+          class="button"
+          href="../work.html"
+        >
+          View all work
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer class="ace-site-footer">
+
+    <div class="ace-container ace-footer-inner">
+
+      <p>
+        ©
+        <span id="current-year">
+          2026
+        </span>
+        Anne Amor
+      </p>
+
+
+      <a href="mailto:anneamordesigns@gmail.com">
+        anneamordesigns@gmail.com
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>

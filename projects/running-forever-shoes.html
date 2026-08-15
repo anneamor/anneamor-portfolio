@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Running Forever Shoes relational database design case study by Anne Amor featuring conceptual, logical, and physical database models, normalization, business rules, data integrity, and database planning."
+  >
+
+  <title>Running Forever Shoes Database System | Anne Amor</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../ace-page.css">
+  <link rel="stylesheet" href="../running-forever-shoes.css">
+
+  <script src="../script.js" defer></script>
+</head>
+
+
+<body class="ace-page running-shoes-case-study">
+
+  <!-- SKIP LINK -->
+  <a
+    class="ace-skip-link"
+    href="#main-content"
+  >
+    Skip to main content
+  </a>
+
+
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
+
+  <header class="ace-site-header">
+
+    <div class="ace-header-inner">
+
+      <a
+        class="ace-brand"
+        href="../index.html"
+        aria-label="Anne Amor home page"
+      >
+        <img
+          src="../images/brand/Anne-Amor-Logo.png"
+          alt="Anne Amor — Design, UX, and Technology"
+        >
+      </a>
+
+
+      <nav
+        class="ace-primary-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a
+          href="../work.html"
+          aria-current="page"
+        >
+          Work
+        </a>
+
+        <a href="../about.html">
+          About
+        </a>
+
+        <a href="../resume.html">
+          Resume
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ======================================================
+       MAIN
+  ======================================================= -->
+
+  <main id="main-content">
+
+
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="rfs-hero">
+
+      <div class="container">
+
+        <a
+          class="back-link"
+          href="../work.html"
+        >
+          ← Back to Work
+        </a>
+
+
+        <p class="eyebrow">
+          Database Design &amp; Development
+        </p>
+
+
+        <h1>
+          Running Forever Shoes Database System
+        </h1>
+
+
+        <p class="rfs-intro">
+          A relational database solution designed to support products,
+          inventory, stores, customers, employees, sales orders, and
+          customer product reviews for a growing specialty running-shoe
+          retailer.
+        </p>
+
+
+        <ul
+          class="case-tags"
+          aria-label="Project technologies and disciplines"
+        >
+          <li>Database Design</li>
+          <li>SQL</li>
+          <li>MySQL</li>
+          <li>ER Modeling</li>
+          <li>Normalization</li>
+          <li>Data Integrity</li>
+          <li>Business Analysis</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         OVERVIEW
+    ===================================================== -->
+
+    <section class="rfs-overview">
+
+      <div class="container rfs-overview-grid">
+
+
+        <div>
+
+          <p class="section-label">
+            Overview
+          </p>
+
+
+          <h2>
+            Designing a database around real business needs
+          </h2>
+
+
+          <p>
+            Running Forever Shoes is a specialty running-shoe retailer
+            operating multiple stores and preparing to expand its business
+            capabilities. The database project focuses on creating a more
+            complete system for managing product information, inventory,
+            customers, orders, employees, and customer feedback.
+          </p>
+
+
+          <p>
+            The project begins with business requirements and gradually
+            translates those requirements into conceptual, logical, and
+            physical database models.
+          </p>
+
+
+          <p>
+            This process demonstrates how business rules can be converted
+            into a structured relational database that supports future
+            applications, reporting, and operational growth.
+          </p>
+
+        </div>
+
+
+
+        <aside
+          class="project-facts"
+          aria-label="Running Forever Shoes project details"
+        >
+
+          <h2>
+            Project details
+          </h2>
+
+
+          <dl>
+
+            <div>
+              <dt>Project type</dt>
+              <dd>Academic database design project</dd>
+            </div>
+
+
+            <div>
+              <dt>Project status</dt>
+              <dd>Ongoing</dd>
+            </div>
+
+
+            <div>
+              <dt>My role</dt>
+              <dd>Database designer and business analyst</dd>
+            </div>
+
+
+            <div>
+              <dt>Database focus</dt>
+              <dd>Relational database architecture</dd>
+            </div>
+
+
+            <div>
+              <dt>Technologies</dt>
+              <dd>
+                SQL, MySQL, ER modeling, data modeling,
+                normalization and database planning
+              </dd>
+            </div>
+
+
+            <div>
+              <dt>Deliverables</dt>
+              <dd>
+                Conceptual model, logical model, physical model,
+                business rules, security planning and recovery strategy
+              </dd>
+            </div>
+
+          </dl>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         BUSINESS PROBLEM
+    ===================================================== -->
+
+    <section class="rfs-section rfs-dark">
+
+      <div class="container two-column">
+
+
+        <div>
+
+          <p class="section-label">
+            The Business Problem
+          </p>
+
+
+          <h2>
+            Supporting a growing retail operation
+          </h2>
+
+
+          <p>
+            The business needs more than a simple list of shoe brands.
+            As Running Forever Shoes grows, the company needs a database
+            capable of supporting detailed products, inventory by store,
+            customer information, sales orders, employees, and product
+            reviews.
+          </p>
+
+
+          <p>
+            The database must also provide a structured foundation that
+            can support future reporting, online inventory, customer
+            ratings, and expanded business operations.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <p class="section-label">
+            Database Goals
+          </p>
+
+
+          <ul class="feature-list">
+
+            <li>
+              Organize manufacturers, product lines, and individual products.
+            </li>
+
+            <li>
+              Track inventory quantities at individual store locations.
+            </li>
+
+            <li>
+              Maintain customer and employee information.
+            </li>
+
+            <li>
+              Record customer sales orders and individual order items.
+            </li>
+
+            <li>
+              Support different order types.
+            </li>
+
+            <li>
+              Store customer product ratings and reviews.
+            </li>
+
+            <li>
+              Reduce redundant data through relational database design.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         BUSINESS RULES
+    ===================================================== -->
+
+    <section class="rfs-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Business Rules
+        </p>
+
+
+        <h2>
+          Translating operations into data relationships
+        </h2>
+
+
+        <p class="section-intro">
+          Before defining tables and data types, the database structure
+          was guided by business rules describing how the major entities
+          relate to one another.
+        </p>
+
+
+        <div class="rfs-rule-grid">
+
+
+          <article>
+            <span>01</span>
+
+            <h3>
+              Stores and products
+            </h3>
+
+            <p>
+              A store contains many products through its inventory records.
+            </p>
+          </article>
+
+
+
+          <article>
+            <span>02</span>
+
+            <h3>
+              Products and manufacturers
+            </h3>
+
+            <p>
+              A product is supplied through a product line associated
+              with a manufacturer.
+            </p>
+          </article>
+
+
+
+          <article>
+            <span>03</span>
+
+            <h3>
+              Customers and orders
+            </h3>
+
+            <p>
+              A customer can place multiple sales orders.
+            </p>
+          </article>
+
+
+
+          <article>
+            <span>04</span>
+
+            <h3>
+              Orders and products
+            </h3>
+
+            <p>
+              Sales orders contain products through individual order items.
+            </p>
+          </article>
+
+
+
+          <article>
+            <span>05</span>
+
+            <h3>
+              Customers and reviews
+            </h3>
+
+            <p>
+              Customers can submit product reviews and ratings for products.
+            </p>
+          </article>
+
+
+
+          <article>
+            <span>06</span>
+
+            <h3>
+              Stores and employees
+            </h3>
+
+            <p>
+              Employees are associated with the store where they work.
+            </p>
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         DATABASE MODEL PROGRESSION
+    ===================================================== -->
+
+    <section class="rfs-section rfs-soft">
+
+      <div class="container">
+
+        <p class="section-label">
+          Database Design Process
+        </p>
+
+
+        <h2>
+          From business concept to implementation-ready model
+        </h2>
+
+
+        <p class="section-intro">
+          The database was developed through three increasingly detailed
+          stages. Each model builds on the previous one, moving from
+          high-level business relationships toward a structure ready for
+          relational database implementation.
+        </p>
+
+
+
+        <!-- CONCEPTUAL MODEL -->
+
+        <article class="rfs-model-section">
+
+          <div class="rfs-model-copy">
+
+            <span class="rfs-model-number">
+              01
+            </span>
+
+            <p class="section-label">
+              Conceptual Model
+            </p>
+
+            <h3>
+              Identifying the major entities
+            </h3>
+
+            <p>
+              The conceptual model establishes the main business entities
+              and the relationships between them without focusing on
+              individual fields, data types, or implementation details.
+            </p>
+
+            <p>
+              This stage helped define the overall scope of the database
+              and provided a clear view of how products, stores, customers,
+              orders, employees, and reviews interact.
+            </p>
+
+          </div>
+
+
+          <figure class="rfs-diagram-panel">
+
+            <a
+              href="../images/projects/Running-Forever-Shoes_conceptual-Diagram.png"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size Running Forever Shoes conceptual database model"
+            >
+              <img
+                src="../images/projects/Running-Forever-Shoes_conceptual-Diagram.png"
+                alt="Running Forever Shoes conceptual database model showing manufacturers, product lines, products, inventory, stores, employees, customers, sales orders, order items, order types, and product reviews"
+                loading="lazy"
+              >
+            </a>
+
+            <figcaption>
+              Conceptual model showing the major entities and business
+              relationships. Select the diagram to view it full size.
+            </figcaption>
+
+          </figure>
+
+        </article>
+
+
+
+        <!-- LOGICAL MODEL -->
+
+        <article class="rfs-model-section rfs-model-reverse">
+
+          <div class="rfs-model-copy">
+
+            <span class="rfs-model-number">
+              02
+            </span>
+
+            <p class="section-label">
+              Logical Model
+            </p>
+
+            <h3>
+              Defining attributes and relationships
+            </h3>
+
+            <p>
+              The logical model expands the conceptual design by defining
+              individual attributes, primary keys, foreign keys, and more
+              detailed entity relationships.
+            </p>
+
+            <p>
+              At this stage, the database structure begins to show how the
+              data will be organized relationally while remaining independent
+              of specific database implementation details.
+            </p>
+
+          </div>
+
+
+          <figure class="rfs-diagram-panel">
+
+            <a
+              href="../images/projects/RunningForeverShoes_ERDiagram_CrowFoot_Logical model.png"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size Running Forever Shoes logical database model"
+            >
+              <img
+                src="../images/projects/RunningForeverShoes_ERDiagram_CrowFoot_Logical model.png"
+                alt="Running Forever Shoes logical database model showing entities, attributes, keys, and crow's foot relationships"
+                loading="lazy"
+              >
+            </a>
+
+            <figcaption>
+              Logical database model defining entities, attributes,
+              keys, and relational structure. Select the diagram to
+              view it full size.
+            </figcaption>
+
+          </figure>
+
+        </article>
+
+
+
+        <!-- PHYSICAL MODEL -->
+
+        <article class="rfs-model-section">
+
+          <div class="rfs-model-copy">
+
+            <span class="rfs-model-number">
+              03
+            </span>
+
+            <p class="section-label">
+              Physical Model
+            </p>
+
+            <h3>
+              Preparing the database for implementation
+            </h3>
+
+            <p>
+              The physical model translates the logical database structure
+              into an implementation-ready schema containing field data
+              types, required values, primary keys, foreign keys, and
+              database constraints.
+            </p>
+
+            <p>
+              This final modeling stage provides the technical structure
+              necessary to begin building the relational database.
+            </p>
+
+          </div>
+
+
+          <figure class="rfs-diagram-panel">
+
+            <a
+              href="../images/projects/RunningForeverShoes_ERDiagram_CrowFoot_Physical Database Design.png"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size Running Forever Shoes physical database model"
+            >
+              <img
+                src="../images/projects/RunningForeverShoes_ERDiagram_CrowFoot_Physical Database Design.png"
+                alt="Running Forever Shoes physical database model showing database tables, fields, data types, keys, constraints, and relationships"
+                loading="lazy"
+              >
+            </a>
+
+            <figcaption>
+              Physical database model containing implementation-level
+              fields, data types, keys, and constraints. Select the
+              diagram to view it full size.
+            </figcaption>
+
+          </figure>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         DATA ARCHITECTURE
+    ===================================================== -->
+
+    <section class="rfs-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Data Architecture
+        </p>
+
+
+        <h2>
+          Organizing the system into connected data domains
+        </h2>
+
+
+        <div class="rfs-architecture-grid">
+
+
+          <article>
+
+            <h3>
+              Product Structure
+            </h3>
+
+            <p class="rfs-path">
+              Manufacturer → ProductLine → Product
+            </p>
+
+            <p>
+              Manufacturer information is separated from product lines
+              and individual products so shared supplier information does
+              not need to be duplicated across product records.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              Inventory Structure
+            </h3>
+
+            <p class="rfs-path">
+              Store → Inventory → Product
+            </p>
+
+            <p>
+              Inventory functions as a linking structure between stores
+              and products, allowing the system to track quantities and
+              reorder levels independently for each location.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              Sales Structure
+            </h3>
+
+            <p class="rfs-path">
+              Customer → SalesOrder → OrderItem → Product
+            </p>
+
+            <p>
+              Separating sales orders from order items allows one order
+              to contain multiple products without repeating customer and
+              order information for every purchased item.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              Review Structure
+            </h3>
+
+            <p class="rfs-path">
+              Customer → ProductReview → Product
+            </p>
+
+            <p>
+              Product reviews connect customers to products while preserving
+              rating, review text, and review-date information independently
+              from the primary product record.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         NORMALIZATION
+    ===================================================== -->
+
+    <section class="rfs-section rfs-dark">
+
+      <div class="container two-column">
+
+
+        <div>
+
+          <p class="section-label">
+            Normalization &amp; Data Integrity
+          </p>
+
+
+          <h2>
+            Reducing redundancy while protecting data quality
+          </h2>
+
+
+          <p>
+            The database separates major business concepts into related
+            tables rather than storing repeated information in a single
+            large structure.
+          </p>
+
+
+          <p>
+            For example, customer and order information is stored
+            separately from individual order items. This allows one order
+            to contain multiple products without repeating customer,
+            employee, store, and order data for every item purchased.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <ul class="feature-list">
+
+            <li>
+              Primary keys uniquely identify records.
+            </li>
+
+            <li>
+              Foreign keys maintain relationships between tables.
+            </li>
+
+            <li>
+              Linking tables support many-to-many business relationships.
+            </li>
+
+            <li>
+              Lookup structures separate reusable classification data.
+            </li>
+
+            <li>
+              Required fields help protect important business data.
+            </li>
+
+            <li>
+              Constraints help maintain valid values and data integrity.
+            </li>
+
+            <li>
+              Normalization reduces duplicated information across records.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         DATA ACCESS & SECURITY
+    ===================================================== -->
+
+    <section class="rfs-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Data Access &amp; Security
+        </p>
+
+
+        <h2>
+          Planning access around business responsibilities
+        </h2>
+
+
+        <p class="section-intro">
+          Database security planning considers both authentication and
+          authorization so users receive access appropriate to their
+          responsibilities while sensitive data remains protected.
+        </p>
+
+
+        <div class="rfs-access-grid">
+
+
+          <article>
+
+            <span aria-hidden="true">
+              V
+            </span>
+
+            <h3>
+              View
+            </h3>
+
+            <p>
+              Authorized employees need access to product, inventory,
+              customer, and order information required for their work.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              C
+            </span>
+
+            <h3>
+              Create
+            </h3>
+
+            <p>
+              Appropriate roles may create records such as customers,
+              orders, products, inventory entries, or reviews.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              U
+            </span>
+
+            <h3>
+              Update
+            </h3>
+
+            <p>
+              Authorized users must be able to maintain changing
+              information while limiting updates to appropriate data.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">
+              D
+            </span>
+
+            <h3>
+              Delete
+            </h3>
+
+            <p>
+              Delete permissions should be more restricted to reduce the
+              risk of accidental or unauthorized data loss.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         BUSINESS CONTINUITY
+    ===================================================== -->
+
+    <section class="rfs-section rfs-soft">
+
+      <div class="container rfs-continuity-grid">
+
+
+        <div>
+
+          <p class="section-label">
+            Database Reliability
+          </p>
+
+
+          <h2>
+            Planning for backup and recovery
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            The database design process also includes planning for business
+            interruption and data recovery. A database that supports retail
+            operations must remain recoverable if hardware, software, or
+            operational failures occur.
+          </p>
+
+
+          <p>
+            The continuity strategy considers regular backups, secure
+            storage of backup copies, recovery procedures, and testing of
+            restoration processes so critical business information can be
+            recovered when necessary.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         SKILLS
+    ===================================================== -->
+
+    <section class="rfs-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Technical Skills
+        </p>
+
+
+        <h2>
+          Skills demonstrated through the project
+        </h2>
+
+
+        <div class="rfs-skill-grid">
+
+          <span>Relational Database Design</span>
+          <span>SQL</span>
+          <span>MySQL</span>
+          <span>Conceptual Data Modeling</span>
+          <span>Logical Data Modeling</span>
+          <span>Physical Data Modeling</span>
+          <span>ER Diagrams</span>
+          <span>Primary &amp; Foreign Keys</span>
+          <span>Normalization</span>
+          <span>Data Integrity</span>
+          <span>Business Rules</span>
+          <span>Requirements Analysis</span>
+          <span>Database Security</span>
+          <span>Backup &amp; Recovery Planning</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         WHAT I LEARNED
+    ===================================================== -->
+
+    <section class="rfs-section rfs-dark">
+
+      <div class="container rfs-learning-grid">
+
+
+        <div>
+
+          <p class="section-label">
+            What I Learned
+          </p>
+
+
+          <h2>
+            Turning business requirements into technical architecture
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            This project strengthened my ability to translate business
+            requirements into structured technical solutions.
+          </p>
+
+
+          <p>
+            Developing the conceptual, logical, and physical models helped
+            me understand how database architecture becomes progressively
+            more detailed as a project moves from business analysis toward
+            implementation.
+          </p>
+
+
+          <p>
+            The project also reinforced the importance of normalization,
+            data integrity, security, documentation, and recovery planning
+            when designing systems that support real business operations.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         OUTCOME
+    ===================================================== -->
+
+    <section class="rfs-section">
+
+      <div class="container outcome-panel">
+
+
+        <div>
+
+          <p class="section-label">
+            Current Outcome
+          </p>
+
+
+          <h2>
+            A structured foundation for the final database
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            The project currently includes conceptual, logical, and physical
+            database models that define the structure required to support
+            Running Forever Shoes operations.
+          </p>
+
+
+          <p>
+            As the project continues, this case study will be expanded with
+            additional implementation work, SQL development, queries, views,
+            and the final enterprise data model.
+          </p>
+
+
+          <p class="rfs-status">
+            Project currently in development.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         NEXT
+    ===================================================== -->
+
+    <section class="ff-next rfs-next">
+
+      <div class="container">
+
+        <p>
+          Continue exploring
+        </p>
+
+
+        <h2>
+          View more design and technology projects.
+        </h2>
+
+
+        <a
+          class="button"
+          href="../work.html"
+        >
+          View all work
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer class="ace-site-footer">
+
+    <div class="ace-container ace-footer-inner">
+
+      <p>
+        ©
+        <span id="current-year">
+          2026
+        </span>
+        Anne Amor
+      </p>
+
+
+      <a href="mailto:anneamordesigns@gmail.com">
+        anneamordesigns@gmail.com
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>

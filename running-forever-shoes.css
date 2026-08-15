@@ -1,0 +1,988 @@
+
+/* =========================================================
+   RUNNING FOREVER SHOES DATABASE CASE STUDY
+   Anne Amor Portfolio
+========================================================= */
+
+
+/* =========================================================
+   PAGE VARIABLES
+========================================================= */
+
+.running-shoes-case-study {
+  --rfs-teal: #0f9f9a;
+  --rfs-teal-dark: #08766f;
+  --rfs-blue: #4f73c7;
+  --rfs-purple: #7e00a8;
+  --rfs-green: #1c6b2a;
+  --rfs-orange: #d88b00;
+  --rfs-navy: #174f73;
+
+  --rfs-ink: #1f2937;
+  --rfs-muted: #657080;
+  --rfs-light: #f6fafb;
+  --rfs-soft: #eef8f8;
+  --rfs-white: #ffffff;
+  --rfs-border: rgba(15, 159, 154, 0.16);
+
+  color: var(--rfs-ink);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.rfs-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: 5rem 0 5.5rem;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(79, 115, 199, 0.18),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(15, 159, 154, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #f9fcfd 0%,
+      #eef8fa 100%
+    );
+}
+
+
+.rfs-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 30rem;
+  height: 30rem;
+
+  right: -12rem;
+  bottom: -16rem;
+
+  border-radius: 50%;
+
+  background: rgba(126, 0, 168, 0.05);
+
+  pointer-events: none;
+}
+
+
+.rfs-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.rfs-hero .back-link {
+  display: inline-block;
+
+  margin-bottom: 3rem;
+
+  color: var(--rfs-teal-dark);
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.rfs-hero .back-link:hover {
+  color: var(--rfs-purple);
+  transform: translateX(-4px);
+}
+
+
+.rfs-hero .eyebrow {
+  margin-bottom: 1rem;
+
+  color: var(--rfs-teal-dark);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+
+.rfs-hero h1 {
+  max-width: 980px;
+
+  margin: 0 0 1.5rem;
+
+  color: var(--rfs-ink);
+
+  font-size: clamp(2.7rem, 7vw, 5.5rem);
+  line-height: 0.98;
+
+  letter-spacing: -0.045em;
+}
+
+
+.rfs-intro {
+  max-width: 800px;
+
+  margin-bottom: 2rem;
+
+  color: #4b5563;
+
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   CASE TAGS
+========================================================= */
+
+.running-shoes-case-study .case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+
+  margin: 2rem 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.running-shoes-case-study .case-tags li {
+  padding: 0.55rem 0.9rem;
+
+  border: 1px solid rgba(15, 159, 154, 0.2);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.8);
+
+  color: var(--rfs-teal-dark);
+
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.rfs-section,
+.rfs-overview {
+  padding: 6rem 0;
+}
+
+
+.rfs-section h2,
+.rfs-overview h2 {
+  margin-top: 0;
+
+  color: var(--rfs-ink);
+
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.08;
+
+  letter-spacing: -0.03em;
+}
+
+
+.rfs-section h3 {
+  color: var(--rfs-ink);
+}
+
+
+.rfs-section p,
+.rfs-overview p {
+  line-height: 1.8;
+}
+
+
+.running-shoes-case-study .section-label {
+  margin-bottom: 0.8rem;
+
+  color: var(--rfs-teal-dark);
+
+  font-size: 0.76rem;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+
+.running-shoes-case-study .section-intro {
+  max-width: 800px;
+
+  margin-bottom: 3rem;
+
+  color: var(--rfs-muted);
+
+  font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.rfs-overview {
+  background: var(--rfs-white);
+}
+
+
+.rfs-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.55fr)
+    minmax(280px, 0.75fr);
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+
+.rfs-overview-grid > div > p {
+  max-width: 740px;
+
+  color: var(--rfs-muted);
+}
+
+
+/* =========================================================
+   PROJECT FACTS
+========================================================= */
+
+.running-shoes-case-study .project-facts {
+  padding: 2rem;
+
+  border: 1px solid var(--rfs-border);
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f2fbfb
+    );
+
+  box-shadow:
+    0 20px 55px rgba(15, 159, 154, 0.08);
+}
+
+
+.running-shoes-case-study .project-facts h2 {
+  margin-bottom: 1.5rem;
+
+  font-size: 1.35rem;
+}
+
+
+.running-shoes-case-study .project-facts dl {
+  margin: 0;
+}
+
+
+.running-shoes-case-study .project-facts dl div {
+  padding: 1rem 0;
+
+  border-top: 1px solid var(--rfs-border);
+}
+
+
+.running-shoes-case-study .project-facts dt {
+  margin-bottom: 0.3rem;
+
+  color: var(--rfs-teal-dark);
+
+  font-size: 0.75rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+.running-shoes-case-study .project-facts dd {
+  margin: 0;
+
+  color: var(--rfs-ink);
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   DARK SECTIONS
+========================================================= */
+
+.rfs-dark {
+  background:
+    linear-gradient(
+      135deg,
+      #173844,
+      #102b34
+    );
+
+  color: rgba(255, 255, 255, 0.86);
+}
+
+
+.rfs-dark h2,
+.rfs-dark h3 {
+  color: var(--rfs-white);
+}
+
+
+.rfs-dark .section-label {
+  color: #7fe3df;
+}
+
+
+.rfs-dark p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+
+/* =========================================================
+   TWO COLUMN
+========================================================= */
+
+.running-shoes-case-study .two-column {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   FEATURE LIST
+========================================================= */
+
+.running-shoes-case-study .feature-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+
+.running-shoes-case-study .feature-list li {
+  position: relative;
+
+  padding:
+    0.9rem
+    0
+    0.9rem
+    1.8rem;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+
+  color: rgba(255, 255, 255, 0.84);
+
+  line-height: 1.6;
+}
+
+
+.running-shoes-case-study .feature-list li::before {
+  content: "→";
+
+  position: absolute;
+
+  left: 0;
+
+  color: #7fe3df;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   BUSINESS RULES
+========================================================= */
+
+.rfs-rule-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 1.25rem;
+}
+
+
+.rfs-rule-grid article {
+  padding: 2rem;
+
+  border: 1px solid var(--rfs-border);
+  border-radius: 18px;
+
+  background: var(--rfs-white);
+
+  box-shadow:
+    0 14px 36px rgba(15, 159, 154, 0.05);
+}
+
+
+.rfs-rule-grid article > span {
+  display: block;
+
+  margin-bottom: 1.8rem;
+
+  color: var(--rfs-teal);
+
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+
+.rfs-rule-grid h3 {
+  margin-bottom: 0.6rem;
+
+  font-size: 1.15rem;
+}
+
+
+.rfs-rule-grid p {
+  margin-bottom: 0;
+
+  color: var(--rfs-muted);
+}
+
+
+/* =========================================================
+   SOFT SECTION
+========================================================= */
+
+.rfs-soft {
+  background:
+    linear-gradient(
+      135deg,
+      #f7fbfc,
+      #eef8f8
+    );
+}
+
+
+/* =========================================================
+   MODEL SECTIONS
+========================================================= */
+
+.rfs-model-section {
+  display: grid;
+
+  grid-template-columns:
+    minmax(260px, 0.65fr)
+    minmax(0, 1.35fr);
+
+  gap: 4rem;
+
+  align-items: center;
+
+  margin-top: 4rem;
+  padding-top: 4rem;
+
+  border-top: 1px solid var(--rfs-border);
+}
+
+
+.rfs-model-section:first-of-type {
+  margin-top: 2rem;
+}
+
+
+.rfs-model-reverse {
+  grid-template-columns:
+    minmax(0, 1.35fr)
+    minmax(260px, 0.65fr);
+}
+
+
+.rfs-model-reverse .rfs-model-copy {
+  order: 2;
+}
+
+
+.rfs-model-reverse .rfs-diagram-panel {
+  order: 1;
+}
+
+
+.rfs-model-number {
+  display: block;
+
+  margin-bottom: 1.25rem;
+
+  color: var(--rfs-teal);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+
+.rfs-model-copy h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+
+.rfs-model-copy p {
+  color: var(--rfs-muted);
+}
+
+
+/* =========================================================
+   DIAGRAM PANELS
+========================================================= */
+
+.rfs-diagram-panel {
+  margin: 0;
+
+  padding: 1.25rem;
+
+  border: 1px solid var(--rfs-border);
+  border-radius: 20px;
+
+  background: var(--rfs-white);
+
+  box-shadow:
+    0 18px 50px rgba(15, 159, 154, 0.08);
+}
+
+
+.rfs-diagram-panel a {
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  cursor: zoom-in;
+}
+
+
+.rfs-diagram-panel img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  transition:
+    transform 0.25s ease,
+    filter 0.25s ease;
+}
+
+
+.rfs-diagram-panel a:hover img {
+  transform: scale(1.015);
+  filter: contrast(1.02);
+}
+
+
+.rfs-diagram-panel figcaption {
+  margin-top: 1rem;
+
+  color: var(--rfs-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+
+/* Give the very wide ERDs enough room */
+
+.rfs-model-section:nth-of-type(2) .rfs-diagram-panel,
+.rfs-model-section:nth-of-type(3) .rfs-diagram-panel {
+  padding: 0.9rem;
+}
+
+
+/* =========================================================
+   DATA ARCHITECTURE
+========================================================= */
+
+.rfs-architecture-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.25rem;
+
+  margin-top: 3rem;
+}
+
+
+.rfs-architecture-grid article {
+  padding: 2rem;
+
+  border: 1px solid var(--rfs-border);
+  border-radius: 18px;
+
+  background: var(--rfs-white);
+}
+
+
+.rfs-architecture-grid h3 {
+  margin-bottom: 0.6rem;
+}
+
+
+.rfs-path {
+  margin-bottom: 1rem;
+
+  color: var(--rfs-teal-dark) !important;
+
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+
+.rfs-architecture-grid article p:last-child {
+  margin-bottom: 0;
+
+  color: var(--rfs-muted);
+}
+
+
+/* =========================================================
+   ACCESS GRID
+========================================================= */
+
+.rfs-access-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 1.25rem;
+
+  margin-top: 3rem;
+}
+
+
+.rfs-access-grid article {
+  padding: 2rem;
+
+  border: 1px solid var(--rfs-border);
+  border-radius: 18px;
+
+  background: var(--rfs-white);
+}
+
+
+.rfs-access-grid article > span {
+  display: grid;
+
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 1.4rem;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: rgba(15, 159, 154, 0.12);
+
+  color: var(--rfs-teal-dark);
+
+  font-weight: 900;
+}
+
+
+.rfs-access-grid h3 {
+  margin-bottom: 0.6rem;
+}
+
+
+.rfs-access-grid p {
+  margin-bottom: 0;
+
+  color: var(--rfs-muted);
+}
+
+
+/* =========================================================
+   CONTINUITY
+========================================================= */
+
+.rfs-continuity-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 0.75fr)
+    minmax(0, 1.25fr);
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+
+.rfs-continuity-grid p {
+  color: var(--rfs-muted);
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.rfs-skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+
+  margin-top: 2.5rem;
+}
+
+
+.rfs-skill-grid span {
+  padding: 0.7rem 1rem;
+
+  border: 1px solid var(--rfs-border);
+  border-radius: 999px;
+
+  background: var(--rfs-soft);
+
+  color: var(--rfs-teal-dark);
+
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   LEARNING
+========================================================= */
+
+.rfs-learning-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 0.75fr)
+    minmax(0, 1.25fr);
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   OUTCOME
+========================================================= */
+
+.running-shoes-case-study .outcome-panel {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 0.8fr)
+    minmax(0, 1.2fr);
+
+  gap: 5rem;
+
+  padding: 3.5rem;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15, 159, 154, 0.10),
+      rgba(79, 115, 199, 0.10)
+    );
+}
+
+
+.running-shoes-case-study .outcome-panel p {
+  color: var(--rfs-muted);
+}
+
+
+.rfs-status {
+  display: inline-block;
+
+  margin-top: 0.5rem;
+
+  padding: 0.55rem 0.9rem;
+
+  border-radius: 999px;
+
+  background: rgba(216, 139, 0, 0.12);
+
+  color: #9a6200 !important;
+
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   NEXT
+========================================================= */
+
+.rfs-next {
+  background:
+    linear-gradient(
+      135deg,
+      var(--rfs-teal-dark),
+      #0d5a68
+    );
+}
+
+
+.rfs-next p {
+  color: #bdf1ee;
+}
+
+
+.rfs-next h2 {
+  color: var(--rfs-white);
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / FOCUS
+========================================================= */
+
+.rfs-diagram-panel a:focus-visible {
+  outline: 3px solid var(--rfs-teal);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .rfs-overview-grid,
+  .running-shoes-case-study .two-column,
+  .rfs-continuity-grid,
+  .rfs-learning-grid,
+  .running-shoes-case-study .outcome-panel {
+    grid-template-columns: 1fr;
+
+    gap: 2.5rem;
+  }
+
+
+  .rfs-rule-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+  .rfs-access-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+  .rfs-model-section,
+  .rfs-model-reverse {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+
+  .rfs-model-reverse .rfs-model-copy,
+  .rfs-model-reverse .rfs-diagram-panel {
+    order: initial;
+  }
+
+
+  .running-shoes-case-study .outcome-panel {
+    padding: 2.5rem;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .rfs-hero {
+    padding:
+      3.5rem
+      0
+      4rem;
+  }
+
+
+  .rfs-section,
+  .rfs-overview {
+    padding: 4rem 0;
+  }
+
+
+  .rfs-rule-grid,
+  .rfs-architecture-grid,
+  .rfs-access-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .rfs-model-section {
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+
+
+  .rfs-diagram-panel {
+    padding: 0.7rem;
+
+    border-radius: 14px;
+  }
+
+
+  .rfs-diagram-panel a {
+    border-radius: 10px;
+  }
+
+
+  .running-shoes-case-study .outcome-panel {
+    padding: 2rem 1.5rem;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .rfs-diagram-panel img,
+  .rfs-hero .back-link {
+    transition: none;
+  }
+
+}

@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="SkyWay Air Travel distributed web application case study by Anne Amor featuring Java, Spring Boot, RESTful flight search, HTML5, database integration, XML-based authentication, and software testing."
+  >
+
+  <title>SkyWay Air Travel Web Application | Anne Amor</title>
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../ace-page.css">
+  <link rel="stylesheet" href="../skyway-air-travel.css">
+
+  <script src="../script.js" defer></script>
+</head>
+
+
+<body class="ace-page skyway-case-study">
+
+  <!-- SKIP LINK -->
+  <a
+    class="ace-skip-link"
+    href="#main-content"
+  >
+    Skip to main content
+  </a>
+
+
+  <!-- ======================================================
+       HEADER
+  ======================================================= -->
+
+  <header class="ace-site-header">
+
+    <div class="ace-header-inner">
+
+      <a
+        class="ace-brand"
+        href="../index.html"
+        aria-label="Anne Amor home page"
+      >
+        <img
+          src="../images/brand/Anne-Amor-Logo.png"
+          alt="Anne Amor — Design, UX, and Technology"
+        >
+      </a>
+
+
+      <nav
+        class="ace-primary-nav"
+        aria-label="Primary navigation"
+      >
+        <a href="../index.html">
+          Home
+        </a>
+
+        <a
+          href="../work.html"
+          aria-current="page"
+        >
+          Work
+        </a>
+
+        <a href="../about.html">
+          About
+        </a>
+
+        <a href="../resume.html">
+          Resume
+        </a>
+
+        <a href="../contact.html">
+          Contact
+        </a>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- ======================================================
+       MAIN
+  ======================================================= -->
+
+  <main id="main-content">
+
+
+    <!-- ====================================================
+         HERO
+    ===================================================== -->
+
+    <section class="skyway-hero">
+
+      <div class="container">
+
+        <a
+          class="back-link"
+          href="../work.html"
+        >
+          ← Back to Work
+        </a>
+
+
+        <p class="eyebrow">
+          Distributed Application Development
+        </p>
+
+
+        <h1>
+          SkyWay Air Travel
+        </h1>
+
+
+        <p class="skyway-intro">
+          An evolving Java and Spring Boot travel application designed
+          to support flight search, user registration and authentication,
+          and database-backed flight booking through a browser-based
+          distributed system.
+        </p>
+
+
+        <ul
+          class="case-tags"
+          aria-label="Project technologies"
+        >
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>HTML5</li>
+          <li>REST API</li>
+          <li>Local Database</li>
+          <li>XML</li>
+          <li>Authentication</li>
+          <li>Software Testing</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         OVERVIEW
+    ===================================================== -->
+
+    <section class="skyway-overview">
+
+      <div class="container skyway-overview-grid">
+
+
+        <div>
+
+          <p class="section-label">
+            Overview
+          </p>
+
+
+          <h2>
+            Building a distributed travel-service web application
+          </h2>
+
+
+          <p>
+            SkyWay Air Travel is a Java-based distributed web application
+            project developed using Spring Boot and HTML5.
+          </p>
+
+
+          <p>
+            The final application is designed to provide customers with
+            a travel-service portal where they can search for flights,
+            view results, create an account, authenticate, and book air
+            tickets.
+          </p>
+
+
+          <p>
+            The project combines browser-based interfaces, web services,
+            a local database, and local XML files to demonstrate how
+            distributed systems exchange and manage data across multiple
+            technologies.
+          </p>
+
+        </div>
+
+
+
+        <aside
+          class="project-facts"
+          aria-label="SkyWay Air Travel project details"
+        >
+
+          <h2>
+            Project details
+          </h2>
+
+
+          <dl>
+
+            <div>
+              <dt>Project type</dt>
+              <dd>Academic distributed application project</dd>
+            </div>
+
+
+            <div>
+              <dt>Project status</dt>
+              <dd>In development</dd>
+            </div>
+
+
+            <div>
+              <dt>My role</dt>
+              <dd>Java developer and interface designer</dd>
+            </div>
+
+
+            <div>
+              <dt>Framework</dt>
+              <dd>Spring Boot</dd>
+            </div>
+
+
+            <div>
+              <dt>Current milestone</dt>
+              <dd>Milestone Two — Web services and flight search</dd>
+            </div>
+
+
+            <div>
+              <dt>Final project scope</dt>
+              <dd>
+                Flight search, flight booking, authentication,
+                local database integration, and XML read/write
+              </dd>
+            </div>
+
+          </dl>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         PROJECT GOALS
+    ===================================================== -->
+
+    <section class="skyway-section skyway-dark">
+
+      <div class="container two-column">
+
+
+        <div>
+
+          <p class="section-label">
+            Project Goals
+          </p>
+
+
+          <h2>
+            Connecting multiple technologies into one system
+          </h2>
+
+
+          <p>
+            The project focuses on creating a functioning browser-based
+            distributed application using Java, HTML5, web services,
+            database technologies, and XML.
+          </p>
+
+
+          <p>
+            Each milestone adds another layer of functionality while
+            maintaining a consistent travel-service experience for the user.
+          </p>
+
+        </div>
+
+
+
+        <div>
+
+          <ul class="feature-list">
+
+            <li>
+              Search for flights using user-entered criteria.
+            </li>
+
+            <li>
+              Retrieve and display flight results through a web service.
+            </li>
+
+            <li>
+              Allow users to register before booking flights.
+            </li>
+
+            <li>
+              Authenticate users locally within the application.
+            </li>
+
+            <li>
+              Store user information in local XML files.
+            </li>
+
+            <li>
+              Store flight-booking information in a local database.
+            </li>
+
+            <li>
+              Support read, write, and update database operations.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         CURRENT MILESTONE
+    ===================================================== -->
+
+    <section class="skyway-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Current Development Stage
+        </p>
+
+
+        <h2>
+          Milestone Two — Building and accessing web services
+        </h2>
+
+
+        <p class="section-intro">
+          The current version focuses on flight-search functionality and
+          the integration of a RESTful web service with the browser-based
+          application.
+        </p>
+
+
+        <div class="skyway-current-grid">
+
+
+          <article>
+
+            <span aria-hidden="true">01</span>
+
+            <h3>
+              Flight search interface
+            </h3>
+
+            <p>
+              The browser interface accepts departure location,
+              destination, travel date, and number of travelers.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">02</span>
+
+            <h3>
+              RESTful flight lookup
+            </h3>
+
+            <p>
+              The application is being developed to retrieve flight
+              information based on user-entered search criteria.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">03</span>
+
+            <h3>
+              Results display
+            </h3>
+
+            <p>
+              Flight information returned through the web-service layer
+              is displayed to the user through the application interface.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span aria-hidden="true">04</span>
+
+            <h3>
+              Professional code structure
+            </h3>
+
+            <p>
+              Java, HTML, and related project files are organized and
+              annotated to support readability, testing, and continued
+              development.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         CURRENT INTERFACE
+    ===================================================== -->
+
+    <section class="skyway-section skyway-soft">
+
+      <div class="container">
+
+        <p class="section-label">
+          Current Interface
+        </p>
+
+
+        <h2>
+          A browser-based flight-search experience
+        </h2>
+
+
+        <p class="section-intro">
+          The current interface provides a clear search experience for
+          departure location, destination, travel date, and traveler count.
+        </p>
+
+
+        <figure class="skyway-interface-panel">
+
+          <img
+            src="../images/projects/skyway_landing.png"
+            alt="SkyWay Air Travel flight search interface with departure, destination, travel date, and traveler fields"
+            loading="lazy"
+          >
+
+          <figcaption>
+            Current SkyWay Air Travel search interface from Milestone Two.
+          </figcaption>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         APPLICATION FLOW
+    ===================================================== -->
+
+    <section class="skyway-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Application Flow
+        </p>
+
+
+        <h2>
+          How flight search works
+        </h2>
+
+
+        <div class="skyway-flow">
+
+
+          <article class="skyway-flow-step">
+
+            <span>1</span>
+
+            <div>
+
+              <h3>
+                Enter search criteria
+              </h3>
+
+              <p>
+                The user enters a departure location, destination,
+                travel date, and traveler count.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <div
+            class="skyway-flow-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </div>
+
+
+
+          <article class="skyway-flow-step">
+
+            <span>2</span>
+
+            <div>
+
+              <h3>
+                Submit the request
+              </h3>
+
+              <p>
+                The browser sends the search criteria through the
+                application to the flight-search service.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <div
+            class="skyway-flow-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </div>
+
+
+
+          <article class="skyway-flow-step">
+
+            <span>3</span>
+
+            <div>
+
+              <h3>
+                Retrieve matching flights
+              </h3>
+
+              <p>
+                The application retrieves matching flight information
+                based on the user's selected criteria.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <div
+            class="skyway-flow-arrow"
+            aria-hidden="true"
+          >
+            ↓
+          </div>
+
+
+
+          <article class="skyway-flow-step">
+
+            <span>4</span>
+
+            <div>
+
+              <h3>
+                Display results
+              </h3>
+
+              <p>
+                The returned flight information is presented to the
+                user through the browser interface.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         TECHNICAL ARCHITECTURE
+    ===================================================== -->
+
+    <section class="skyway-section skyway-dark">
+
+      <div class="container">
+
+        <p class="section-label">
+          Technical Architecture
+        </p>
+
+
+        <h2>
+          A multi-layer distributed application
+        </h2>
+
+
+        <div class="skyway-tech-grid">
+
+
+          <article>
+
+            <span class="skyway-tech-number">
+              01
+            </span>
+
+            <h3>
+              Browser Interface
+            </h3>
+
+            <p>
+              HTML5 and CSS provide the user-facing flight-search,
+              registration, authentication, and booking interfaces.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span class="skyway-tech-number">
+              02
+            </span>
+
+            <h3>
+              Java &amp; Spring Boot
+            </h3>
+
+            <p>
+              Java and Spring Boot provide the core application logic,
+              routing, data handling, and communication between system
+              components.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span class="skyway-tech-number">
+              03
+            </span>
+
+            <h3>
+              Web Services
+            </h3>
+
+            <p>
+              RESTful services support flight search and the exchange of
+              flight information between application components.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span class="skyway-tech-number">
+              04
+            </span>
+
+            <h3>
+              Local Database
+            </h3>
+
+            <p>
+              The final application will store flight-booking information
+              locally and support read, write, and update operations.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span class="skyway-tech-number">
+              05
+            </span>
+
+            <h3>
+              XML
+            </h3>
+
+            <p>
+              Local XML files will store user-registration and
+              authentication information and support read, write, and
+              update functionality.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span class="skyway-tech-number">
+              06
+            </span>
+
+            <h3>
+              Testing &amp; Debugging
+            </h3>
+
+            <p>
+              Application components are tested throughout development
+              to confirm communication, data handling, and interface
+              behavior.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         DEVELOPMENT ROADMAP
+    ===================================================== -->
+
+    <section class="skyway-section">
+
+      <div class="container">
+
+        <p class="section-label">
+          Development Roadmap
+        </p>
+
+
+        <h2>
+          Building the application milestone by milestone
+        </h2>
+
+
+        <div class="skyway-roadmap">
+
+
+          <article class="skyway-roadmap-item complete">
+
+            <div class="skyway-roadmap-marker">
+              01
+            </div>
+
+            <div>
+
+              <p class="roadmap-status">
+                Milestone One
+              </p>
+
+              <h3>
+                Beginning Web Development
+              </h3>
+
+              <p>
+                Developed the initial browser-based travel interface and
+                flight-search forms using professional, annotated code.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="skyway-roadmap-item current">
+
+            <div class="skyway-roadmap-marker">
+              02
+            </div>
+
+            <div>
+
+              <p class="roadmap-status">
+                Current Stage
+              </p>
+
+              <h3>
+                Building and Accessing Web Services
+              </h3>
+
+              <p>
+                Developing RESTful flight-search functionality that retrieves
+                flight information based on user input and displays the
+                results through the application.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="skyway-roadmap-item">
+
+            <div class="skyway-roadmap-marker">
+              03
+            </div>
+
+            <div>
+
+              <p class="roadmap-status">
+                Upcoming
+              </p>
+
+              <h3>
+                Security and Database
+              </h3>
+
+              <p>
+                Add user registration, basic authentication, XML read/write
+                functionality, local database storage, and flight booking.
+              </p>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="skyway-roadmap-item">
+
+            <div class="skyway-roadmap-marker">
+              04
+            </div>
+
+            <div>
+
+              <p class="roadmap-status">
+                Final Application
+              </p>
+
+              <h3>
+                Complete Distributed Web Application
+              </h3>
+
+              <p>
+                Deliver a polished Java and HTML5 application integrating
+                flight search, booking, authentication, XML, and local
+                database connectivity.
+              </p>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         FINAL PROJECT REQUIREMENTS
+    ===================================================== -->
+
+    <section class="skyway-section skyway-soft">
+
+      <div class="container">
+
+        <p class="section-label">
+          Final Application Requirements
+        </p>
+
+
+        <h2>
+          Functionality the completed system will support
+        </h2>
+
+
+        <div class="skyway-requirements-grid">
+
+
+          <article>
+
+            <h3>
+              Flight Search
+            </h3>
+
+            <p>
+              Perform flight lookup based on user input and display
+              matching results.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              Flight Booking
+            </h3>
+
+            <p>
+              Pull selected booking information and display booking
+              results to the user.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              Authentication
+            </h3>
+
+            <p>
+              Allow users to register and authenticate before booking
+              flights.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              Database Interface
+            </h3>
+
+            <p>
+              Support read, write, and update operations with the local
+              flight-booking database.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              XML Reader
+            </h3>
+
+            <p>
+              Read user-registration and authentication information from
+              a local XML file.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <h3>
+              XML Write &amp; Update
+            </h3>
+
+            <p>
+              Write new user information to XML and update existing
+              records as required.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         WHAT I AM LEARNING
+    ===================================================== -->
+
+    <section class="skyway-section skyway-dark">
+
+      <div class="container skyway-learning-grid">
+
+
+        <div>
+
+          <p class="section-label">
+            What I Am Learning
+          </p>
+
+
+          <h2>
+            Developing across multiple application layers
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            SkyWay Air Travel is strengthening my understanding of how
+            browser-based interfaces, Java application logic, web services,
+            local databases, and structured data formats work together in
+            distributed systems.
+          </p>
+
+
+          <p>
+            The milestone structure also provides experience developing a
+            larger application incrementally, incorporating feedback,
+            debugging each layer, and expanding functionality without
+            losing the structure of the existing system.
+          </p>
+
+
+          <p>
+            As the project continues, the case study will be updated with
+            authentication, XML processing, booking functionality,
+            database integration, and final testing results.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         CURRENT OUTCOME
+    ===================================================== -->
+
+    <section class="skyway-section">
+
+      <div class="container outcome-panel">
+
+
+        <div>
+
+          <p class="section-label">
+            Current Outcome
+          </p>
+
+
+          <h2>
+            A functioning foundation for the final travel application
+          </h2>
+
+        </div>
+
+
+
+        <div>
+
+          <p>
+            The project currently includes a browser-based flight-search
+            interface and the foundation for RESTful flight-search
+            functionality.
+          </p>
+
+
+          <p>
+            Future development will add local XML registration and
+            authentication, database-backed flight booking, and complete
+            integration of the distributed application requirements.
+          </p>
+
+
+          <p class="skyway-status">
+            Project currently in development.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ====================================================
+         NEXT
+    ===================================================== -->
+
+    <section class="ff-next skyway-next">
+
+      <div class="container">
+
+        <p>
+          Continue exploring
+        </p>
+
+
+        <h2>
+          View more design and technology projects.
+        </h2>
+
+
+        <a
+          class="button"
+          href="../work.html"
+        >
+          View all work
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- ======================================================
+       FOOTER
+  ======================================================= -->
+
+  <footer class="ace-site-footer">
+
+    <div class="ace-container ace-footer-inner">
+
+      <p>
+        ©
+        <span id="current-year">
+          2026
+        </span>
+        Anne Amor
+      </p>
+
+
+      <a href="mailto:anneamordesigns@gmail.com">
+        anneamordesigns@gmail.com
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
