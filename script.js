@@ -230,4 +230,3 @@ if (aceCarousel) {
 
     showAceSlide(0);
 }
-

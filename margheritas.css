@@ -1,0 +1,1152 @@
+/* =========================================================
+   MARGHERITA'S BRICK OVEN CASE STUDY
+   Anne Amor Portfolio
+========================================================= */
+
+
+/* =========================================================
+   COLOR SYSTEM
+========================================================= */
+
+.margheritas-case-study {
+  --marg-fire-brick: #c8362b;
+  --marg-flame: #e16d28;
+  --marg-smoky-black: #0e0a06;
+  --marg-basil: #436b4c;
+  --marg-mushroom: #a49279;
+  --marg-mozzarella: #f2efe7;
+
+  --marg-white: #ffffff;
+  --marg-text: #2b2927;
+  --marg-muted: #6c655f;
+  --marg-border: rgba(14, 10, 6, 0.12);
+
+  color: var(--marg-text);
+  background: var(--marg-white);
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.margheritas-case-study main {
+  overflow: hidden;
+}
+
+.margheritas-case-study .container {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.margheritas-case-study h1,
+.margheritas-case-study h2,
+.margheritas-case-study h3 {
+  line-height: 1.1;
+}
+
+.margheritas-case-study h2 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+
+  color: var(--marg-smoky-black);
+
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  letter-spacing: -0.03em;
+}
+
+.margheritas-case-study h3 {
+  color: var(--marg-smoky-black);
+}
+
+.margheritas-case-study p {
+  line-height: 1.75;
+}
+
+.margheritas-case-study .section-label {
+  margin-bottom: 0.7rem;
+
+  color: var(--marg-fire-brick);
+
+  font-size: 0.76rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.margheritas-case-study .section-intro {
+  max-width: 780px;
+  margin-bottom: 3rem;
+
+  color: var(--marg-muted);
+
+  font-size: 1.05rem;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.margheritas-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: 5rem 0 5.5rem;
+
+  color: var(--marg-white);
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(225, 109, 40, 0.22),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #0e0a06 0%,
+      #24130c 52%,
+      #3a1f13 100%
+    );
+}
+
+.margheritas-hero::after {
+  content: "";
+
+  position: absolute;
+
+  right: -10rem;
+  bottom: -16rem;
+
+  width: 30rem;
+  height: 30rem;
+
+  border-radius: 50%;
+
+  background: rgba(200, 54, 43, 0.14);
+}
+
+.margheritas-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.margheritas-hero .back-link {
+  display: inline-block;
+
+  margin-bottom: 3rem;
+
+  color: rgba(255, 255, 255, 0.84);
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.margheritas-hero .back-link:hover {
+  color: var(--marg-flame);
+  transform: translateX(-4px);
+}
+
+.margheritas-hero .eyebrow {
+  margin-bottom: 1rem;
+
+  color: var(--marg-flame);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.margheritas-hero h1 {
+  max-width: 950px;
+
+  margin: 0 0 1.5rem;
+
+  color: var(--marg-white);
+
+  font-size: clamp(3rem, 8vw, 6.2rem);
+  letter-spacing: -0.045em;
+}
+
+.margheritas-intro {
+  max-width: 800px;
+  margin-bottom: 2rem;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+
+/* =========================================================
+   HERO TAGS
+========================================================= */
+
+.margheritas-case-study .case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.margheritas-case-study .case-tags li {
+  padding: 0.55rem 0.9rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  color: var(--marg-white);
+
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.margheritas-overview {
+  padding: 6rem 0;
+
+  background: var(--marg-white);
+}
+
+.margheritas-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.45fr)
+    minmax(290px, 0.7fr);
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+.margheritas-overview-grid > div > p {
+  max-width: 720px;
+
+  color: var(--marg-muted);
+}
+
+
+/* =========================================================
+   PROJECT FACTS
+========================================================= */
+
+.margheritas-case-study .project-facts {
+  overflow: hidden;
+
+  border: 1px solid var(--marg-border);
+  border-radius: 22px;
+
+  background: var(--marg-mozzarella);
+
+  box-shadow:
+    0 20px 55px rgba(14, 10, 6, 0.08);
+}
+
+.margheritas-case-study .project-facts h2 {
+  margin: 0;
+  padding: 1.35rem 1.6rem;
+
+  color: var(--marg-white);
+
+  font-size: 1.25rem;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--marg-fire-brick),
+      var(--marg-flame)
+    );
+}
+
+.margheritas-case-study .project-facts dl {
+  margin: 0;
+}
+
+.margheritas-case-study .project-facts dl div {
+  padding: 1rem 1.6rem;
+
+  border-bottom: 1px solid rgba(14, 10, 6, 0.08);
+}
+
+.margheritas-case-study .project-facts dl div:last-child {
+  border-bottom: 0;
+}
+
+.margheritas-case-study .project-facts dt {
+  margin-bottom: 0.3rem;
+
+  color: var(--marg-fire-brick);
+
+  font-size: 0.74rem;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.margheritas-case-study .project-facts dd {
+  margin: 0;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   STANDARD SECTIONS
+========================================================= */
+
+.margheritas-section {
+  padding: 6rem 0;
+}
+
+.margheritas-soft {
+  background: var(--marg-mozzarella);
+}
+
+.margheritas-dark {
+  color: rgba(255, 255, 255, 0.86);
+
+  background:
+    linear-gradient(
+      135deg,
+      #0e0a06,
+      #1d120d
+    );
+}
+
+.margheritas-dark h2,
+.margheritas-dark h3 {
+  color: var(--marg-white);
+}
+
+.margheritas-dark .section-label {
+  color: var(--marg-flame);
+}
+
+.margheritas-dark p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+
+/* =========================================================
+   TWO COLUMN
+========================================================= */
+
+.margheritas-case-study .two-column {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   FEATURE LIST
+========================================================= */
+
+.margheritas-case-study .feature-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.margheritas-case-study .feature-list li {
+  position: relative;
+
+  padding:
+    0.9rem
+    0
+    0.9rem
+    1.8rem;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+
+  color: rgba(255, 255, 255, 0.83);
+
+  line-height: 1.6;
+}
+
+.margheritas-case-study .feature-list li::before {
+  content: "→";
+
+  position: absolute;
+  left: 0;
+
+  color: var(--marg-flame);
+
+  font-weight: 900;
+}
+
+
+/* =========================================================
+   AUDIT SUMMARY
+========================================================= */
+
+.margheritas-audit-summary {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 1.25rem;
+
+  margin-bottom: 3.5rem;
+}
+
+.margheritas-audit-summary article {
+  position: relative;
+
+  padding: 2rem;
+
+  border: 1px solid var(--marg-border);
+  border-radius: 18px;
+
+  background: var(--marg-white);
+
+  box-shadow:
+    0 12px 35px rgba(14, 10, 6, 0.05);
+}
+
+.margheritas-audit-summary article::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 5px;
+
+  border-radius: 18px 18px 0 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--marg-fire-brick),
+      var(--marg-flame)
+    );
+}
+
+.margheritas-audit-summary article > span {
+  display: block;
+
+  margin-bottom: 2rem;
+
+  color: var(--marg-fire-brick);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.margheritas-audit-summary h3 {
+  margin-bottom: 0.65rem;
+}
+
+.margheritas-audit-summary p {
+  margin-bottom: 0;
+
+  color: var(--marg-muted);
+
+  font-size: 0.94rem;
+}
+
+
+/* =========================================================
+   AUDIT GALLERY
+========================================================= */
+
+.margheritas-audit-gallery {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+}
+
+.margheritas-audit-gallery figure {
+  margin: 0;
+
+  padding: 1rem;
+
+  border: 1px solid var(--marg-border);
+  border-radius: 18px;
+
+  background: var(--marg-mozzarella);
+}
+
+.margheritas-audit-gallery a {
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 12px;
+
+  background: white;
+
+  cursor: zoom-in;
+}
+
+.margheritas-audit-gallery img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  transition: transform 0.25s ease;
+}
+
+.margheritas-audit-gallery a:hover img {
+  transform: scale(1.015);
+}
+
+.margheritas-audit-gallery figcaption {
+  margin-top: 0.8rem;
+
+  color: var(--marg-muted);
+
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+
+/* =========================================================
+   BRAND STYLE TILE
+========================================================= */
+
+.margheritas-style-tile {
+  margin: 3rem 0 4rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--marg-border);
+  border-radius: 22px;
+
+  background: var(--marg-white);
+
+  box-shadow:
+    0 18px 50px rgba(14, 10, 6, 0.08);
+}
+
+.margheritas-style-tile a {
+  display: block;
+
+  overflow: hidden;
+
+  border-radius: 14px;
+
+  cursor: zoom-in;
+}
+
+.margheritas-style-tile img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+
+.margheritas-style-tile figcaption {
+  max-width: 800px;
+
+  margin: 1rem auto 0;
+
+  color: var(--marg-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+/* =========================================================
+   BRAND SYSTEM GRID
+========================================================= */
+
+.margheritas-brand-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.25rem;
+}
+
+.margheritas-brand-grid article {
+  padding: 2rem;
+
+  border: 1px solid rgba(14, 10, 6, 0.08);
+  border-radius: 18px;
+
+  background: var(--marg-white);
+}
+
+.margheritas-brand-grid h3 {
+  margin-bottom: 0.75rem;
+}
+
+.margheritas-brand-grid p:last-child {
+  margin-bottom: 0;
+
+  color: var(--marg-muted);
+}
+
+
+/* =========================================================
+   PLATFORM GRID
+========================================================= */
+
+.margheritas-platform-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+}
+
+.margheritas-platform-card {
+  overflow: hidden;
+
+  margin: 0;
+
+  border: 1px solid var(--marg-border);
+  border-radius: 20px;
+
+  background: var(--marg-white);
+
+  box-shadow:
+    0 14px 40px rgba(14, 10, 6, 0.06);
+}
+
+.margheritas-platform-card img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  background: #f5f5f5;
+}
+
+.margheritas-platform-card figcaption {
+  padding: 1.7rem 1.8rem 2rem;
+}
+
+.margheritas-platform-card h3 {
+  margin-bottom: 0.65rem;
+}
+
+.margheritas-platform-card figcaption p:last-child {
+  margin-bottom: 0;
+
+  color: var(--marg-muted);
+}
+
+
+/* =========================================================
+   PROMOTIONAL CAMPAIGN
+========================================================= */
+
+.margheritas-dark .section-intro {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.margheritas-promo-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.3fr)
+    minmax(280px, 0.7fr);
+
+  gap: 2rem;
+
+  align-items: start;
+}
+
+.margheritas-promo {
+  margin: 0;
+}
+
+.margheritas-promo img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.28);
+}
+
+.margheritas-promo figcaption {
+  margin-top: 0.8rem;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.margheritas-story {
+  max-width: 430px;
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   DESIGN DECISIONS
+========================================================= */
+
+.margheritas-decision-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 1.25rem;
+
+  margin-top: 3rem;
+}
+
+.margheritas-decision-grid article {
+  padding: 2rem;
+
+  border: 1px solid var(--marg-border);
+  border-radius: 18px;
+
+  background: var(--marg-white);
+}
+
+.margheritas-decision-grid article > span {
+  display: grid;
+
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 1.5rem;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: rgba(200, 54, 43, 0.1);
+
+  color: var(--marg-fire-brick);
+
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.margheritas-decision-grid h3 {
+  margin-bottom: 0.7rem;
+}
+
+.margheritas-decision-grid p {
+  margin-bottom: 0;
+
+  color: var(--marg-muted);
+}
+
+
+/* =========================================================
+   OUTCOME
+========================================================= */
+
+.margheritas-case-study .outcome-panel {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 0.8fr)
+    minmax(0, 1.2fr);
+
+  gap: 5rem;
+
+  align-items: start;
+}
+
+.margheritas-case-study .outcome-panel p {
+  color: var(--marg-muted);
+}
+
+
+/* =========================================================
+   NEXT
+========================================================= */
+
+.margheritas-next {
+  padding: 5.5rem 0;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--marg-fire-brick),
+      #8f241d
+    );
+}
+
+.margheritas-next p {
+  margin-bottom: 0.7rem;
+
+  color: var(--marg-mozzarella);
+
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.margheritas-next h2 {
+  max-width: 650px;
+
+  margin: 0 auto 1.8rem;
+
+  color: var(--marg-white);
+}
+
+.margheritas-next .button {
+  display: inline-block;
+
+  padding: 0.8rem 1.5rem;
+
+  border: 2px solid var(--marg-white);
+  border-radius: 999px;
+
+  background: var(--marg-white);
+
+  color: var(--marg-fire-brick);
+
+  font-weight: 800;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.margheritas-next .button:hover {
+  background: transparent;
+
+  color: var(--marg-white);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOCUS STATES
+========================================================= */
+
+.margheritas-case-study a:focus-visible {
+  outline: 3px solid var(--marg-flame);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .margheritas-overview-grid,
+  .margheritas-case-study .two-column,
+  .margheritas-case-study .outcome-panel {
+    grid-template-columns: 1fr;
+
+    gap: 2.5rem;
+  }
+
+
+  .margheritas-audit-summary,
+  .margheritas-decision-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+  .margheritas-promo-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .margheritas-facebook {
+    max-width: 760px;
+    margin-inline: auto;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .margheritas-case-study .container {
+    width: min(100% - 28px, 1120px);
+  }
+
+
+  .margheritas-hero {
+    padding: 3.5rem 0 4rem;
+  }
+
+
+  .margheritas-section,
+  .margheritas-overview {
+    padding: 4rem 0;
+  }
+
+
+  .margheritas-audit-summary,
+  .margheritas-audit-gallery,
+  .margheritas-brand-grid,
+  .margheritas-platform-grid,
+  .margheritas-decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .margheritas-audit-gallery figure,
+  .margheritas-style-tile {
+    padding: 0.7rem;
+  }
+
+
+  .margheritas-platform-card figcaption {
+    padding: 1.4rem;
+  }
+
+
+  .margheritas-story {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .margheritas-hero .back-link,
+  .margheritas-audit-gallery img,
+  .margheritas-next .button {
+    transition: none;
+  }
+
+}
+
+/* =========================================================
+   BRAND EVALUATION BOOK
+========================================================= */
+
+.margheritas-book-section {
+  max-width: 820px;
+  margin: 3.5rem auto 0;
+}
+
+
+.margheritas-book {
+  position: relative;
+
+  min-height: 820px;
+
+  padding: 2rem;
+
+  border-radius: 8px 22px 22px 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c9c1b6 0,
+      #f2efe7 2.5%,
+      #ffffff 7%,
+      #ffffff 93%,
+      #e4ddd3 100%
+    );
+
+  box-shadow:
+    -18px 22px 50px rgba(14, 10, 6, 0.18),
+    inset 16px 0 20px rgba(14, 10, 6, 0.06);
+
+  perspective: 1600px;
+}
+
+
+.margheritas-book::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 28px;
+
+  width: 2px;
+
+  background: rgba(14, 10, 6, 0.12);
+
+  box-shadow:
+    6px 0 10px rgba(14, 10, 6, 0.06);
+}
+
+
+.margheritas-book-page {
+  display: none;
+
+  transform-origin: left center;
+}
+
+
+.margheritas-book-page.active {
+  display: block;
+
+  animation: margheritas-page-turn 0.45s ease;
+}
+
+
+.margheritas-book-page img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  border-radius: 3px;
+
+  background: white;
+}
+
+
+@keyframes margheritas-page-turn {
+
+  from {
+    opacity: 0;
+    transform:
+      rotateY(-8deg)
+      translateX(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      rotateY(0)
+      translateX(0);
+  }
+
+}
+
+
+/* CONTROLS */
+
+.margheritas-book-controls {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+
+.margheritas-book-button {
+  padding: 0.7rem 1.15rem;
+
+  border: 1px solid var(--marg-fire-brick);
+  border-radius: 999px;
+
+  background: transparent;
+
+  color: var(--marg-fire-brick);
+
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.margheritas-book-button:hover:not(:disabled) {
+  background: var(--marg-fire-brick);
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+
+.margheritas-book-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+
+.margheritas-book-counter {
+  margin: 0;
+
+  color: var(--marg-muted);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .margheritas-book {
+    min-height: auto;
+
+    padding: 1rem;
+
+    border-radius: 6px 14px 14px 6px;
+  }
+
+
+  .margheritas-book-controls {
+    gap: 0.75rem;
+  }
+
+
+  .margheritas-book-button {
+    padding: 0.6rem 0.85rem;
+
+    font-size: 0.8rem;
+  }
+
+}
